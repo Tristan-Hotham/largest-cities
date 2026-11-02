@@ -1,0 +1,86 @@
+year,source,largest,population,second,second_population,largest_modelski,largest_chandler,places,over_100k,over_1m,centre25_lat,centre25_lon,centre10_lat,centre10_lon
+-3700,Modelski and Chandler,Eridu,6000,,,Eridu,,1,0,0,30.82,46.0,30.82,46.0
+-3500,Modelski and Chandler,Uruk,14000,Eridu,10000,Uruk,,3,0,0,31.46,45.75,31.46,45.75
+-3300,Modelski and Chandler,Uruk,40000,Anshan,10000,Uruk,,4,0,0,31.23,46.67,31.23,46.67
+-3000,Modelski and Chandler,Uruk,40000,Nagar,20000,Uruk,,6,0,0,32.42,45.46,32.42,45.46
+-2800,Modelski and Chandler,Uruk,80000,Larak,40000,Uruk,,14,0,0,32.29,45.23,32.12,45.24
+-2500,Modelski and Chandler,Lagash,60000,Mari,50000,Lagash,,22,0,0,32.72,45.87,32.69,44.02
+-2400,Modelski and Chandler,Mari,50000,Mohenjo-daro,40000,Mari,,24,0,0,32.74,47.12,32.55,46.35
+-2300,Modelski and Chandler,Girsu,80000,Mari,50000,Girsu,,24,0,0,32.6,47.96,32.66,45.27
+-2200,Modelski and Chandler,Girsu,50000,Ur,40000,Girsu,,17,0,0,31.74,50.59,31.36,50.16
+-2100,Modelski and Chandler,Ur,100000,Girsu,80000,Ur,,17,1,0,31.76,49.41,31.47,48.8
+-2000,Modelski and Chandler,Memphis,60000,Ur,42500,"Girsu, Isin and Larsa",Ur,20,0,0,31.72,46.82,31.65,43.11
+-1900,Modelski and Chandler,Larsa and Isin,40000,Uruk,30000,Larsa and Isin,Susa,16,0,0,31.92,44.98,31.71,44.08
+-1800,Modelski and Chandler,Mari,60000,Larsa,40000,Mari,Susa,23,0,0,32.26,42.99,32.26,43.35
+-1700,Modelski and Chandler,Babylon,60000,Erlitou,40000,Babylon,Susa,12,0,0,35.97,48.83,35.92,49.64
+-1600,Modelski and Chandler,Avaris,75000,Babylon,60000,Babylon,Avaris,12,0,0,35.2,41.7,35.51,42.0
+-1500,Modelski and Chandler,Thebes,60000,Knossos,50000,Thebes,Hazor,8,0,0,32.32,32.52,32.32,32.52
+-1400,Modelski and Chandler,Thebes,80000,Ao,32000,Thebes,Hazor,13,0,0,34.0,44.76,33.89,44.93
+-1360,Modelski and Chandler,Thebes,80000,Hattusa,45000,Thebes,Thebes,19,0,0,34.4,39.68,34.19,37.45
+-1300,Modelski and Chandler,Yin,120000,Thebes,80000,Yin,Hattusa,18,1,0,37.88,49.26,38.43,51.13
+-1200,Modelski and Chandler,Pi-Ramesses,160000,Thebes,150000,Pi-Ramesses,Memphis,21,2,0,34.65,42.01,34.8,44.31
+-1100,Modelski and Chandler,Pi-Ramesses,120000,Memphis,100000,Pi-Ramesses,Susa,8,3,0,30.2,35.28,30.2,35.28
+-1000,Modelski and Chandler,Thebes,120000,Memphis,100000,Thebes,Luoyang,11,3,0,33.9,45.12,33.91,45.33
+-900,Modelski and Chandler,"Babylon, Memphis and Thebes",100000,Luoyang,50000,"Babylon, Memphis and Thebes",Luoyang,6,3,0,34.53,48.39,34.53,48.39
+-800,Modelski and Chandler,"Babylon, Memphis and Thebes",100000,Nimrud,50000,"Babylon, Memphis and Thebes",Nimrud and Luoyang,9,3,0,34.44,46.08,34.44,46.08
+-700,Modelski and Chandler,"Babylon, Memphis, Thebes, Nineveh and Linzi",100000,Luoyang,81287,"Babylon, Memphis, Thebes, Nineveh, Linzi and Luoyang",Luoyang,10,5,0,38.39,57.93,38.39,57.93
+-650,Modelski and Chandler,Nineveh,120000,Luoyang,105711,Luoyang and Babylon,Nineveh,11,4,0,39.35,62.92,39.65,63.72
+-600,Modelski and Chandler,Babylon,139442,Luoyang,137955,Babylon and Luoyang,Babylon,6,4,0,42.61,67.15,42.61,67.15
+-500,Modelski and Chandler,Linzi,200000,Babylon,168176,"Linzi, Babylon and Luoyang",Babylon,16,14,0,42.37,77.42,42.32,74.58
+-430,Modelski and Chandler,Linzi and Babylon,200000,Kaifeng,162450,"Linzi, Babylon and Luoyang",Babylon,38,13,0,42.09,74.16,44.83,81.89
+-400,Modelski and Chandler,"Babylon, Kaifeng and Linzi",200000,Rome,150000,"Babylon, Kaifeng, Linzi, Luoyang and Carthage",Syracuse,24,20,0,42.28,79.83,43.93,79.6
+-300,Modelski and Chandler,Linzi,350000,Pataliputra,301505,Carthage,Pataliputra,26,22,0,41.72,71.61,42.39,70.58
+-200,Modelski and Chandler,Alexandria,450000,Pataliputra,350000,Alexandria,Chang'an,27,16,0,39.24,56.76,38.87,53.93
+-100,Modelski and Chandler,Alexandria,1000000,Rome,400000,Alexandria,Seleucia,37,15,1,39.1,52.73,37.99,54.39
+1,Modelski and Chandler,Rome,800000,Chang'an,420000,Rome,Luoyang,21,20,0,41.57,58.94,43.74,57.79
+100,Modelski and Chandler,Rome,725000,Alexandria,500000,Rome,Rome,20,18,0,39.21,44.64,39.42,40.51
+200,Modelski and Chandler,Rome,747699,Alexandria,600000,Rome,Rome,17,17,0,38.66,36.63,37.71,29.19
+300,Modelski and Chandler,Rome,596955,Alexandria,500000,Rome,Rome,18,18,0,40.75,39.29,39.36,36.92
+361,Modelski and Chandler,Rome,511370,Antioch,220990,Rome,Ctesiphon,29,13,0,45.21,47.05,43.72,48.48
+400,Modelski and Chandler,Rome,466935,Constantinople,400000,Rome,Ctesiphon,25,17,0,49.49,43.79,45.89,41.91
+500,Modelski and Chandler,Constantinople,450000,Ctesiphon,400000,"Constantinople, Luoyang and Nanjing",Constantinople and Ctesiphon,27,17,0,48.06,62.58,46.5,75.37
+600,Modelski and Chandler,Constantinople,500000,Ctesiphon,490140,Constantinople,Ctesiphon,27,13,0,42.56,69.02,44.33,69.41
+622,Modelski and Chandler,Ctesiphon,500000,Constantinople,474398,Constantinople,Ctesiphon,43,8,0,39.62,73.84,41.59,72.55
+700,Modelski and Chandler,Chang'an,738888,Luoyang,369444,Chang'an,Chang'an,32,17,0,41.21,78.37,38.97,83.7
+800,Modelski and Chandler,Baghdad and Chang'an,700000,Luoyang,350000,Chang'an,Baghdad,74,18,0,40.32,73.51,41.42,74.67
+900,Modelski and Chandler,Baghdad,900000,Constantinople,400000,Baghdad,Baghdad,71,19,0,37.61,63.79,40.72,61.77
+1000,Modelski and Chandler,Baghdad,812500,Constantinople,450000,Baghdad,Cordoba,115,16,0,41.43,58.99,42.49,56.41
+1100,Chandler,Kaifeng,442000,Constantinople,200000,,Kaifeng,120,18,0,39.3,68.11,40.45,65.85
+1150,Chandler,Merv,200000,Cairo,175000,,Merv,122,18,0,40.1,70.59,42.65,68.32
+1200,Chandler,Hangzhou,255000,Fez,200000,,Hangzhou,169,19,0,44.95,71.86,45.79,55.01
+1250,Chandler,Hangzhou,320489,Cairo,300000,,Hangzhou,155,18,0,42.24,75.33,42.21,88.17
+1300,Chandler,Hangzhou,432000,Beijing,401000,,Hangzhou,190,15,0,45.73,78.5,47.92,81.44
+1350,Chandler,Hangzhou,432000,Beijing,400000,,Hangzhou,185,12,0,41.79,81.73,44.0,80.88
+1400,Chandler,Nanjing,487000,Vijayanagar,400000,,Nanjing,215,16,0,42.02,78.92,39.17,84.03
+1450,Chandler,Beijing,600000,Vijayanagar,455000,,Beijing,213,20,0,40.3,80.57,38.52,79.64
+1500,Chandler,Beijing,672000,Vijayanagar,500000,,Beijing,255,20,0,39.96,78.27,37.98,79.68
+1550,Chandler,Beijing,690000,Istanbul,660000,,Beijing,271,21,0,40.65,76.09,43.34,68.37
+1600,Chandler,Beijing,706000,Istanbul,700000,,Beijing,327,33,0,48.07,73.01,45.49,80.99
+1650,Chandler,Istanbul,700000,Edo,500000,,Istanbul,335,40,0,47.84,76.07,50.33,77.78
+1700,Chandler,Istanbul,700000,Edo,688000,,Istanbul,389,36,0,49.95,78.21,52.63,84.17
+1750,Chandler,Beijing,900000,Edo,694000,,Beijing,428,42,0,52.45,79.77,55.0,91.43
+1800,Chandler,Beijing,1100000,London,861000,,Beijing,591,51,1,51.64,81.85,53.33,92.37
+1825,Chandler,Beijing,1350000,London,1335000,,Beijing,582,63,2,55.21,72.57,57.13,77.67
+1850,Chandler,London,2320000,Beijing,1648000,,London,617,101,3,60.37,54.42,61.16,51.77
+1875,Chandler,London,4241000,Paris,2250000,,London,516,169,5,60.52,13.15,60.29,-0.34
+1900,Chandler,London,6480000,New York,4242000,,London,1102,283,16,59.94,-4.94,59.51,-18.25
+1914,Chandler,London,7419000,New York,6700000,,London,419,314,26,61.5,-7.17,62.81,-20.36
+1925,Chandler,New York and London,7774000,Tokyo,5300000,,New York and London,418,383,30,64.85,-13.94,64.79,-30.65
+1950,Chandler,New York,12463000,London,8860000,,New York,453,449,66,67.92,-20.21,70.32,-8.41
+1970,Chandler,Tokyo,20450000,New York,17252000,,Tokyo,346,346,152,81.15,25.24,71.13,-74.34
+1975,UN WUP 2025,Tokyo,24281618,Osaka,14448054,,,5713,2602,165,55.25,92.31,58.37,130.75
+1980,UN WUP 2025,Tokyo,25912201,Osaka,14742356,,,6297,2883,206,53.34,87.65,42.81,123.67
+1985,UN WUP 2025,Tokyo,27209324,Jakarta,16848703,,,6878,3204,238,52.12,90.22,41.02,122.03
+1990,UN WUP 2025,Tokyo,28588983,Jakarta,19744195,,,7483,3558,271,49.19,90.0,39.28,120.63
+1995,UN WUP 2025,Tokyo,29222295,Jakarta,22421273,,,8306,4033,297,46.24,93.14,31.1,112.6
+2000,UN WUP 2025,Tokyo,30302560,Jakarta,25591966,,,9054,4480,337,41.0,95.81,28.49,110.68
+2005,UN WUP 2025,Tokyo,31352582,Jakarta,28880592,,,9726,4837,369,37.91,95.48,29.61,106.33
+2010,UN WUP 2025,Jakarta and Tokyo,32595795,Dhaka,24560379,,,10421,5243,404,36.9,95.13,25.81,104.77
+2015,UN WUP 2025,Jakarta,36098681,Tokyo,33103603,,,11048,5644,450,35.05,97.71,25.66,104.23
+2020,UN WUP 2025,Jakarta,39069168,Tokyo,33698874,,,11431,5833,491,31.69,95.01,25.63,103.68
+2025,UN WUP 2025,Jakarta,41913860,Dhaka,36585479,,,12138,6172,511,31.22,94.68,25.43,103.26
+2030,UN WUP 2025,Jakarta,44639909,Dhaka,40803862,,,12849,6575,538,30.65,90.74,24.34,98.23
+2035,UN WUP 2025,Jakarta,46979303,Dhaka,44409883,,,13553,7026,567,27.94,88.53,24.23,97.73
+2040,UN WUP 2025,Jakarta,49018960,Dhaka,47360848,,,14226,7456,585,27.69,87.98,24.14,97.27
+2045,UN WUP 2025,Jakarta,50611791,Dhaka,49829850,,,14838,7878,593,27.49,87.44,24.07,96.83
+2050,UN WUP 2025,Dhaka,52122843,Jakarta,51784216,,,15445,8277,611,27.31,86.88,24.03,96.41

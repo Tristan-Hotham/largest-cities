@@ -1,0 +1,1655 @@
+place_id,name,other_names,country,lat,lon,region,certainty,sources,un_city_code
+0,A Coruna,"Coruna, A Coruña",Spain,43.362344,-8.41154,Europe,1,Chandler,1146
+1,Aachen,Aix-la-Chapelle,Germany,50.77664,6.08342,Europe,1,Chandler,58
+2,Aalborg,,Denmark,57.048,9.9187,Europe,1,Chandler,63
+3,Aarhus,,Denmark,56.162939,10.203921,Europe,1,Chandler,233
+4,Abeokuta,,Nigeria,7.15,3.35,Sub-Saharan Africa,2,Chandler,1570
+5,Aberdeen,,United Kingdom,57.14369,-2.09814,Europe,1,Chandler,4150
+6,Abidjan,,Cote D'Ivoire,5.30966,-4.01266,Sub-Saharan Africa,1,Chandler,3439
+7,Abo,Åbo (Turku),Finland,60.449325,22.259231,Europe,3,Chandler,
+8,Abomey-Calavi,,Benin,7.18286,1.99119,Sub-Saharan Africa,1,Chandler,
+9,Accra,,Ghana,5.55602,-0.1969,Sub-Saharan Africa,1,Chandler,3336
+10,Achin,Aceh,Indonesia,5.55,95.316667,South-East Asia and Oceania,3,Chandler,159
+11,Acre,,Israel,32.927778,35.081667,West and Central Asia,2,Chandler,13736
+12,Adana,,Turkey,37.00167,35.32889,West and Central Asia,1,Chandler,5750
+13,Addis Ababa,,Ethiopia,9.02497,38.74689,Sub-Saharan Africa,1,Chandler,6353
+14,Adelaide,,Australia,-34.92866,138.59863,South-East Asia and Oceania,1,Chandler,1003
+15,Aden,,Yemen,12.77944,45.03667,West and Central Asia,1,Chandler,5508
+16,Agades,,Niger,16.966667,7.983333,Sub-Saharan Africa,1,Chandler,
+17,Agra,,India,27.18333,78.01667,South Asia,1,Chandler,8971
+18,Agrigento,Agrigentum,Italy,37.29082765,13.58427204,Europe,1,Chandler,
+19,Aguascalientes,,Mexico,21.88234,-102.28259,Latin America and the Caribbean,1,Chandler,4184
+20,Ahmedabad,Asawal,India,23.039568,72.566004,South Asia,1,Chandler,6408
+21,Ahmednagar,,India,19.095208,74.749592,South Asia,1,Chandler,8893
+22,Aix,,France,43.526304,5.445429,Europe,3,Chandler,
+23,Ajmer,,India,26.44976,74.64116,South Asia,1,Chandler,7350
+24,Akita,,Japan,39.71667,140.11667,East Asia,1,Chandler,4302
+25,Akron,Ohio,United States of America,41.0731,-81.5178,North America,1,Chandler,
+26,Aksu,Aqsu,China,41.12306,80.26444,East Asia,1,Chandler,1427
+27,Akyab,Sittwe,Myanmar,20.144444,92.896944,South-East Asia and Oceania,1,Chandler,617
+28,Albany,New York,United States of America,42.652578,-73.756233,North America,1,Chandler,8439
+29,Aldershot,,United Kingdom,51.24827,-0.76389,Europe,1,Chandler,
+30,Aleppo,,Syria,36.216667,37.166667,West and Central Asia,1,Chandler Modelski,1601
+31,Alessandria,,Italy,44.91245,8.61894,Europe,1,Chandler,678
+32,Alexandria,,Egypt,31.200092,29.918739,North Africa,1,Chandler Modelski,275
+33,Algiers,,Algiers,36.7525,3.04197,North Africa,1,Chandler,3444
+34,Al-Hasa,"Lahsa, Ahsa, El Hasa, Al Ahsa, Hadjar",Saudi Arabia,25.429444,49.621944,West and Central Asia,1,Chandler Modelski,3414
+35,Alicante,,Spain,38.34517,-0.48149,Europe,1,Chandler,4537
+36,Aligarh,,India,27.88334,78.07475,South Asia,1,Chandler,8935
+37,Alkalawa,Gobir,Nigeria,9.2833,8.4,Sub-Saharan Africa,3,Chandler,
+38,Allada,Ardra,Benin,6.66547,2.15138,Sub-Saharan Africa,1,Chandler,1569
+39,Allahabad,Prayag,India,25.44894,81.83328,South Asia,1,Chandler,
+40,Allentown,Pennsylvania,United States of America,40.17789,-74.58349,North America,1,Chandler,
+41,Almaty,Alma-Ata,Kazakhstan,43.2775,76.895833,West and Central Asia,1,Chandler,2965
+42,Almeria,Almería,Spain,36.83814,-2.45974,Europe,1,Chandler,4107
+43,Alost,Aalst,Belgium,50.93781,4.040952,Europe,3,Chandler,804
+44,Altenburg,,Germany,50.985,12.433333,Europe,1,Chandler,
+45,Altoona,Pennsylvania,United States of America,40.518681,-78.394736,North America,3,Chandler,
+46,Alwar,,India,27.56246,76.625,South Asia,1,Chandler,8490
+47,Amalfi,,Italy,40.634003,14.602683,Europe,1,Chandler,
+48,Amarapura,,Myanmar,21.892983,96.05,South-East Asia and Oceania,1,Chandler,
+49,Amarna,,Egypt,27.64528963,30.89624244,North Africa,1,Chandler,
+50,Amber,Amer,India,26.985847,75.888251,South Asia,3,Chandler,8176
+51,Amiens,,France,49.892,2.299,Europe,1,Chandler,3112
+52,Amman,,Jordan,31.95522,35.94503,West and Central Asia,1,Chandler,850
+53,Amravati,Amraoti,India,20.9258,77.7647,South Asia,2,Chandler,9509
+54,Amritsar,,India,31.63661,74.87476,South Asia,1,Chandler,4483
+55,Amroha,,India,28.90314,78.46984,South Asia,1,Chandler,8927
+56,Amsterdam,,Netherlands,52.37403,4.88969,Europe,1,Chandler,1754
+57,Anantpur,"Penugonda, Penukonda",India,14.08339,77.59588,South Asia,3,Chandler,
+58,Anbar,Al Anbar Governorate,Iraq,32.559761,41.919647,West and Central Asia,3,Chandler,
+59,Ancona,,Italy,43.59816,13.51008,Europe,3,Chandler,4579
+60,Andizhan,Andijan,Uzbekistan,40.783333,72.333333,West and Central Asia,1,Chandler,
+61,Andria,,Italy,41.23063,16.29087,Europe,2,Chandler,5254
+62,Angers,,France,47.46667,-0.55,Europe,1,Chandler,1659
+63,Angkor,,Cambodia,13.412417,103.86705,South-East Asia and Oceania,1,Chandler Modelski,
+64,Angouleme,Angoulême,France,45.65,0.15,Europe,1,Chandler,21101
+65,Ani,,Turkey,40.501381,43.567128,West and Central Asia,2,Chandler Modelski,
+66,Ankara,Angora,Turkey,39.91987,32.85427,West and Central Asia,1,Chandler,4941
+67,Anqing,Anking,China,30.50917,117.05056,East Asia,1,Chandler,11168
+68,Anshan,,China,41.1167,122.9833,East Asia,1,Chandler,10224
+69,Antananarivo,Tananarive,Madagascar,-18.914812,47.531623,Sub-Saharan Africa,1,Chandler,1961
+70,Antioch,,Syria/Turkey,36.20655,36.15722,West and Central Asia,2,Chandler Modelski,
+71,Antwerp,Antwerpen,Belgium,51.219217,4.402883,Europe,1,Chandler,1266
+72,Anuradhapura,Anuradha-Pura,Sri Lanka,8.31223,80.41306,South Asia,1,Chandler Modelski,991
+73,Yin,Yin,China,36.09944,114.32889,East Asia,1,Chandler Modelski,9476
+74,Ao,Zhengzhou,China,34.766667,113.65,East Asia,2,Chandler Modelski,9574
+75,Apamea,,Turkey,35.41853326,36.40475674,West and Central Asia,3,Chandler Modelski,
+76,Arad,,Romania,46.18333,21.31667,Europe,1,Chandler,95
+77,Arakan,Rakhine,Myanmar,19.810092,93.987842,South-East Asia and Oceania,1,Chandler,
+78,Arcot,Vellore,India,12.90569,79.31897,South Asia,1,Chandler,
+79,Arequipa,,Peru,-16.39889,-71.535,Latin America and the Caribbean,1,Chandler,3272
+80,Argos,Argolis,Greece,37.63333,22.73333,Europe,1,Chandler,
+81,Arkhangelsk,Archangel,Russian Federation,64.533333,40.533333,Europe,3,Chandler,1593
+82,Arles,,France,43.6767,4.6278,Europe,1,Chandler,
+83,Arnhem,,Netherlands,51.98,5.91111,Europe,1,Chandler,3285
+84,Aror,,Pakistan,27.65,68.9833,South Asia,3,Chandler,
+85,Arrah,Ara,India,25.34,84.4,South Asia,2,Chandler,10929
+86,Arras,,France,50.291,2.777533,Europe,1,Chandler,3282
+87,Astrakhan,"Atil, Itil",Russian Federation,46.366681,48.083239,Europe,1,Chandler,6791
+88,Asuncion,Asunción,Paraguay,-25.30066,-57.63591,Latin America and the Caribbean,1,Chandler,202
+89,Asyut,,Egypt,27.18096,31.18368,North Africa,1,Chandler,6909
+90,Athens,,Greece,37.97945,23.71622,Europe,1,Chandler Modelski,833
+91,Atlanta,,United States of America,33.749,-84.38798,North America,1,Chandler,7328
+92,Auburn,Alabama,United States of America,32.587778,-85.480833,North America,3,Chandler,
+93,Auckland,,New Zealand,-36.86667,174.76667,South-East Asia and Oceania,1,Chandler,1005
+94,Augsberg,Ausburg,Germany,48.371444,10.898239,Europe,1,Chandler,
+95,Augusta,Georgia,United States of America,33.473498,-82.010515,North America,3,Chandler,
+96,Aurangabad,,India,19.876165,75.343314,South Asia,1,Chandler,
+97,Avaris,near Pi-Rameses,Egypt,30.78629566,31.82221773,North Africa,1,Chandler Modelski,
+98,Avignon,,France,43.94834,4.80892,Europe,1,Chandler,4111
+99,Axum,,Ethiopia,14.131781,38.714081,Sub-Saharan Africa,1,Chandler,5883
+100,Ayacucho,"Guamanga, Huamanga",Peru,-13.1615,-74.22154,Latin America and the Caribbean,1,Chandler,3042
+101,Aydin,,Turkey,37.84501,27.83963,West and Central Asia,1,Chandler,2692
+102,Ayutthaya,Ayutia,Thailand,14.35,100.55,South-East Asia and Oceania,2,Chandler,2583
+103,Ayvalik,Aivali,Turkey,39.33589,26.71281,West and Central Asia,1,Chandler,
+104,Azemmour,Azammour,Morocco,33.287778,-8.342222,North Africa,1,Chandler,1652
+105,Babylon,,Iraq,32.536389,44.420833,West and Central Asia,1,Chandler Modelski,
+106,Badajoz,,Spain,38.87789,-6.97061,Europe,1,Chandler,1561
+107,Badami,Vatapi,India,15.91495,75.67683,South Asia,2,Chandler,
+108,Baeza,,Spain,37.99384,-3.47103,Europe,1,Chandler,
+109,Bagan,Pagan,Myanmar,21.172111,94.8602,South-East Asia and Oceania,1,Chandler,
+110,Baghdad,Bagdad,Iraq,33.34058,44.40088,West and Central Asia,1,Chandler Modelski,3303
+111,Bahawalpur,,Pakistan,29.3956,71.68333,South Asia,1,Chandler,7568
+112,Bakhchiserai,,Ukraine,44.755286,33.867233,Europe,1,Chandler,
+113,Baku,,Azerbaijan,40.37767,49.89201,West and Central Asia,1,Chandler,2348
+114,Balasaghun,"Balasaqun, Gobalik",Kyrgyzstan,42.379739,75.250456,West and Central Asia,2,Chandler,
+115,Balkh,,Afghanistan,36.75635,66.8972,West and Central Asia,1,Chandler,13149
+116,Ballarat,,Australia,-37.56622,143.84957,South-East Asia and Oceania,1,Chandler,15152
+117,Baltimore,Maryland,United States of America,39.29038,-76.61219,North America,1,Chandler,8172
+118,Bamberg,,Germany,49.89873,10.90067,Europe,1,Chandler,5038
+119,Banda,Uttar Pradesh,India,25.4833,80.3333,South Asia,3,Chandler,9743
+120,Bandar Seri Begawan,,Brunei,4.890283,114.942217,South-East Asia and Oceania,3,Chandler,169
+121,Bandung,,Indonesia,-6.914744,107.609814,South-East Asia and Oceania,3,Chandler,5991
+122,Bangalore,,India,12.97194,77.59369,South Asia,1,Chandler,
+123,Bangkok,,Thailand,13.75398,100.50144,South-East Asia and Oceania,1,Chandler,2286
+124,Bantam,Batu Besar,Indonesia,-6.405369,106.064081,South-East Asia and Oceania,1,Chandler,
+125,Baoding,Paoting,China,38.873891,115.464806,East Asia,2,Chandler,9124
+126,Baotou,Paotow,China,40.65744,109.84054,East Asia,1,Chandler,5486
+127,Barcelona,,Spain,41.38879,2.15899,Europe,1,Chandler,5068
+128,Bareilly,,India,28.34702,79.42193,South Asia,1,Chandler,9183
+129,Bari,,Italy,41.117142,16.871872,Europe,1,Chandler,5419
+130,Barletta,,Italy,41.31183,16.29077,Europe,1,Chandler,5225
+131,Barnaul,,Russian Federation,53.36056,83.76361,Europe,1,Chandler,7556
+132,Barnsley,,United Kingdom,53.55,-1.48333,Europe,1,Chandler,4933
+133,Barquisimeto,,Venezuela,10.07389,-69.32278,Latin America and the Caribbean,1,Chandler,2528
+134,Barranquilla,,Colombia,10.96854,-74.78132,Latin America and the Caribbean,1,Chandler,3928
+135,Barrow,Alaska,United States of America,71.29058,-156.78872,North America,2,Chandler,
+136,Basel,,Switzerland,47.5584,7.57327,Europe,1,Chandler,1046
+137,Basra,Basrah,Iraq,30.5,47.816667,West and Central Asia,1,Chandler Modelski,5262
+138,Bassein,Pathein,Myanmar,16.774168,94.731666,South-East Asia and Oceania,2,Chandler,3733
+139,Bath,,United Kingdom,51.37795,-2.35907,Europe,1,Chandler,3600
+140,Bauchi,Yakoba,Nigeria,10.315833,9.844167,Sub-Saharan Africa,3,Chandler,8679
+141,Bay City,Michigan,United States of America,43.59505,-83.888639,North America,2,Chandler,
+142,Beijing,Peking,China,39.9075,116.39723,East Asia,1,Chandler,9020
+143,Beirut,,Lebanon,33.88894,35.49442,West and Central Asia,1,Chandler,441
+144,Bejaia,"Bougie, Béjaïa",Algeria,36.75,5.066667,North Africa,2,Chandler,4538
+145,Belem,"Belém, Para",Brazil,-1.455833,-48.503889,Latin America and the Caribbean,3,Chandler,4497
+146,Belfast,,Ireland,54.597283,-5.930117,Europe,1,Chandler,220
+147,Belgaum,,India,15.85212,74.50447,South Asia,1,Chandler,
+148,Belgorod-Dnestrovskiy,"Bilhorod-Dnistrovskyi, Akkerman",Ukraine,46.183333,30.333333,Europe,1,Chandler,20369
+149,Belgrade,Beograd,Serbia,44.80401,20.46513,Europe,1,Chandler,556
+150,Bellary,,India,15.14575,76.91751,South Asia,1,Chandler,
+151,Belo Horizonte,,Brazil,-19.92083,-43.93778,Latin America and the Caribbean,1,Chandler,7802
+152,Belur,,India,13.16558,75.86519,South Asia,3,Chandler,
+153,Bendery,Bender,Republic of Moldova,46.83056,29.47111,Europe,1,Chandler,572
+154,Bendigo,,Australia,-36.75818,144.28024,South-East Asia and Oceania,1,Chandler,
+155,Benin,Oedo,Nigeria,6.339081,5.626483,Sub-Saharan Africa,2,Chandler,6186
+156,Benxi,,China,41.28861,123.765,East Asia,1,Chandler,10360
+157,Berdychiv,Berdichev,Ukraine,49.907903,28.587936,Europe,1,Chandler,2019
+158,Bergamo,,Italy,45.69798,9.66895,Europe,1,Chandler,2169
+159,Bergen,,Norway,60.391264,5.322053,Europe,1,Chandler,57
+160,Bergisch Gladbach,Gladbach,Germany,51.2,7.116667,Europe,3,Chandler,
+161,Berlin,,Germany,52.52437,13.41053,Europe,1,Chandler,5576
+162,Bern,,Switzerland,46.94809,7.44744,Europe,1,Chandler,930
+163,Bernburg,Bernberg,Germany,51.797014,11.73421,Europe,2,Chandler,
+164,Beruit,,Lebanon,33.888629,35.495479,West and Central Asia,1,Chandler,
+165,Berwick-upon-Tweed,Berwick,United Kingdom,55.771,-2.007,Europe,3,Chandler,
+166,Besancon,Besançon,France,47.24878,6.01815,Europe,1,Chandler,4391
+167,Beziers,Béziers,France,43.34762,3.21899,Europe,1,Chandler,3800
+168,Bhagalpur,Boglipore,India,25.24446,86.97183,South Asia,1,Chandler,11457
+169,Bhaktapur,"Bhatgaon, Bhadgaon",Nepal,27.672222,85.427778,South Asia,1,Chandler,
+170,Bharatpur,Bhurtpore,India,27.21731,77.49009,South Asia,3,Chandler,8865
+171,Bhavnagar,,India,21.77446,72.1525,South Asia,1,Chandler,6440
+172,Bhimavaram,Bhimavarman,India,16.54541,81.531578,South Asia,1,Chandler,10925
+173,Bhiwani,,India,28.79194,76.14108,South Asia,1,Chandler,7878
+174,Bhuj,,India,23.25397,69.66928,South Asia,1,Chandler,1103
+175,Bialystok,,Poland,53.13333,23.16433,Europe,1,Chandler,
+176,Bida,,Nigeria,9.08333,6.01667,Sub-Saharan Africa,1,Chandler,6528
+177,Bidar,,India,17.91331,77.5301,South Asia,3,Chandler,9677
+178,Bielefeld,,Germany,52.03333,8.53333,Europe,1,Chandler,3174
+179,Bihar,"Udantapura, Odantapuri",India,25.096074,85.313119,South Asia,3,Chandler,11183
+180,Bijapur,,India,16.82442,75.71537,South Asia,1,Chandler,
+181,Bikaner,,India,28.02094,73.30749,South Asia,1,Chandler,4741
+182,Bilbao,,Spain,43.26271,-2.92528,Europe,1,Chandler,4021
+183,Binghamton,New York,United States of America,42.09869,-75.91797,North America,2,Chandler,8340
+184,Binh Dinh,Vijaya,Vietnam,14.166256,108.902683,South-East Asia and Oceania,2,Chandler,
+185,Birmingham,,United Kingdom,52.48142,-1.89983,Europe,1,Chandler,3979
+186,Birmingham,Alabama,United States of America,33.520661,-86.80249,North America,1,Chandler,
+187,Bitlis,,Turkey,38.40115,42.10784,West and Central Asia,1,Chandler,
+188,Blackburn,,United Kingdom,53.748578,-2.487536,Europe,2,Chandler,3494
+189,Blackpool,,United Kingdom,53.81667,-3.05,Europe,2,Chandler,2537
+190,Blagoveshchensk,Blagovyeshchensk,Russian Federation,50.272776,127.540406,Europe,1,Chandler,7781
+191,Bobastro,Malaga Province,Spain,36.716667,-4.416667,Europe,2,Chandler,
+192,Bobruysk,Bobruisk,Belarus,53.15,29.233333,Europe,1,Chandler,
+193,Bogota,"Bacata, Funza, Bogotá",Columbia,4.598056,-74.075833,Latin America and the Caribbean,1,Chandler,3883
+194,Bologna,,Italy,44.49381,11.33875,Europe,1,Chandler,3342
+195,Bolton,,United Kingdom,53.58333,-2.43333,Europe,1,Chandler,
+196,Bonga,,Ethiopia,7.28333,36.23333,Sub-Saharan Africa,2,Chandler,13116
+197,Bonn,,Germany,50.73438,7.09548,Europe,1,Chandler,1477
+198,Bordeaux,,France,44.84044,-0.5805,Europe,1,Chandler,1566
+199,Borinage,,Belgium,50.617619,3.345133,Europe,2,Chandler,
+200,Bost,"Bust, Lashkar Gah",Afghanistan,31.583056,64.369167,West and Central Asia,2,Chandler,2777
+201,Boston,,United States of America,42.358431,-71.059772,North America,1,Chandler,8493
+202,Boulogne,Boulogne-sur-Mer,France,50.7264,1.6147,Europe,2,Chandler,2541
+203,Bourges,,France,47.08333,2.4,Europe,1,Chandler,20821
+204,Bournemouth,,United Kingdom,50.72048,-1.8795,Europe,1,Chandler,4108
+205,Bradford,,United Kingdom,53.79391,-1.75206,Europe,2,Chandler,
+206,Braila,,Romania,45.26667,27.98333,Europe,1,Chandler,2758
+207,Brandenburg,Bradenburg an der Havel,Germany,52.416667,12.533333,Europe,3,Chandler,
+208,Brasilia,Brasília,Brazil,-15.77972,-47.92972,Latin America and the Caribbean,1,Chandler,5833
+209,Brasov,"Brassov, Brasso",Romania,45.666667,25.616667,Europe,2,Chandler,1856
+210,Bratislava,"Pozsony, Pressburg",Slovakia,48.145892,17.107136,Europe,2,Chandler,80
+211,Braunschweig,Brunswick,Germany,52.268875,10.526769,Europe,1,Chandler,4868
+212,Bremen,,Germany,53.07516,8.80777,Europe,1,Chandler,3231
+213,Bremerhaven,,Germany,53.55021,8.57674,Europe,1,Chandler,2877
+214,Brescia,,Italy,45.52478,10.22727,Europe,1,Chandler,2547
+215,Brest,Brest-Litovsk,Belarus,52.133333,23.666667,Europe,2,Chandler,264
+216,Brest,,France,48.3908,-4.486075,Europe,1,Chandler,524
+217,Bridgeport,Connecticut,United States of America,41.1864,-73.1956,North America,3,Chandler,8415
+218,Brighton,,United Kingdom,50.822531,-0.137164,Europe,2,Chandler,6034
+219,Brisbane,,Australia,-27.46794,153.02809,South-East Asia and Oceania,1,Chandler,2591
+220,Bristol,,United Kingdom,51.45523,-2.59665,Europe,1,Chandler,3110
+221,Broach,,India,21.724644,73.002294,South Asia,3,Chandler,
+222,Brockton,Massachusetts,United States of America,42.08343,-71.01838,North America,1,Chandler,8499
+223,Brugge,Bruges,Belgium,51.210819,3.224936,Europe,1,Chandler,226
+224,Brunn,Brno,Austria,49.2,16.6167,Europe,2,Chandler,1168
+225,Brussel,Brussels,Belgium,50.85045,4.34878,Europe,1,Chandler,1157
+226,Bucharest,,Romania,44.43225,26.10626,Europe,1,Chandler,2329
+227,Budapest,,Hungary,47.49801,19.03991,Europe,1,Chandler,942
+228,Budaun,,India,28.0362,79.12631,South Asia,1,Chandler,
+229,Buenos Aires,,Argentina,-34.61315,-58.37723,Latin America and the Caribbean,1,Chandler,4459
+230,Buffalo,,United States of America,42.9047,-78.8494,North America,1,Chandler,8207
+231,Bukhara,Bokhara,Uzbekistan,39.765869,64.422347,West and Central Asia,1,Chandler Modelski,1616
+232,Burgos,,Spain,42.35,-3.7,Europe,1,Chandler,3701
+233,Burhanpur,,India,21.30898,76.22996,South Asia,2,Chandler,9095
+234,Burnley,,United Kingdom,53.8,-2.23333,Europe,1,Chandler,3798
+235,Bursa,Brusa,Turkey,40.19266,29.08403,West and Central Asia,1,Chandler,3124
+236,Bury,,United Kingdom,53.593,-2.298,Europe,1,Chandler,
+237,Busan,Pusan,Republic of Korea,35.179554,129.075642,East Asia,3,Chandler,3878
+238,Bussa,Boussa,Nigeria,10.194264,4.564217,Sub-Saharan Africa,2,Chandler,4315
+239,Bydgoszcz,Bromberg,Poland,53.116667,18.0,Europe,3,Chandler,1852
+240,Cadiz,,Spain,36.52978,-6.29465,Europe,1,Chandler,1654
+241,Caen,,France,49.18585,-0.35912,Europe,1,Chandler,1838
+242,Cagliari,,Italy,39.20738,9.13462,Europe,1,Chandler,2246
+243,Cahokia,Missouri,United States of America,38.57088,-90.19011,North America,1,Chandler,
+244,Cairo,"Fostat, Fustat",Egypt,30.06263,31.24967,North Africa,1,Chandler Modelski,4435
+245,Cajamarquilla,,Peru,-11.985278,-76.910556,Latin America and the Caribbean,3,Chandler,
+246,Calais,,France,50.9581,1.85205,Europe,1,Chandler,2678
+247,Calcutta,Kolkata,India,22.56263,88.36304,South Asia,1,Chandler,11821
+248,Cali,Santiago de Cali,Colombia,3.43722,-76.5225,Latin America and the Caribbean,1,Chandler,899
+249,Calicut,,India,11.258753,75.78041,South Asia,3,Chandler,
+250,Caltanissetta,,Italy,37.490112,14.062893,Europe,1,Chandler,21511
+251,Cambay,,India,22.313114,72.619408,South Asia,3,Chandler,
+252,Cambridge,,United Kingdom,52.205,0.119,Europe,1,Chandler,6221
+253,Campulung Muscel,,Romania,47.5308,25.5514,Europe,1,Chandler,
+254,Canton,Ohio,United States of America,40.805,-81.375833,North America,2,Chandler,
+255,Cape Town,,South Africa,-33.92584,18.42322,Sub-Saharan Africa,1,Chandler,413
+256,Cap-Haitien,"Cap Francois, Cap-Haïtien",Haiti,19.756219,-72.199669,Latin America and the Caribbean,1,Chandler,2069
+257,Capua,,Italy,41.09971,14.22013,Europe,1,Chandler Modelski,
+258,Caracas,,Venezuela,10.48801,-66.87919,Latin America and the Caribbean,1,Chandler,3791
+259,Cardiff,,Wales,51.481581,-3.17909,Europe,1,Chandler,2001
+260,Carlisle,,United Kingdom,54.8951,-2.9382,Europe,1,Chandler,
+261,Cartagena,,Spain,37.625683,-0.996583,Europe,1,Chandler,4350
+262,Carthage,,Tunisia,36.8581,10.3308,North Africa,3,Chandler Modelski,
+263,Casablanca,,Morocco,33.58831,-7.61138,North Africa,1,Chandler,2076
+264,Cassel,,France,50.80109,2.48527,Europe,1,Chandler,
+265,Catania,,Italy,37.50213,15.08719,Europe,1,Chandler,5072
+266,Cerignola,,Italy,41.26403,15.90046,Europe,1,Chandler,20849
+267,Ceske Budejovice,"Budweis, Ceské Budejovice",Czech Republic,48.974722,14.474722,Europe,2,Chandler,684
+268,Ceuta,,Spain,35.88933,-5.31979,North Africa,1,Chandler,2741
+269,Chakanputun,Chanpoton,Mexico,19.35,-90.716667,Latin America and the Caribbean,2,Chandler,
+270,Chanchan,Chancán,Peru,-8.106,-79.074536,Latin America and the Caribbean,1,Chandler,
+271,Chanda,,India,26.064269,82.315343,South Asia,3,Chandler,
+272,Chandannagar,Chandernagore,India,22.87,88.38,South Asia,2,Chandler,
+273,Chanderi,,India,24.71514,78.1376,South Asia,2,Chandler,9275
+274,Chandragiri,,India,13.5833,79.3167,South Asia,2,Chandler,
+275,Changchun,"Hsinking, Kwangchingtsu",China,43.9,125.2,East Asia,1,Chandler,9948
+276,Changsha,,China,28.196111,112.972222,East Asia,1,Chandler,10588
+277,Changteh,,China,28.228209,112.938814,East Asia,3,Chandler,
+278,Changzhou,"Changchow, Jiangsu province",China,31.77358,119.95401,East Asia,1,Chandler,11514
+279,Chaozhou,"Chaochow, Chaohsien",China,23.67,116.63,East Asia,3,Chandler,11800
+280,Charleston,South Carolina,United States of America,32.7833,-79.9333,North America,1,Chandler,
+281,Chatham,,United Kingdom,51.37891,0.52786,Europe,2,Chandler,
+282,Chattanooga,Tennessee,United States of America,35.04563,-85.30968,North America,1,Chandler,
+283,Chefoo,Yantai,China,37.535,121.389167,East Asia,2,Chandler,
+284,Cheltenham,,United Kingdom,51.883333,-2.066667,Europe,2,Chandler,4022
+285,Chelyabinsk,,Russian Federation,55.15402,61.42915,Europe,1,Chandler,7269
+286,Chemnitz,,Germany,50.83333,12.91667,Europe,1,Chandler,5551
+287,Chengde,Jehol,China,40.966667,117.933333,East Asia,3,Chandler,9176
+288,Chengdu,,China,30.66667,104.06667,East Asia,1,Chandler Modelski,6602
+289,Cherbourg,Cherbourg-Octeville,France,49.639093,-1.625298,Europe,1,Chandler,1261
+290,Chernivtsi,Czernowitz,Ukraine,48.291683,25.935217,Europe,3,Chandler,1679
+291,Chester,,United Kingdom,53.1903,-2.8916,Europe,3,Chandler,2742
+292,Chhapra,,India,25.7848,84.7274,South Asia,3,Chandler,10917
+293,Chiang Mai,Chiengmai,Thailand,18.790978,98.960775,South-East Asia and Oceania,1,Chandler,160
+294,Chibiri,Naya,Ghana,6.82,-2.42,Sub-Saharan Africa,3,Chandler,
+295,Chicago,Illinois,United States of America,41.85003,-87.65005,North America,1,Chandler,7747
+296,Chihuahua,,Mexico,28.63333,-106.08333,Latin America and the Caribbean,1,Chandler,4142
+297,Chillan,Chillán,Chile,-36.60664,-72.10344,Latin America and the Caribbean,1,Chandler,2669
+298,Chillicothe,Ohio,United States of America,39.3364,-82.9839,North America,3,Chandler,
+299,Chincha,,Peru,-13.45,-76.133333,Latin America and the Caribbean,2,Chandler,2451
+300,Chinkiang,Zhenjiang,China,32.2,119.416667,East Asia,2,Chandler,11392
+301,Chisinau,"Kishinev, Chisinãu",Republic of Moldova,47.026858,28.84155,Europe,1,Chandler,426
+302,Chittagong,,Bangladesh,22.3384,91.83168,South Asia,1,Chandler,
+303,Chittoor,,India,13.217176,79.100329,South Asia,2,Chandler,10423
+304,Cholula,,Mexico,19.06333,-98.306389,Latin America and the Caribbean,1,Chandler,
+305,Chongqing,"Chonquing, Chungking",China,29.56301,106.551557,East Asia,2,Chandler,8833
+306,Chorzow,Konigshutte,Poland,50.3,18.95,Europe,3,Chandler,
+307,Christchurch,,New Zealand,-43.532054,172.636225,South-East Asia and Oceania,1,Chandler,336
+308,Chunar,"Chandalgar, Uttar Pradesh",India,25.12909,82.8836,South Asia,1,Chandler,10471
+309,Cincinnati,,United States of America,39.162,-84.45689,North America,1,Chandler,7864
+310,Clermont,,France,45.7831,3.0824,Europe,2,Chandler,3704
+311,Cleveland,Ohio,United States of America,41.499495,-81.695409,North America,1,Chandler,
+312,Cluj-Napoca,Koloszvar,Romania,46.777248,23.59989,Europe,1,Chandler,948
+313,Coatbridge,,United Kingdom,55.86216,-4.02469,Europe,1,Chandler,1258
+314,Cochabamba,Oropesa,Bolivia,-17.3895,-66.1568,Latin America and the Caribbean,1,Chandler,648
+315,Cochin,,India,9.93988,76.26022,South Asia,1,Chandler,
+316,Coimbatore,,India,11.00555,76.96612,South Asia,1,Chandler,9895
+317,Coimbra,,Portugal,40.20564,-8.41955,Europe,1,Chandler,20428
+318,Colchester,,United Kingdom,51.88921,0.90421,Europe,1,Chandler,6447
+319,Colmar,,France,48.08333,7.36667,Europe,1,Chandler,4724
+320,Cologne,"Koln, Coln",Germany,50.937531,6.960278,Europe,1,Chandler,1160
+321,Colombo,,Sri Lanka,6.9344,79.8428,South Asia,1,Chandler,615
+322,Columbus,Ohio,United States of America,39.961176,-82.998794,North America,1,Chandler,7962
+323,Conakry,,Guinea,9.53795,-13.67729,Sub-Saharan Africa,1,Chandler,
+324,Concepcion,Concepción,Chile,-36.818938,-73.050319,Latin America and the Caribbean,1,Chandler,1554
+325,Constantine,,Algeria,36.365,6.61472,North Africa,1,Chandler,5363
+326,Copenhagen,,Denmark,55.67594,12.56553,Europe,1,Chandler,680
+327,Cordoba,,Argentina,-31.4135,-64.18105,Latin America and the Caribbean,1,Chandler,2381
+328,Cordoba,"Cordova, Córdoba",Spain,38.046133,-4.893564,Europe,2,Chandler Modelski,2931
+329,Corinth,,Greece,37.938636,22.932228,Europe,1,Chandler,
+330,Cork,,Ireland,51.89797,-8.47061,Europe,1,Chandler,218
+331,Cossimbazar,Kasimbazar,India,24.1167,88.2833,South Asia,3,Chandler,
+332,Cottbus,,Germany,51.75769,14.32888,Europe,1,Chandler,5651
+333,Coventry,,United Kingdom,52.40656,-1.51217,Europe,3,Chandler,4647
+334,Craiova,,Romania,44.333333,23.816667,Europe,2,Chandler,1390
+335,Cremona,,Italy,45.13617,10.02797,Europe,1,Chandler,2473
+336,Crewe,,United Kingdom,53.09787,-2.44161,Europe,1,Chandler,3547
+337,Crotone,Croton,Italy,39.08144536,17.12880422,Europe,2,Chandler,
+338,Ctesiphon,Taq-I  Kisra,Iraq,33.09378746,44.58006701,West and Central Asia,1,Chandler Modelski,
+339,Cuddalore,,India,11.74629,79.76436,South Asia,2,Chandler,10743
+340,Cuenca,,Ecuador,-2.8992,-79.0153,Latin America and the Caribbean,1,Chandler,2221
+341,Cuiaba,"Cuiabá, Cuyaba",Brazil,-15.598917,-56.094894,Latin America and the Caribbean,1,Chandler,2152
+342,Curitiba,,Brazil,-25.42778,-49.27306,Latin America and the Caribbean,1,Chandler,6446
+343,Cuttack,,India,20.46497,85.87927,South Asia,1,Chandler,
+344,Cuzco,,Peru,-13.525,-71.972222,Latin America and the Caribbean,1,Chandler,
+345,Cyrene,near present-day Shahhat,Libya,32.81901498,21.85583296,North Africa,3,Chandler,
+346,Czestochowa,,Poland,50.79646,19.12409,Europe,1,Chandler,3002
+347,Da Nang,,Vietnam,16.051571,108.214897,South-East Asia and Oceania,1,Chandler,
+348,Daegu,Taegu,Republic of Korea,35.871435,128.601445,East Asia,1,Chandler,2915
+349,Daejeon,Taejon,Republic of Korea,36.350412,127.384548,East Asia,1,Chandler,2214
+350,Dakar,,Senegal,14.6937,-17.44406,Sub-Saharan Africa,1,Chandler,33
+351,Dali,Tali,China,25.606486,100.267638,East Asia,1,Chandler Modelski,6214
+352,Dallas,Texas,United States of America,32.78014,-96.800451,North America,1,Chandler,6620
+353,Damascus,,Syria,33.5102,36.29128,West and Central Asia,1,Chandler Modelski,1404
+354,Dandong,Antung,China,40.1167,124.3833,East Asia,2,Chandler,10802
+355,Darbhanga,,India,26.15216,85.89707,South Asia,1,Chandler,11153
+356,Dar-es-Salaam,Dar es Salaam,Tanzania,-6.822921,39.269661,Sub-Saharan Africa,1,Chandler,3566
+357,Darlington,,United Kingdom,54.527,-1.5526,Europe,3,Chandler,4756
+358,Darmstadt,,Germany,49.87056,8.64944,Europe,1,Chandler,3708
+359,Datong,"Taitong, Tatung",China,40.083333,113.3,East Asia,1,Chandler Modelski,7709
+360,Daugavpils,Dvinsk,Latvia,55.875,26.535556,Europe,3,Chandler,420
+361,Daulatabad,Deogiri,India,19.942724,75.213164,South Asia,3,Chandler,
+362,Davenport,Iowa,United States of America,41.5431,-90.5908,North America,3,Chandler,
+363,Dayton,Ohio,United States of America,39.11284,-84.47272,North America,1,Chandler,
+364,Debrecen,,Hungary,47.53333,21.63333,Europe,1,Chandler,1584
+365,Delft,,Netherlands,52.00667,4.35556,Europe,1,Chandler,
+366,Delhi,,India,28.65381,77.22897,South Asia,1,Chandler,8364
+367,Demak,,Indonesia,-6.8909,110.6396,South-East Asia and Oceania,1,Chandler,7184
+368,Denver,Colorado,United States of America,39.737567,-104.984718,North America,1,Chandler,6032
+369,Dera Ismail Khan,,Pakistan,31.83269,70.9024,South Asia,1,Chandler,5660
+370,Derby,,United Kingdom,52.922531,-1.474619,Europe,1,Chandler,4828
+371,Deri Ghazi Khan,,Pakistan,30.053049,70.637093,South Asia,1,Chandler,
+372,Des Moines,Iowa,United States of America,41.60054,-93.60911,North America,1,Chandler,
+373,Dessau-Rosslau,,Germany,51.83864,12.24555,Europe,1,Chandler,
+374,Detroit,Michigan,United States of America,42.33143,-83.04575,North America,1,Chandler,8032
+375,Dewsbury,,United Kingdom,53.69076,-1.62907,Europe,1,Chandler,
+376,Dhaka,Dacca,India,23.709921,90.407143,South Asia,1,Chandler,6249
+377,Dhanbad,,India,23.80199,86.44324,South Asia,1,Chandler,11445
+378,Dhar,,India,22.59373,75.29774,South Asia,1,Chandler,8733
+379,Dharwad,Dharwar,India,15.364708,75.123955,South Asia,3,Chandler,9189
+380,Dienne,"Guinea, Jenne",Senegal,15.033366,-16.350122,Sub-Saharan Africa,3,Chandler,
+381,Dieppe,,France,49.922992,1.077483,Europe,1,Chandler,
+382,Dijon,,France,47.31667,5.01667,Europe,1,Chandler,4153
+383,Dikwa,Emirate,Nigeria,12.02396,13.91646,Sub-Saharan Africa,1,Chandler,8882
+384,Dinajpur,,Bangladesh,25.62745,88.63779,South Asia,2,Chandler,1430
+385,Diu,Dui,India,21.081554,76.091401,South Asia,3,Chandler,
+386,Diyarbakir,Diarbekr,Turkey,37.914411,40.230628,West and Central Asia,1,Chandler,6625
+387,Dnipropetrovsk,"Dnepropetrovsk, Ekaterinoslav",Ukraine,48.464717,35.046183,Europe,1,Chandler,
+388,Donetsk,"Donestsk, Stalino",Ukraine,48.015883,37.80285,Europe,1,Chandler,4547
+389,Dongo,Pungu n'Dongo,Angola,-9.6625,15.583889,Sub-Saharan Africa,3,Chandler,
+390,Dongola,"Pachoras, Mukarra",Sudan,19.16667,30.48333,Sub-Saharan Africa,1,Chandler,3994
+391,Dordrecht,,Netherlands,51.81,4.67361,Europe,1,Chandler,1373
+392,Dortmund,,Germany,51.51494,7.466,Europe,1,Chandler,1845
+393,Dover,,United Kingdom,51.13333,1.3,Europe,1,Chandler,14116
+394,Dresden,,Germany,51.05089,13.73832,Europe,1,Chandler,5626
+395,Dublin,,Ireland,53.33306,-6.24889,Europe,1,Chandler,377
+396,Dubuque,Iowa,United States of America,42.50056,-90.66457,North America,1,Chandler,
+397,Duhuang,Tunhuang,China,40.15,94.666667,East Asia,2,Chandler,
+398,Duluth,Minnesota,United States of America,46.786672,-92.100485,North America,1,Chandler,
+399,Dumyat,Damietta,Egypt,31.41648,31.81332,North Africa,1,Chandler,6774
+400,Dundee,,United Kingdom,56.5,-2.96667,Europe,1,Chandler,2871
+401,Dunedin,,New Zealand,-45.87416,170.50361,South-East Asia and Oceania,1,Chandler,173
+402,Dunkerque,Dunkirk,France,51.0383,2.3775,Europe,1,Chandler,3053
+403,Durango,,Mexico,24.016667,-104.666667,Latin America and the Caribbean,3,Chandler,3270
+404,Durban,,South Africa,-29.8579,31.0292,Sub-Saharan Africa,1,Chandler,5227
+405,Dur-Kurigalzu,,Iraq,33.35355825,44.20235367,West and Central Asia,1,Chandler,
+406,Dusseldorf,Düsseldorf,Germany,51.22172,6.77616,Europe,1,Chandler,807
+407,Dvin,,Armenia,40.01984,44.58376,West and Central Asia,2,Chandler,
+408,Dzibalchaltun,"Dzibilchaltún, Dzibilchaltun",Mexico,21.091075,-89.590453,Latin America and the Caribbean,2,Chandler,
+409,East Berlin,,Germany,52.5186,13.4044,Europe,1,Chandler,
+410,Eastbourne,,United Kingdom,50.76871,0.28453,Europe,1,Chandler,
+411,Ebla,,Syria,35.79839754,36.79872812,West and Central Asia,1,Chandler Modelski,
+412,Ecbatana,,Iran,34.8053317919,48.51738769,West and Central Asia,1,Chandler Modelski,
+413,Ecija,Écija,Spain,37.5422,-5.0826,Europe,1,Chandler,
+414,Edessa,Urfa,Turkey,37.15,38.8,West and Central Asia,1,Chandler Modelski,
+415,Edinburgh,,United Kingdom,55.95206,-3.19648,Europe,1,Chandler,2312
+416,Edirne,Adrianople,Turkey,41.681808,26.562269,West and Central Asia,1,Chandler,103
+417,Edmonton,,Canada,53.55014,-113.46871,North America,1,Chandler,1546
+418,Eisenach,,Germany,50.9807,10.31522,Europe,1,Chandler,
+419,El Paso,Texas,United States of America,31.7903,-106.4233,North America,1,Chandler,5303
+420,El Tajin,"Tajin, El Tajín",Mexico,20.4481,97.3782,South-East Asia and Oceania,2,Chandler,
+421,Elblag,Elbing,Poland,54.166667,19.4,Europe,2,Chandler,2620
+422,Elis,Eleia,Greece,37.89189226,21.37348005,Europe,1,Chandler,
+423,Ellora,,India,20.026319,75.177641,South Asia,3,Chandler,
+424,Elmira,New York,United States of America,42.0898,-76.80773,North America,3,Chandler,
+425,Elvira,,Spain,36.5025,-4.783611,Europe,3,Chandler,
+426,Ephesus,,Turkey,37.94049284,27.34104109,West and Central Asia,3,Chandler Modelski,
+427,Erfurt,,Germany,50.9787,11.03283,Europe,1,Chandler,5005
+428,Erzurum,"Theodosiopolis, Erzerum",Turkey,39.90861,41.27694,West and Central Asia,1,Chandler,6655
+429,Esfahan,Isfahan,Iran,32.651389,51.679192,West and Central Asia,1,Chandler Modelski,5884
+430,Esztergom,,Hungary,47.7928,18.74148,Europe,1,Chandler,
+431,Etawah,,India,26.7778,79.02159,South Asia,1,Chandler,9279
+432,Evansville,Indiana,United States of America,37.97476,-87.55585,North America,1,Chandler,12630
+433,Evora,Évora,Portugal,38.56667,-7.9,Europe,1,Chandler,
+434,Exeter,,United Kingdom,50.7236,-3.52751,Europe,1,Chandler,1656
+435,Faisalabad,,Pakistan,31.41667,73.08333,South Asia,1,Chandler,7724
+436,Faiyum,Medinet-el-Fayum,Egypt,29.308374,30.844105,North Africa,2,Chandler,3668
+437,Faizabad,"Ayodhya, Ajodhya, Fyzabad",India,26.779386,82.142169,South Asia,2,Chandler,10065
+438,Fall River,Massachusetts,United States of America,41.70149,-71.15505,North America,1,Chandler,8481
+439,Farrukhabad,,India,27.39048,79.58006,South Asia,3,Chandler,9349
+440,Fatehpur Sikri,,India,27.0937,77.66003,South Asia,1,Chandler,8933
+441,Feodosia,"Kaffa, Theodosia, Feodosiya, Caffa",Russian Federation,45.048889,35.379167,Europe,2,Chandler,4246
+442,Ferrara,,Italy,44.82678,11.62071,Europe,1,Chandler,3554
+443,Fez,Fes,Morocco,34.033333,-5.01,North Africa,1,Chandler,4424
+444,Firozpur,Ferozepore,India,30.918094,74.616113,South Asia,1,Chandler,4705
+445,Firuzkoh,Ghor,Afghanistan,34.099578,64.905956,West and Central Asia,2,Chandler,
+446,Fitchburg,Massachusetts,United States of America,42.58342,-71.8023,North America,1,Chandler,
+447,Flensburg,,Germany,54.78431,9.43961,Europe,1,Chandler,3803
+448,Florence,Firenze,Italy,43.771033,11.248,Europe,1,Chandler,3287
+449,Florianopolis,Florianópolis,Brazil,-27.59667,-48.54917,Latin America and the Caribbean,1,Chandler,7010
+450,Foggia,,Italy,41.46093,15.54925,Europe,1,Chandler,5039
+451,Folkestone,,United Kingdom,51.08333,1.18333,Europe,1,Chandler,6527
+452,Forst,,Germany,51.73544,14.63971,Europe,1,Chandler,
+453,Fort Wayne,Indiana,United States of America,41.1306,-85.12886,North America,2,Chandler,7913
+454,Fort Worth,Texas,United States of America,32.72541,-97.32085,North America,1,Chandler,
+455,Fortaleza,,Brazil,-3.71722,-38.54306,Latin America and the Caribbean,1,Chandler,8285
+456,Frankfurt am Main,,Germany,50.110922,8.682128,Europe,1,Chandler,
+457,Frankfurt/Oder,Oder,Germany,52.34249,14.538127,Europe,2,Chandler,21275
+458,Freetown,,Sierra Leone,8.43194,-13.28972,Sub-Saharan Africa,1,Chandler,41
+459,Freiberg,,Germany,50.91089,13.33881,Europe,1,Chandler,
+460,Freiburg im Breisgau,,Germany,47.9959,7.85222,Europe,1,Chandler,2814
+461,Fua,"Puwa, near Alexandria",Egypt,31.207161,29.960322,North Africa,3,Chandler,
+462,Fukui,,Japan,36.065178,136.221527,East Asia,1,Chandler,4564
+463,Furth,Fürth,Germany,49.477117,10.988667,Europe,1,Chandler,
+464,Fushun,Liaoning province,China,41.85583,123.92333,East Asia,3,Chandler,10228
+465,Fuzhou,"Fuchow, Hokchiu, Fujian province",China,26.076111,119.306389,East Asia,1,Chandler,12022
+466,Galati,Galatz,Romania,45.42572,28.031044,Europe,1,Chandler,2691
+467,Galle,,Sri Lanka,6.0367,80.217,South Asia,1,Chandler,874
+468,Galveston,Texas,United States of America,29.281111,-94.825833,North America,1,Chandler,15522
+469,Gangaikonda Cholapuram,"Jayakondacholapuram, Ganaikonda, Chalapuram",India,11.20718,79.367622,South Asia,2,Chandler,
+470,Ganja,Elizavetpol,Azerbaijan,40.682778,46.360556,West and Central Asia,2,Chandler,453
+471,Gao,"Kagho, Kukia, Gogo",Mali,16.27167,-0.04472,Sub-Saharan Africa,2,Chandler,2082
+472,Gauda,"Lakhnauti, Gaur",India,24.866667,88.133333,South Asia,2,Chandler,
+473,Gaya,,India,24.79686,85.00385,South Asia,1,Chandler,11089
+474,Gdansk,Danzig,Poland,54.352025,18.64663,Europe,2,Chandler,2093
+475,Gela,,Italy,37.08034,14.23068,Europe,1,Chandler,4904
+476,Gelibolu,Gallipoli,Turkey,40.333333,26.499992,West and Central Asia,1,Chandler,
+477,Geneva,Genève,Switzerland,46.198392,6.142297,Europe,1,Chandler,60
+478,Genova,Genoa,Italy,44.40565,8.946256,Europe,1,Chandler,1162
+479,Gent,Ghent,Belgium,51.053469,3.730378,Europe,1,Chandler,531
+480,Georgetown,,Guyana,6.8,-58.166667,Latin America and the Caribbean,2,Chandler,28
+481,Gera,,Germany,50.88029,12.08187,Europe,1,Chandler,5364
+482,Ghazipur,"Ghazeepore, Gauspur, Ghazipour",India,25.58052,83.58058,South Asia,1,Chandler,10619
+483,Ghazni,,Afghanistan,33.55391,68.42096,West and Central Asia,1,Chandler,4592
+484,Gibraltar,,Britain,36.14474,-5.35257,Europe,2,Chandler,2607
+485,Gifu,,Japan,35.423298,136.760654,East Asia,1,Chandler,
+486,Glasgow,,United Kingdom,55.86515,-4.25763,Europe,1,Chandler,797
+487,Gliwice,Gleiwitz,Poland,50.294491,18.671384,Europe,1,Chandler,2881
+488,Gloucester,,United Kingdom,51.87,-2.24,Europe,1,Chandler,3702
+489,Goa,,India,15.299333,74.124,South Asia,1,Chandler,
+490,Goiania,Goiânia,Brazil,-16.67861,-49.25389,Latin America and the Caribbean,1,Chandler,4862
+491,Golkonda,Golconda,India,17.382986,78.402003,South Asia,3,Chandler,
+492,Gomel,,Belarus,52.445278,30.984167,Europe,1,Chandler,
+493,Gondar,,Ethiopia,12.600003,37.466669,Sub-Saharan Africa,1,Chandler,
+494,Gorakhpur,,India,26.760555,83.373168,South Asia,2,Chandler,10399
+495,Gorlitz,"Corlitz, Görlitz",Germany,51.150627,14.968707,Europe,3,Chandler,21277
+496,Gortyn,"Gortys, Gortyna",Greece,35.06262738,24.94680958,Europe,1,Chandler,
+497,Goteborg,Göteborg,Sweden,57.70887,11.97456,Europe,1,Chandler,
+498,Gotha,,Germany,50.94823,10.70193,Europe,1,Chandler,
+499,Gottingen,Göttingen,Germany,51.53933,9.93406,Europe,1,Chandler,4615
+500,Granada,,Spain,37.177336,-3.598558,Europe,1,Chandler,3546
+501,Grand Rapids,Michigan,United States of America,42.96336,-85.66809,North America,1,Chandler,7948
+502,Graz,,Austria,47.06667,15.45,Europe,1,Chandler,938
+503,Great Yarmouth,,United Kingdom,52.60831,1.73052,Europe,1,Chandler,6575
+504,Greenock,,United Kingdom,55.94838,-4.76121,Europe,1,Chandler,21554
+505,Grenoble,,France,45.16667,5.71667,Europe,1,Chandler,4353
+506,Gresik,"Grisee, Java",Indonesia,-7.15389,112.65611,South-East Asia and Oceania,3,Chandler,7782
+507,Grimsby,,United Kingdom,53.56539,-0.07553,Europe,1,Chandler,6185
+508,Grodno,Hrodna,Belarus,53.666667,23.833333,Europe,2,Chandler,96
+509,Groningen,,Netherlands,53.21917,6.56667,Europe,1,Chandler,3552
+510,Groznyj,Grozny,Russian Federation,43.30191,45.67228,Europe,1,Chandler,6671
+511,Grudziadz,Graudenz,Poland,53.483749,18.753565,Europe,1,Chandler,2549
+512,Guadalajara,,Mexico,20.673819,-103.343489,Latin America and the Caribbean,1,Chandler,3099
+513,Guanajuato,,Mexico,21.01858,-101.2591,Latin America and the Caribbean,1,Chandler,4751
+514,Guangzhou,Canton,China,23.11667,113.25,East Asia,1,Chandler Modelski,11306
+515,Guatemala City,Iximche,Guatemala,14.64072,-90.51327,Latin America and the Caribbean,1,Chandler,2063
+516,Guayaquil,,Ecuador,-2.18194,-79.89167,Latin America and the Caribbean,1,Chandler,772
+517,Guben,,Germany,51.94987,14.71447,Europe,1,Chandler,
+518,Guilin,"Gwilin, Kweilin",China,25.273566,110.290195,East Asia,3,Chandler,10358
+519,Guiyang,"Gwiyang, Kweiyang",China,26.647661,106.630154,East Asia,1,Chandler,9300
+520,Guizhou,Kweichow,China,26.598194,106.70741,East Asia,1,Chandler,
+521,Gulbarga,,India,17.33764,76.83787,South Asia,1,Chandler,
+522,Gumarcaj,"Gumarcaah, Utatlan, Gumarkaaj, Gumarcaj, Cumarcaj, Kumarcaaj, Q'umarkaj",Guatemala,14.7667,-91.2667,Latin America and the Caribbean,2,Chandler,
+523,Guntur,,India,16.29974,80.45729,South Asia,1,Chandler,10627
+524,Gurgaon,Gargaon,India,28.459497,77.026638,South Asia,3,Chandler,
+525,Gwalior,,India,26.22982,78.17337,South Asia,1,Chandler,9121
+526,Gwangju,Kwangchu,Republic of Korea,35.166667,126.916667,East Asia,1,Chandler,2656
+527,Gyeongju,Kyongju,Republic of Korea,35.856172,129.224747,East Asia,1,Chandler,3373
+528,Haarlem,,Netherlands,52.38084,4.63683,Europe,1,Chandler,1158
+529,Haikou,Kiungshan,China,20.003143,110.354149,East Asia,3,Chandler,
+530,Haining,"Hweining, Zhejiang Province",China,30.533333,120.683333,East Asia,2,Chandler,11788
+531,Haiphong,,Vietnam,20.85611,106.68222,South-East Asia and Oceania,1,Chandler,
+532,Fukuoka,Hakata,Japan,33.591389,130.414722,East Asia,2,Chandler,884
+533,Hakodate,,Japan,41.77583,140.73667,East Asia,1,Chandler,2724
+534,Halberstadt,,Germany,51.89562,11.05622,Europe,1,Chandler,
+535,Halebidu,"Dwarasamudra, Dorasamudra",India,12.2591,76.640549,South Asia,3,Chandler,
+536,Halifax,,Canada,44.64533,-63.57239,North America,1,Chandler,4146
+537,Halifax,,United Kingdom,53.727019,-1.857539,Europe,1,Chandler,
+538,Halle,,Germany,51.4833,11.9667,Europe,3,Chandler,5309
+539,Hama,,Syria,35.133333,36.75,West and Central Asia,2,Chandler,1690
+540,Hamadan,,Iran,34.79922,48.51456,West and Central Asia,1,Chandler,
+541,Hamburg,,Germany,53.57532,10.01534,Europe,1,Chandler,4278
+542,Hamilton,,Canada,43.250022,79.866092,West and Central Asia,1,Chandler,
+543,Hamm,,Germany,51.68033,7.82089,Europe,1,Chandler,2471
+544,Handan,Ye,China,36.6,114.483333,East Asia,3,Chandler Modelski,9410
+545,Hangzhou,Hangchow,China,30.25,120.166667,East Asia,2,Chandler,11700
+546,Hannover,,Germany,52.37052,9.73322,Europe,1,Chandler,
+547,Hanoi,Hà Noi,Vietnam,21.033333,105.85,South-East Asia and Oceania,1,Chandler,1975
+548,Hanzhong,Hanchung,China,33.066667,107.016667,East Asia,1,Chandler,
+549,Harar,Harrar,Ethiopia,9.304648,42.132642,Sub-Saharan Africa,1,Chandler,7667
+550,Harare,Salisbury,Zimbabwe,-17.863889,31.029722,Sub-Saharan Africa,1,Chandler,1398
+551,Harbin,Haerbin,China,45.75,126.65,East Asia,1,Chandler,9738
+552,Harrisburg,Pennsylvania,United States of America,40.2737,-76.884418,North America,1,Chandler,8200
+553,Hartford,,United States of America,41.7627,-72.6743,North America,3,Chandler,8457
+554,Hartlepool,,United Kingdom,54.68611,-1.2125,Europe,1,Chandler,5415
+555,Hastings,,United Kingdom,50.8563,0.5729,Europe,1,Chandler,6415
+556,Hathras,,India,27.59621,78.05237,South Asia,1,Chandler,8963
+557,Hattusa,"Hattusah, Khattushash, Bogazkale",Turkey,40.021111,34.609722,West and Central Asia,1,Chandler Modelski,
+558,Havana,La Habana,Cuba,23.13302,-82.38304,Latin America and the Caribbean,1,Chandler,350
+559,Haverhill,,United Kingdom,52.08226,0.43891,Europe,1,Chandler,
+560,Hazor,Tel Hazor,Israel,33.01745538,35.5685014,West and Central Asia,1,Chandler Modelski,
+561,Hefei,"Hofei, Luchow",China,31.866667,117.283333,East Asia,1,Chandler,10990
+562,Heidelberg,,Germany,49.40768,8.69079,Europe,1,Chandler,3756
+563,Heilbronn,,Germany,49.13995,9.22054,Europe,1,Chandler,4238
+564,Heliopolis,,Egypt,30.129528,31.288889,North Africa,3,Chandler Modelski,
+565,Helsinki,Helsinfors,Finland,60.173324,24.941025,Europe,1,Chandler,555
+566,Herat,,Afghanistan,34.34817,62.19967,West and Central Asia,1,Chandler,742
+567,Hildesheim,,Germany,52.15077,9.95112,Europe,1,Chandler,4541
+568,Himeji,,Japan,34.81667,134.7,East Asia,1,Chandler,4378
+569,Hippos,Hippo,Israel,32.77907253,35.65948301,West and Central Asia,3,Chandler,
+570,Hiraizumi,Iwate,Japan,38.986661,141.113822,East Asia,2,Chandler,
+571,Hirosaki,,Japan,40.59306,140.4725,East Asia,1,Chandler,3924
+572,Hiroshima,,Japan,34.396775,132.460017,East Asia,1,Chandler,3037
+573,Ho Chi Minh,Saigon,Vietnam,10.823099,106.628767,South-East Asia and Oceania,1,Chandler,5435
+574,Hobart,,Australia,-42.87936,147.32941,South-East Asia and Oceania,1,Chandler,761
+575,Hodeidah,"Al Hudaydah, Hodeida",Yemen,14.802222,42.951111,West and Central Asia,1,Chandler,456
+576,Hodmezovasarhely,"Hodmezo-Vasarhely, Hódmezovásárhely",Hungary,46.418126,20.330032,Europe,1,Chandler,
+577,Hof,,Germany,50.313539,11.912781,Europe,3,Chandler,
+578,Hofuf,,Saudi Arabia,25.383333,49.583333,West and Central Asia,2,Chandler,
+579,Hohhot,,China,40.81056,111.65222,East Asia,1,Chandler,6045
+580,Holyoke,Massachusetts,United States of America,42.20426,-72.6162,North America,2,Chandler,
+581,Homs,,Syria,34.72682,36.72339,West and Central Asia,1,Chandler,2106
+582,Hong Kong,,China,22.28552,114.15769,East Asia,1,Chandler,11566
+583,Honolulu,,United States of America,21.30694,-157.85833,North America,1,Chandler,1
+584,Horlivka,Gorlovka,Ukraine,48.3071,38.029633,Europe,2,Chandler,4584
+585,Hormuz,Ormuz,Iran,27.1,56.45,West and Central Asia,1,Chandler,
+586,Houston,Texas,United States of America,29.760193,-95.36939,North America,1,Chandler,6237
+587,Hsinhui,,China,22.4583,113.034187,East Asia,3,Chandler,
+588,Huai'an,"Huaian, Hwaian",China,33.5,119.133333,East Asia,1,Chandler,11114
+589,Huainan,,China,32.62639,116.99694,East Asia,1,Chandler,
+590,Huancavelica,,Peru,-12.78542,-74.97501,Latin America and the Caribbean,1,Chandler,12345
+591,Hubli,,India,15.34776,75.13378,South Asia,1,Chandler,9227
+592,Huddersfield,,United Kingdom,53.64904,-1.78416,Europe,1,Chandler,4387
+593,Hue,,Vietnam,16.46667,107.6,South-East Asia and Oceania,1,Chandler,5059
+594,Hugli-Chuchura,"Chinsurah, Hooghly, Hooghly-Chinsura",India,22.9,88.39,South Asia,2,Chandler,
+595,Huizhou,Huichow,China,23.0667,114.4,East Asia,2,Chandler,11552
+596,Hull,,United Kingdom,53.7446,-0.33525,Europe,1,Chandler,6053
+597,Hyderabad,,India,17.38405,78.45636,South Asia,1,Chandler,9913
+598,Hydra,,Algeria,36.7567,3.0247,North Africa,3,Chandler,
+599,Iasi,Jassy,Romania,47.16667,27.6,Europe,1,Chandler,2553
+600,Ibadan,,Nigeria,7.38778,3.89639,Sub-Saharan Africa,1,Chandler,2996
+601,Ife,,Nigeria,7.470706,4.55665,Sub-Saharan Africa,1,Chandler,4465
+602,Ijaye,short-lived kingdom,Nigeria,6.684967,3.288544,Sub-Saharan Africa,3,Chandler,
+603,Ikkeri,,India,14.135,75.0226,South Asia,3,Chandler,
+604,Ikoso,Shaki,Guinea,8.666667,3.383333,Sub-Saharan Africa,3,Chandler,
+605,Ilade,,Nigeria,6.5667,3.5333,Sub-Saharan Africa,3,Chandler,
+606,Ilorin,,Nigeria,8.5,4.55,Sub-Saharan Africa,1,Chandler,4352
+607,Imphal,,India,24.80805,93.9442,South Asia,1,Chandler,12063
+608,Incheon,Inchon,Republic of Korea,37.456256,126.705206,East Asia,1,Chandler,
+609,Indianapolis,Indiana,United States of America,39.76838,-86.15804,North America,1,Chandler,7765
+610,Indore,,India,22.71792,75.8333,South Asia,1,Chandler,8886
+611,Inwa,Ava,Myanmar,21.857353,95.981936,South-East Asia and Oceania,1,Chandler,
+612,Ioannina,"Iannina,  Ioánnina, Yannina",Greece,39.665028,20.853747,Europe,1,Chandler,99
+613,Ipswich,,United Kingdom,52.05917,1.15545,Europe,3,Chandler,6495
+614,Iquique,,Chile,-20.22036,-70.13913,Latin America and the Caribbean,1,Chandler,195
+615,Iraklion,"Irakleion, Candia. Heraklion",Greece,35.338736,25.144214,Europe,1,Chandler,
+616,Irkutsk,,Russian Federation,52.29778,104.29639,Europe,1,Chandler,7744
+617,Isanapura,Chenla,Cambodia,11.55,104.916667,South-East Asia and Oceania,2,Chandler,
+618,Iseyin,,Nigeria,7.966667,3.6,Sub-Saharan Africa,1,Chandler,2394
+619,Istakhr,"Estakhr, Stakhr",Iran,29.9797278,52.90898604,West and Central Asia,3,Chandler,
+620,Istanbul,"Constantinople, Byzantium",Turkey,41.005275,28.976944,West and Central Asia,1,Chandler Modelski,2626
+621,Ivano-Frankivs'k,"Ivano-Frankivsk, Stanislau",Ukraine,48.916667,24.716667,Europe,3,Chandler,1284
+622,Ivanovo,,Russian Federation,56.9967,40.9819,Europe,1,Chandler,4035
+623,Iwo,Osun,Nigeria,7.63333,4.18333,Sub-Saharan Africa,1,Chandler,4196
+624,Izapa,,Mexico,14.92339814,-92.17999,Latin America and the Caribbean,1,Chandler,
+625,Izhevsk,,Russian Federation,56.84976,53.20448,Europe,1,Chandler,6484
+626,Izmail,Ismail,Romania,45.351667,28.836389,Europe,2,Chandler,20367
+627,Iznik,Nicaea,Turkey,40.42861,29.72111,West and Central Asia,1,Chandler,
+628,Jabalpur,,India,23.16697,79.95006,South Asia,1,Chandler,9851
+629,Jacksonville,Florida,United States of America,30.3369,-81.6614,North America,1,Chandler,7584
+630,Jaen,Jaén,Spain,37.76922,-3.79028,Europe,1,Chandler,3493
+631,Jaffna,,Sri Lanka,9.66845,80.00742,South Asia,1,Chandler,154
+632,Jaipur,Jeypore,India,26.91962,75.78781,South Asia,1,Chandler,8064
+633,Jakarta,Batavia,Indonesia,-6.21462,106.84513,South-East Asia and Oceania,1,Chandler,5590
+634,Jalandhar,Jullundur,India,31.326015,75.576183,South Asia,3,Chandler,5907
+635,Jammu,,India,32.73569,74.86911,South Asia,1,Chandler,3577
+636,Jamnagar,,India,22.47292,70.06673,South Asia,1,Chandler,2647
+637,Jamshedpur,,India,22.80278,86.18545,South Asia,1,Chandler,11483
+638,Japalpur,Jubbulpore,India,23.1667,79.95,South Asia,1,Chandler,
+639,Jatinegara,Meester Cornelis,Indonesia,-6.230702,106.882743,South-East Asia and Oceania,1,Chandler,
+640,Jaunpur,,India,25.75506,82.68361,South Asia,1,Chandler,10337
+641,Jeddah,Jiddah,Saudi Arabia,21.543333,39.172778,West and Central Asia,2,Chandler,1086
+642,Jelgava,Mitau,Latvia,56.648333,23.713889,Europe,2,Chandler,
+643,Jerez de la Frontera,Xerez,Spain,36.6936,-6.132431,Europe,1,Chandler,
+644,Jerusalem,,Israel,31.76904,35.21633,West and Central Asia,1,Chandler Modelski,1402
+645,Jhansi,,India,25.45446,78.58221,South Asia,1,Chandler,9295
+646,Jilin,Kirin,China,43.896536,125.32599,East Asia,3,Chandler,
+647,Jinan,Tsinan,China,36.650997,117.120497,East Asia,1,Chandler,9912
+648,Jingdezhen,Kingtehchen,China,29.268836,117.17842,East Asia,2,Chandler,11384
+649,Jingmen,Shasi/Jingzhou,China,31.0436,112.2008,East Asia,3,Chandler,9922
+650,Jinzhou,"Chinchou, Chinchow",China,41.1077778,121.1416667,East Asia,3,Chandler,9830
+651,Jiujiang,"Kiukiang, Kew Keang",China,29.705078,115.987222,East Asia,1,Chandler,11076
+652,Jodhpur,,India,26.26841,73.00594,South Asia,1,Chandler,5536
+653,Johannesburg,,South Africa,-26.20227,28.04363,Sub-Saharan Africa,1,Chandler,3664
+654,Juarez,,Mexico,31.739444,-106.486944,Latin America and the Caribbean,2,Chandler,5188
+655,Kabul,,Afghanistan,34.52813,69.17233,West and Central Asia,1,Chandler,4703
+656,Kaesong,Songdo,Dem. People's Republic of Korea,37.97083,126.55444,East Asia,1,Chandler,5739
+657,Kagoshima,,Japan,31.5966,130.557183,East Asia,1,Chandler,3481
+658,Kahramanmaras,Marash,Turkey,37.5833,36.9333,West and Central Asia,3,Chandler,6189
+659,Kaifeng,"Bienliang, Pienliang",China,34.7986,114.30742,East Asia,1,Chandler Modelski,9726
+660,Kairouan,"Qairwan, Qairawan, Zirids, Kairwan",Tunisia,35.674444,10.101667,North Africa,1,Chandler Modelski,1577
+661,Kaiserslautern,,Germany,49.443,7.77161,Europe,1,Chandler,2616
+662,Kakinada,Kokanada,India,16.93,82.33,South Asia,3,Chandler,11081
+663,Kalaa,,Algeria,35.580556,0.328333,North Africa,3,Chandler,
+664,Kalinjar,,India,25.011586,80.472977,South Asia,3,Chandler,
+665,Kaluga,,Russian Federation,54.5293,36.27542,Europe,1,Chandler,2181
+666,Kalyan,,India,19.2437,73.13554,South Asia,1,Chandler,8120
+667,Kamakura,,Japan,35.30889,139.55028,East Asia,1,Chandler,
+668,Kamarupa,"Kamata, Pragjyotisha",India,26.183333,91.733333,South Asia,3,Chandler,
+669,Kamianets-Podilskyi,Kamenets,Ukraine,48.683333,26.583333,Europe,2,Chandler,1769
+670,Kamtapur,Kamatapur,India,26.158333,89.370833,South Asia,2,Chandler,
+671,Kannauj,"Kannauj, Kanauj, Kanauji, Kanauj",India,27.05519,79.91808,South Asia,3,Chandler Modelski,9467
+672,Kanazawa,,Japan,36.561325,136.656206,East Asia,1,Chandler,4416
+673,Kanchipuram,"Conjeeveram, Kanchi, K?ñci-pura, Conjevaram",India,12.834173,79.70364,South Asia,1,Chandler,10657
+674,Kandahar,Qandahar,Afghanistan,31.61332,65.71013,West and Central Asia,1,Chandler,3775
+675,Kangding,Tatsienlu,China,30.055278,101.964722,East Asia,1,Chandler,
+676,Kano,,Nigeria,12.00012,8.51672,Sub-Saharan Africa,1,Chandler,8435
+677,Kanpur,Cawnpore,India,26.4478,80.34627,South Asia,1,Chandler,9603
+678,Kansas City,Missouri,United States of America,39.11417,-94.62746,North America,1,Chandler,6935
+679,Kaohsiung,,Taiwan,22.61626,120.31333,East Asia,1,Chandler,12135
+680,Karachi,,Pakistan,24.9056,67.0822,South Asia,1,Chandler,2578
+681,Karaganda,,Kazakhstan,49.833333,73.166667,West and Central Asia,1,Chandler,1880
+682,Karaman,Laranda,Turkey,37.18111,33.215,West and Central Asia,1,Chandler,5229
+683,Karbala,Kerbela,Iraq,32.6143,44.02483,West and Central Asia,1,Chandler,3462
+684,Karlsruhe,,Germany,49.00472,8.38583,Europe,1,Chandler,3394
+685,Kashan,,Iran,33.98308,51.43644,West and Central Asia,1,Chandler,5609
+686,Kashi,Kashgar,China,39.4704,75.989756,East Asia,1,Chandler,150
+687,Kathmandu,Katmandu,Nepal,27.7,85.333333,South Asia,1,Chandler,1712
+688,Katowice,,Poland,50.25842,19.02754,Europe,1,Chandler,2942
+689,Katsina,,Nigeria,12.98943,7.60063,Sub-Saharan Africa,1,Chandler,7964
+690,Kaunas,Kovno,Lithuania,54.898535,23.903563,Europe,1,Chandler,415
+691,Kayalpatam,"Cail, Kayal",India,8.566389,78.116389,South Asia,3,Chandler,
+692,Kayseri,"Caesarea, Mazaca",Turkey,38.73222,35.48528,West and Central Asia,2,Chandler Modelski,5654
+693,Kazan,,Russian Federation,55.790278,49.134722,Europe,2,Chandler,5923
+694,Kebbi,,Nigeria,11.678125,4.069544,Sub-Saharan Africa,2,Chandler,
+695,Kecskemet,,Hungary,46.90618,19.69128,Europe,1,Chandler,1171
+696,Kemerovo,,Russian Federation,55.33333,86.08333,Europe,1,Chandler,7534
+697,Kerkira,"Corfu, Corcyra,  Kérkira",Greece,39.583333,19.866667,Europe,2,Chandler,
+698,Kerman,,Iran,30.28321,57.07879,West and Central Asia,1,Chandler,7086
+699,Kermanshah,,Iran,34.31417,47.065,West and Central Asia,1,Chandler,3078
+700,Khabarovsk,,Russian Federation,48.48272,135.08379,Europe,3,Chandler,7808
+701,Khajuraho,,India,24.8478,79.93344,South Asia,3,Chandler,
+702,Kharkov,Kharkiv,Ukraine,49.9935,36.230384,Europe,1,Chandler,3991
+703,Khartoum,,Sudan,15.55177,32.53241,Sub-Saharan Africa,1,Chandler,4325
+704,Kherson,Cherson,Ukraine,46.635417,32.616867,Europe,1,Chandler,3402
+705,Khiva,"Khorasam, Khoresm, Khwarezm, Khwarizm, Khwarazm, Chorezm",Uzbekistan,41.3784494711,60.35964994,West and Central Asia,1,Chandler,864
+706,Khovd,Kobdo,Mongolia,48.004167,91.640556,East Asia,2,Chandler,
+707,Khujand,Khojent,Tajikistan,40.283333,69.633333,West and Central Asia,2,Chandler,868
+708,Khvoy,"Khoy, Khoi",Iran,38.5525,44.952222,West and Central Asia,2,Chandler,731
+709,Kiel,,Germany,54.32133,10.13489,Europe,1,Chandler,4467
+710,Kiev,,Ukraine,50.45466,30.5238,Europe,1,Chandler,2178
+711,Kilmarnock,,United Kingdom,55.61171,-4.49581,Europe,1,Chandler,
+712,Kilwa,,Tanzania,-9.149644,38.987675,Sub-Saharan Africa,2,Chandler,
+713,Kingston,,Jamaica,17.992731,-76.8,Latin America and the Caribbean,1,Chandler,776
+714,Kinshasa,Leopoldville,Democratic Republic of the Congo,-4.325,15.3222,Sub-Saharan Africa,1,Chandler,1854
+715,Kirkcaldy,,United Kingdom,56.10982,-3.16149,Europe,1,Chandler,
+716,Kirovohrad,Elizavetgrad,Ukraine,48.507933,32.262317,Europe,2,Chandler,
+717,Kish,Qish,Iran,32.55217989,44.5856425,West and Central Asia,1,Chandler Modelski,
+718,Kiskunfelegyhaza,Kiskunfélegyháza,Hungary,46.71213,19.84458,Europe,1,Chandler,
+719,Kitakyushu,,Japan,33.83333,130.83333,East Asia,1,Chandler,1001
+720,Knossos,,Greece,35.2979516,25.16329744,Europe,1,Chandler Modelski,
+721,Knoxville,Tennesse,United States of America,35.972778,-83.99769,North America,1,Chandler,
+722,Kobe,Hyogo,Japan,34.691269,135.183072,East Asia,1,Chandler,
+723,Koblenz am Rhein,Coblenz,Germany,50.360025,7.589907,Europe,1,Chandler,
+724,Kochi,,Japan,33.558803,133.531167,East Asia,2,Chandler,4453
+725,Kofu,,Japan,35.655625,138.567574,East Asia,1,Chandler,5893
+726,Kohat,,Pakistan,33.58196,71.44929,South Asia,1,Chandler,5147
+727,Kokand,Khokand,Uzbekistan,40.533261,70.932342,West and Central Asia,1,Chandler,
+728,Kolar,,India,13.13671,78.12917,South Asia,1,Chandler,10179
+729,Kolhapur,,India,16.69563,74.23167,South Asia,1,Chandler,8925
+730,Kolomyia,Kolomea,Ukraine,48.530556,25.040278,Europe,1,Chandler,1391
+731,Konigsberg,"Kaliningrad, Königsberg",Germany,54.716667,20.516667,Europe,2,Chandler,86
+732,Konya,Konia,Turkey,37.87135,32.48464,West and Central Asia,1,Chandler,5107
+733,Konye-Urgench,Gurganj,Turkmenistan,42.333333,59.15,West and Central Asia,2,Chandler,604
+734,Kortrijk,Courtrai,Belgium,50.83053,3.264464,Europe,1,Chandler,385
+735,Kosambi,Kausambi,India,25.338984,81.392899,South Asia,2,Chandler,
+736,Kosice,"Košice, Kassa",Slovakia,48.721005,21.2578,Europe,1,Chandler,944
+737,Kostroma,,Russian Federation,57.76647,40.92686,Europe,1,Chandler,3948
+738,Kota,Kotah,India,25.18,75.83,South Asia,3,Chandler,8604
+739,Krakow,Cracow,Poland,50.06143,19.93658,Europe,1,Chandler,3608
+740,Krasnodar,Ekaterinodar,Russian Federation,45.006247,38.960626,Europe,1,Chandler,5109
+741,Krasnoyarsk,,Russian Federation,56.01839,92.86717,Europe,1,Chandler,7648
+742,Krefeld,,Germany,51.33921,6.58615,Europe,1,Chandler,389
+743,Kremenchuk,Kremenchug,Ukraine,49.065783,33.410033,Europe,1,Chandler,3295
+744,Krivoi Rog,Kryvyi Rih,Ukraine,47.910483,33.391783,Europe,1,Chandler,3455
+745,Kuala Lumpur,,Malaysia,3.1412,101.68653,South-East Asia and Oceania,1,Chandler,1629
+746,Kudus,Kudus Regency,Indonesia,-6.8048,110.8405,South-East Asia and Oceania,2,Chandler,7262
+747,Kufa,,Iraq,32.033333,44.4,West and Central Asia,2,Chandler Modelski,
+748,Kukawa,Kuka,Nigeria,12.916667,13.566667,Sub-Saharan Africa,3,Chandler,13529
+749,Kukukhoto,"Kweihwa, Kweisui, Huhehot",China,40.842585,111.749181,East Asia,2,Chandler,
+750,Kumamoto,,Japan,32.78983,130.741574,East Asia,1,Chandler,2854
+751,Kumasi,,Guinea,6.68848,-1.62443,Sub-Saharan Africa,1,Chandler,1468
+752,Kumbakonam,,India,10.96209,79.39124,South Asia,1,Chandler,10653
+753,Kunduz,Qunduz,Afghanistan,36.72896,68.857,West and Central Asia,1,Chandler,3958
+754,Kunming,Yunnanfu,China,25.03889,102.71833,East Asia,1,Chandler,8296
+755,Kure,,Japan,34.23333,132.56667,East Asia,1,Chandler,3267
+756,Kursk,,Russian Federation,51.73733,36.18735,Europe,1,Chandler,3457
+757,Kush,Kus,Egypt,18.53,31.84,Sub-Saharan Africa,3,Chandler,
+758,Kutahya,"Kütahya, Kutahia",Turkey,39.416667,29.983333,West and Central Asia,3,Chandler,3989
+759,Kutaisi,Kutais,Georgia,42.25,42.7,West and Central Asia,1,Chandler,293
+760,Kuwait,,Kuwait,29.369721,47.978324,West and Central Asia,1,Chandler,305
+761,Kyoto,,Japan,35.02107,135.75385,East Asia,1,Chandler Modelski,
+762,La Chaux de Fonds,,Switzerland,47.097872,6.821634,Europe,1,Chandler,
+763,La Paz,,Bolivia,-16.5,-68.15,Latin America and the Caribbean,1,Chandler,197
+764,La Plata,,Argentina,-34.92145,-57.95453,Latin America and the Caribbean,1,Chandler,4681
+765,La Rochelle,,France,46.16667,-1.15,Europe,1,Chandler,1469
+766,La Spezia,Spezia,Italy,44.10245,9.824083,Europe,3,Chandler,2398
+767,Lagos,,Nigeria,6.524379,3.379206,Sub-Saharan Africa,1,Chandler,1265
+768,Lahore,,Pakistan,31.54972,74.34361,South Asia,1,Chandler,8021
+769,Lakkundi,Lokkigundi,India,15.389314,75.716929,South Asia,1,Chandler,
+770,Lamphun,"Haripunjai, Lampun",Thailand,18.574461,99.008722,South-East Asia and Oceania,1,Chandler,
+771,Lancaster,,United Kingdom,54.06667,-2.83333,Europe,1,Chandler,
+772,Lancaster,Pennsylvania,United States of America,40.039722,-76.304444,North America,3,Chandler,8214
+773,Landsberg am Lech,Landsberg,Germany,48.047778,10.898889,Europe,1,Chandler,
+774,Lanzhou,Lanchow,China,36.061089,103.834304,East Asia,1,Chandler,4559
+775,Laon,,France,49.56667,3.61667,Europe,1,Chandler,
+776,Las Palmas,,Spain,28.15,-15.416667,Europe,3,Chandler,654
+777,Lausanne,,Switzerland,46.516,6.63282,Europe,1,Chandler,231
+778,Lawrence,Kansas,United States of America,38.9717,-95.2353,North America,3,Chandler,6920
+779,Le Havre,,France,49.494369,0.107931,Europe,1,Chandler,1922
+780,Le Mans,,France,48.00611,0.199556,Europe,1,Chandler,2005
+781,Lecce,,Italy,40.35703,18.17202,Europe,1,Chandler,5500
+782,Leeds,,United Kingdom,53.79648,-1.54785,Europe,1,Chandler,4425
+783,Leghorn,Livorno,Italy,43.55,10.310579,Europe,2,Chandler,2685
+784,Legnica,Leignitz,Poland,51.208333,16.160278,Europe,2,Chandler,937
+785,Leicester,,United Kingdom,52.6386,-1.13169,Europe,1,Chandler,5469
+786,Leiden,Leyden,Netherlands,52.15833,4.49306,Europe,1,Chandler,674
+787,Leipzig,,Germany,51.33962,12.37129,Europe,1,Chandler,5391
+788,Leon,Léon,Mexico,21.1292,-101.672675,Latin America and the Caribbean,1,Chandler,4456
+789,Leon,,Spain,42.605556,-5.57,Europe,1,Chandler,2806
+790,Leptis,Leptis Magna,Libya,32.63777029,14.29232884,North Africa,3,Chandler,
+791,Leshan,Kiating,China,29.552106,103.765568,East Asia,3,Chandler,7196
+792,Lewiston,Maine,United States of America,44.0975,-70.1925,North America,3,Chandler,
+793,Lexington,Kentucky,United States of America,38.040584,-84.503716,North America,1,Chandler,7810
+794,Lhasa,,China,29.645563,91.140749,East Asia,1,Chandler Modelski,3366
+795,Liaotung,penninsula,China,40.5,121.5,East Asia,3,Chandler,
+796,Liaoyang,,China,41.266667,123.183333,East Asia,1,Chandler,10232
+797,Liberec,Reichenberg,Czech Republic,50.716667,15.066667,Europe,3,Chandler,814
+798,Liege,Liège,Belgium,50.63373,5.56749,Europe,1,Chandler,1755
+799,Liepaja,Libau,Latvia,56.505634,21.011906,Europe,1,Chandler,85
+800,Lille,,France,50.628442,3.054975,Europe,1,Chandler,3549
+801,Lima,Rimac,Peru,-12.04318,-77.02824,Latin America and the Caribbean,1,Chandler,1987
+802,Limerick,,Ireland,52.6653,-8.630497,Europe,1,Chandler,20788
+803,Limoges,,France,45.83153,1.2578,Europe,1,Chandler,2316
+804,Lincoln,,United Kingdom,53.230689,-0.540583,Europe,1,Chandler,5918
+805,Lincoln,Nebraska,United States of America,40.825763,-96.685198,North America,3,Chandler,6890
+806,Linqing,Linching,China,36.849444,115.706111,East Asia,3,Chandler,9650
+807,Linz,,Austria,48.30639,14.28611,Europe,1,Chandler,683
+808,Lisbon,,Portugal,38.71667,-9.13333,Europe,1,Chandler,217
+809,Little Rock,,United States of America,34.74648,-92.28959,North America,1,Chandler,
+810,Liverpool,,United Kingdom,53.408372,-2.991572,Europe,1,Chandler,2236
+811,Ljubljana,Laibach,Slovenia,46.056456,14.508064,Europe,1,Chandler,73
+812,Loango,,Congo,-4.630225,11.835006,Sub-Saharan Africa,3,Chandler,
+813,Lodz,,Poland,51.75,19.46667,Europe,1,Chandler,3120
+814,London,,United Kingdom,51.511214,-0.119825,Europe,1,Chandler,5938
+815,London,,Canada,42.98339,-81.23304,North America,1,Chandler,2303
+816,Londonderry,New Hampshire,United States of America,42.86509,-71.37395,North America,3,Chandler,
+817,Lorca,,Spain,37.67119,-1.7017,Europe,1,Chandler,
+818,Lorient,,France,47.75,-3.36667,Europe,1,Chandler,666
+819,Los Angeles,California,United States of America,34.052234,-118.243685,North America,1,Chandler,1725
+820,Louisville,Kentucky,United States of America,38.252563,-85.758367,North America,1,Chandler,7594
+821,Louveigne,"Louvain, Louveigné",Belgium,50.877572,4.704328,Europe,2,Chandler,
+822,Lowell,Massachusetts,United States of America,42.633425,-71.316172,North America,1,Chandler,8505
+823,Luanda,Loanda,Angola,-8.838333,13.23444,Sub-Saharan Africa,3,Chandler,939
+824,Luang Prabang,,Lao People's Democratic Republic,19.884111,102.141633,South-East Asia and Oceania,1,Chandler,161
+825,Lubeck,Lübeck,Germany,53.865886,10.687097,Europe,1,Chandler,4797
+826,Lublin,,Poland,51.25,22.56667,Europe,1,Chandler,4280
+827,Lucca,,Italy,43.84357,10.50585,Europe,1,Chandler,2815
+828,Lucheng,,China,36.316667,113.216667,East Asia,3,Chandler,9186
+829,Lucknow,,India,26.83928,80.92313,South Asia,1,Chandler,9717
+830,Ludhiana,,India,30.90015,75.85229,South Asia,1,Chandler,6504
+831,Ludwigshafen,,Germany,49.47741,8.44518,Europe,1,Chandler,
+832,Lugansk,"Luhansk, Voroshilovgrad",Ukraine,48.57404,39.307827,Europe,1,Chandler,4943
+833,Luoyang,Honan,China,34.669722,112.442222,East Asia,1,Chandler Modelski,9308
+834,Lusaka,,Zambia,-15.40669,28.28713,Sub-Saharan Africa,1,Chandler,1498
+835,Luton,,United Kingdom,51.87967,-0.41748,Europe,1,Chandler,5977
+836,Lvov,"Lwow, Lemberg",Poland,49.839683,24.029717,Europe,1,Chandler,
+837,Lyon,,France,45.74846,4.84671,Europe,1,Chandler,4068
+838,Maastricht,,Netherlands,50.84833,5.68889,Europe,1,Chandler,3230
+839,Macao,,China,22.1667,113.55,East Asia,1,Chandler,
+840,Macclesfield,,United Kingdom,53.258663,-2.119287,Europe,1,Chandler,13177
+841,Maceio,Maceió,Brazil,-9.66583,-35.73528,Latin America and the Caribbean,1,Chandler,8494
+842,Magdeburg,,Germany,52.130808,11.628878,Europe,1,Chandler,5164
+843,Madras,,India,13.08784,80.27847,South Asia,1,Chandler,
+844,Madrid,,Spain,40.416775,-3.703789,Europe,1,Chandler,3440
+845,Madurai,,India,9.91735,78.11962,South Asia,1,Chandler Modelski,10301
+846,Maebashi,,Japan,36.389482,139.063428,East Asia,1,Chandler,5785
+847,Magnitogorsk,,Russian Federation,53.41861,59.04722,Europe,1,Chandler,7217
+848,Mahdia,Mahdiya,Tunisia,35.50472,11.06222,North Africa,1,Chandler,13824
+849,Maheshwar,,India,22.17592,75.58715,South Asia,1,Chandler,12766
+850,Mahoba,,India,25.29222,79.87231,South Asia,2,Chandler,9647
+851,Maidstone,,United Kingdom,51.26667,0.51667,Europe,1,Chandler,6383
+852,Mainz,,Germany,49.98419,8.2791,Europe,1,Chandler,
+853,Majapahit,,Indonesia,-8.18947,113.667019,South-East Asia and Oceania,3,Chandler,
+854,Makassar,,Indonesia,-5.14,119.4221,South-East Asia and Oceania,1,Chandler,8297
+855,Mako,,Hungary,46.21667,20.48333,Europe,1,Chandler,
+856,Malaga,,Spain,36.721261,-4.421267,Europe,1,Chandler,3224
+857,Malang,,Indonesia,-7.9797,112.6304,South-East Asia and Oceania,1,Chandler,7737
+858,Malatya,,Turkey,38.35018,38.31667,West and Central Asia,1,Chandler,6351
+859,Mali,"Melle, Niani",Mali,11.0,-8.0,Sub-Saharan Africa,3,Chandler,
+860,Malmo,Malmö,Sweden,55.604981,13.003822,Europe,1,Chandler,540
+861,Managua,,Nicaragua,12.13282,-86.2504,Latin America and the Caribbean,1,Chandler,345
+862,Manaus,,Brazil,-3.10194,-60.025,Latin America and the Caribbean,1,Chandler,1356
+863,Manchester,,United Kingdom,53.48095,-2.23743,Europe,1,Chandler,3388
+864,Mandalay,,Myanmar,21.97473,96.08359,South-East Asia and Oceania,1,Chandler,3089
+865,Mandu,Mandavgad,India,22.36667,75.38333,South Asia,2,Chandler,
+866,Mandvi,Måndvi,India,22.83282,69.35238,South Asia,1,Chandler,613
+867,Mangalore,,India,12.91723,74.85603,South Asia,1,Chandler,
+868,Mani,,Mexico,20.393381,-89.407156,Latin America and the Caribbean,1,Chandler,
+869,Manila,,Philippines,14.58,121.0,South-East Asia and Oceania,1,Chandler,2369
+870,Manisa,,Turkey,38.61202,27.42646,West and Central Asia,1,Chandler,1496
+871,Mannheim,,Germany,49.49671,8.47955,Europe,1,Chandler,3447
+872,Mansoura,Mansura,Egypt,31.040948,31.37847,North Africa,3,Chandler,5256
+873,Mansura,Brahmanabad,Pakistan,25.590258,68.776944,South Asia,3,Chandler,
+874,Mantova,Mantua,Italy,45.156417,10.791375,Europe,1,Chandler,
+875,Manyakheta,Malkhed,India,17.19313,77.157379,South Asia,3,Chandler Modelski,
+876,Maracaibo,,Venezuela,10.63167,-71.64056,Latin America and the Caribbean,1,Chandler,1132
+877,Maragheh,,Iran,37.383531,46.237961,West and Central Asia,1,Chandler,1788
+878,Mareb,Marib,Yemen,15.40427477,45.355823,West and Central Asia,1,Chandler,5481
+879,Marghilon,"Margilan, Marghelan",Uzbekistan,40.471119,71.718361,West and Central Asia,2,Chandler,
+880,Mariana,,Brazil,-20.37778,-43.41611,Latin America and the Caribbean,1,Chandler,
+881,Mariupol,Zhdanov,Ukraine,47.09514,37.54131,Europe,1,Chandler,4658
+882,Marrakech,Marrakesh,Morocco,31.63416,-7.99994,North Africa,1,Chandler,1742
+883,Marseille,,France,43.29695,5.38107,Europe,1,Chandler,4276
+884,Martaban,Mottama,Myanmar,16.52834,97.6157,South-East Asia and Oceania,1,Chandler,
+885,Masenya,,Chad,11.402536,16.171328,Sub-Saharan Africa,3,Chandler,
+886,Mashhad,Meshhed,Iran,36.3,59.6,West and Central Asia,1,Chandler,7072
+887,Masulipatam,,India,16.18438,81.134933,South Asia,1,Chandler,
+888,Matanzas,,Cuba,23.04111,-81.5775,Latin America and the Caribbean,1,Chandler,898
+889,Mathura,Muttra,India,27.4925,77.673611,South Asia,3,Chandler,8877
+890,Matsue,,Japan,35.468059,133.048375,East Asia,1,Chandler,2657
+891,Matsumae,"Fukuyama, Matsmaye (Hokkaido)",Japan,41.433333,140.116667,East Asia,3,Chandler,
+892,Matsuyama,,Japan,33.839157,132.765575,East Asia,1,Chandler,3739
+893,Mawlamyine,Moulmein,Myanmar,16.484591,97.625931,South-East Asia and Oceania,1,Chandler,5930
+894,Mayapan,"Màayapáan, Mayapán",Mexico,20.978497,-89.593372,Latin America and the Caribbean,2,Chandler,
+895,Maykop,Maikop,Russian Federation,44.6,40.08333,Europe,1,Chandler,5424
+896,M'banza-Congo,"M'banza-Kongo, Sao Salvador",Angola,-6.267778,14.248056,Sub-Saharan Africa,2,Chandler,2250
+897,Mecca,,Saudi Arabia,21.42667,39.82611,West and Central Asia,1,Chandler Modelski,1513
+898,Mechelen,,Belgium,51.02574,4.47762,Europe,1,Chandler,1474
+899,Meckenbeuren,Schwerin,Germany,53.62937,11.41316,Europe,1,Chandler,4972
+900,Medan,,Indonesia,3.5833,98.6667,South-East Asia and Oceania,1,Chandler,1806
+901,Medellin,Medellín,Colombia,6.25184,-75.56359,Latin America and the Caribbean,1,Chandler,2525
+902,Medina,Madinah,Saudi Arabia,24.4609,39.620189,West and Central Asia,1,Chandler,728
+903,Medina del Campo,,Spain,41.31239,-4.91413,Europe,1,Chandler,
+904,Meerut,,India,28.97155,77.71934,South Asia,1,Chandler,8652
+905,Meihsien,,China,24.297687,116.107241,East Asia,3,Chandler,
+906,Meknes,"Takrart, Mequinez, Miknas, Meknès",Morocco,33.89352,-5.54727,North Africa,1,Chandler,4020
+907,Melbourne,,Australia,-37.814,144.96332,South-East Asia and Oceania,1,Chandler,1634
+908,Memphis,,Egypt,29.844722,31.250833,North Africa,2,Chandler Modelski,
+909,Memphis,,United States of America,35.149703,-90.048529,North America,1,Chandler,6980
+910,Mendoza,,Argentina,-32.89084,-68.82717,Latin America and the Caribbean,1,Chandler,198
+911,Mengo,hill/area in Kampala,Uganda,0.346667,32.605556,Sub-Saharan Africa,3,Chandler,
+912,Merida,Tiho,Mexico,20.979719,-89.615789,Latin America and the Caribbean,1,Chandler,7008
+913,Merida,Emerita,Spain,38.91611,-6.34366,Europe,1,Chandler Modelski,
+914,Merthyr Tydfil,,United Kingdom,51.748731,-3.381647,Europe,1,Chandler,
+915,Merv,Merw,Turkmenistan,37.6628,62.1925,West and Central Asia,1,Chandler Modelski,
+916,Messina,,Italy,38.19327,15.54969,Europe,1,Chandler,5165
+917,Metz,,France,49.11911,6.17269,Europe,1,Chandler,4429
+918,Mexico City,Tenochtitlan,Mexico,19.42847,-99.12766,Latin America and the Caribbean,1,Chandler,5439
+919,Mhow,Dr Ambedkar Nagar,India,22.552437,75.756527,South Asia,3,Chandler,
+920,Miami,,United States of America,25.77427,-80.19366,North America,1,Chandler,7289
+921,Michurinsk,Kozlov,Russian Federation,52.883333,40.483333,Europe,2,Chandler,4437
+922,Middelburg,,Netherlands,51.5,3.61389,Europe,1,Chandler,
+923,Middlesbrough,,United Kingdom,54.57623,-1.23483,Europe,1,Chandler,5250
+924,Midnapore,Midnapur,India,22.42087,87.326088,South Asia,2,Chandler,
+925,Milan,,Italy,45.465453,9.198786,Europe,1,Chandler Modelski,1848
+926,Miletus,,Turkey,37.530278,27.278333,West and Central Asia,2,Chandler,
+927,Milwaukee,Wisconsin,United States of America,43.0389,-87.90647,North America,1,Chandler,7846
+928,Minneapolis,Minnesota,United States of America,39.12194,-93.265011,North America,1,Chandler,
+929,Minsk,,Belarus,53.9,27.56667,Europe,1,Chandler,704
+930,Mirzapur,,India,24.10287,82.564433,South Asia,3,Chandler,
+931,Miskolc,Miskole,Hungary,48.104167,20.791667,Europe,1,Chandler,1386
+932,Mobile,Alabama,United States of America,30.69436,-88.04305,North America,1,Chandler,
+933,Modakeke,,Nigeria,7.38333,4.26667,Sub-Saharan Africa,3,Chandler,
+934,Mogilev,,Belarus,53.899999,30.333328,Europe,1,Chandler,
+935,Mohenjo-daro,Mohenjo-daro,Pakistan,27.32533494,68.13293014,South Asia,1,Chandler Modelski,
+936,Monastir,,Turkey,41.038155,21.343003,Europe,3,Chandler,
+937,Mondovi,,Italy,44.39603,7.81764,Europe,1,Chandler,
+938,Montauban,,France,44.01667,1.35,Europe,1,Chandler,
+939,Monte Alban,Monte Albán,Mexico,17.043989,-96.767467,Latin America and the Caribbean,2,Chandler,
+940,Monterrey,Monterey,Mexico,25.6667,-100.3,Latin America and the Caribbean,1,Chandler,6218
+941,Montevideo,,Uraguay,-34.817311,-56.158866,Latin America and the Caribbean,1,Chandler,652
+942,Montlucon,Montluçon,France,46.33333,2.6,Europe,2,Chandler,
+943,Montpellier,,France,43.61092,3.87723,Europe,1,Chandler,3893
+944,Montreal,Montréal,Canada,45.50884,-73.58781,North America,1,Chandler,3645
+945,Monza,,Italy,45.58248,9.27485,Europe,1,Chandler,
+946,Moradabad,,India,28.83893,78.77684,South Asia,1,Chandler,8979
+947,Morelia,,Mexico,19.768333,-101.189444,Latin America and the Caribbean,2,Chandler,4343
+948,Morioka,,Japan,39.702053,141.154484,East Asia,1,Chandler,4926
+949,Moscow,,Russian Federation,55.75222,37.61556,Europe,1,Chandler,2485
+950,Mosul,Ak Mawsil,Iraq,36.335,43.11889,West and Central Asia,1,Chandler,1410
+951,Motherwell,,United Kingdom,55.78924,-3.99187,Europe,1,Chandler,
+952,Muhlhausen,,Germany,51.20896,10.45275,Europe,1,Chandler,
+953,Mulhausen,,France,47.750839,7.335888,Europe,1,Chandler,
+954,Multan,,Pakistan,30.19556,71.47528,South Asia,1,Chandler,7167
+955,Mumbai,Bombay,India,19.07283,72.88261,South Asia,1,Chandler,7945
+956,Munger,"Mudgagiri, Monghyr",India,25.37262,86.490321,South Asia,1,Chandler,11363
+957,Munich,,Germany,48.136739,11.576756,Europe,1,Chandler,5337
+958,Munster,Münster,Germany,51.9667,7.6333,Europe,3,Chandler,2088
+959,Murcia,,Spain,37.98704,-1.13004,Europe,1,Chandler,4312
+960,Murshidabad,,India,24.1839,88.27171,South Asia,3,Chandler,14396
+961,Muscat,,Oman,23.61387,58.5922,West and Central Asia,1,Chandler,1421
+962,Musumba,,Democratic Republic of the Congo,-8.559167,22.6825,Sub-Saharan Africa,2,Chandler,4763
+963,Muzaffarpur,Mizaffarpur,India,26.120888,85.36472,South Asia,1,Chandler,
+964,Mycenae,,Greece,37.73038721,22.75788116,Europe,1,Chandler Modelski,
+965,Mykolayiv,"Nikolayev, Nikolayev",Ukraine,46.975033,31.994583,Europe,3,Chandler,
+966,Mysore,,India,12.29791,76.63925,South Asia,1,Chandler,
+967,Nadiya,,India,23.501389,73.960963,South Asia,3,Chandler,
+968,Nagano,,Japan,36.651299,138.180956,East Asia,1,Chandler,5273
+969,Nagapattinam,"Negapatam, Choromandel",India,10.768802,79.839427,South Asia,3,Chandler,10813
+970,Nagara,"Bednur, Bidanur",India,13.824,75.034,South Asia,3,Chandler,
+971,Nagasaki,,Japan,32.752558,129.878192,East Asia,1,Chandler,1334
+972,Nagoya,,Japan,35.181447,136.906397,East Asia,1,Chandler,5245
+973,Nagpur,,India,21.15,79.1,South Asia,2,Chandler,9793
+974,Nairobi,,Kenya,-1.28333,36.81667,Sub-Saharan Africa,1,Chandler,2033
+975,Nam Dinh,,Vietnam,20.42,106.168333,South-East Asia and Oceania,1,Chandler,
+976,Namangan,,Uzbekistan,40.9983,71.67257,West and Central Asia,1,Chandler,4368
+977,Namur,,Belgium,50.4669,4.86746,Europe,1,Chandler,1665
+978,Nanchang,,China,28.68333,115.88333,East Asia,1,Chandler,11188
+979,Nancy,,France,48.68439,6.18496,Europe,1,Chandler,4503
+980,Nanhai,"Foshan, Fatshan",China,23.016667,113.116667,East Asia,1,Chandler,
+981,Nanjing,Nanking,China,32.05,118.766667,East Asia,1,Chandler Modelski,11254
+982,Nanning,,China,22.81667,108.31667,East Asia,1,Chandler,10166
+983,Nantes,,France,47.21725,-1.55336,Europe,1,Chandler,1152
+984,Nantong,Nantung,China,31.980175,120.894339,East Asia,1,Chandler,11606
+985,Naples,,Italy,40.851775,14.268122,Europe,1,Chandler,4726
+986,Nara City,,Japan,34.685333,135.832742,East Asia,1,Chandler Modelski,
+987,Narbonne,,France,43.18333,3.0,Europe,1,Chandler,
+988,Nashville,Tennessee,United States of America,36.166667,-86.783333,North America,1,Chandler,
+989,Nellore,,India,14.45363,79.98674,South Asia,1,Chandler,10629
+990,New Bedford,Massachusetts,United States of America,41.63622,-70.9342,North America,1,Chandler,8487
+991,New Haven,Connecticut,United States of America,41.308274,-72.927884,North America,1,Chandler,8421
+992,New Orleans,Louisiana,United States of America,29.95465,-90.07507,North America,1,Chandler,6845
+993,New York,New York,United States of America,40.714353,-74.005972,North America,1,Chandler,8354
+994,Newburgh,New York,United States of America,41.519722,-74.021389,North America,2,Chandler,
+995,Newcastle,,Australia,-32.92715,151.77647,South-East Asia and Oceania,1,Chandler,2217
+996,Newcastle upon Tyne,,United Kingdom,54.978253,-1.617781,Europe,2,Chandler,4536
+997,Newport,,Wales,51.582336,-2.969647,Europe,1,Chandler,2388
+998,Nezhyn,Nezhin,Ukraine,51.038056,31.886111,Europe,1,Chandler,
+999,Ngornu,Angornu,Nigeria,12.714444,13.702778,Sub-Saharan Africa,3,Chandler,
+1000,Nice,,France,43.70313,7.26608,Europe,1,Chandler,4796
+1001,Nicosia,,Cyprus,35.16667,33.36667,West and Central Asia,1,Chandler,434
+1002,Niigata,,Japan,37.902552,139.023095,East Asia,1,Chandler,4995
+1003,Nijmegen,Nimeguen,Netherlands,51.812563,5.837233,Europe,1,Chandler,3173
+1004,Nimes,Nîmes,France,43.83333,4.35,Europe,1,Chandler,4025
+1005,Nimrud,Calah,Iraq,36.09813154,43.32875612,West and Central Asia,1,Chandler,
+1006,Nineveh,,Iraq,36.359444,43.152778,West and Central Asia,1,Chandler Modelski,
+1007,Ningbo,"Yinhsien, Ningpo",China,29.866667,121.55,East Asia,2,Chandler,11956
+1008,Nippur,,Iraq,32.12693858,45.23078534,West and Central Asia,1,Chandler Modelski,
+1009,Nis,Nish,Serbia,43.319381,21.896328,Europe,1,Chandler,1489
+1010,Nishapur,,Iran,36.213333,58.795833,West and Central Asia,1,Chandler Modelski,
+1011,Nizhniy Novgorod,"Nishny Novgorod, Gorkiy",Russian Federation,56.3269,44.0075,Europe,1,Chandler,
+1012,Nizhniy Tagil,Nizhny-Tagil,Russian Federation,57.916667,59.966667,Europe,1,Chandler,7057
+1013,Nkazargamu,"Gasreggomo, Birni, Kazargamu",Nigeria,13.047222,12.227778,Sub-Saharan Africa,3,Chandler,
+1014,Norfolk,Virginia,United States of America,36.84681,-76.28522,North America,1,Chandler,8102
+1015,Norrkoping,Norrköping,Sweden,58.59419,16.1826,Europe,1,Chandler,1166
+1016,Northampton,,United Kingdom,52.150592,-0.896028,Europe,2,Chandler,5598
+1017,Norwich,,United Kingdom,52.62783,1.29834,Europe,1,Chandler,6543
+1018,Nottingham,,United Kingdom,52.9536,-1.15047,Europe,1,Chandler,5220
+1019,Novgorod,,Russian Federation,58.525569,31.274192,Europe,1,Chandler,1065
+1020,Novocherkassk,Novocherkask,Russian Federation,47.416667,40.083333,Europe,1,Chandler,5200
+1021,Novokuznetsk,Stalinsk,Russian Federation,53.7557,87.1099,Europe,1,Chandler,7618
+1022,Novosibirsk,,Russian Federation,55.0415,82.9346,Europe,1,Chandler,7486
+1023,Nurnberg,"Nürnberg, Nuremberg",Germany,49.452031,11.07675,Europe,1,Chandler,5071
+1024,Nyiregyhaza,Nyíregyháza,Hungary,47.95539,21.71671,Europe,1,Chandler,1488
+1025,Oaklahoma City,Oaklahoma,United States of America,35.46756,-97.516428,North America,1,Chandler,
+1026,Oaxaca,,Mexico,17.07108,-96.71914,Latin America and the Caribbean,1,Chandler,6272
+1027,Odense,,Denmark,55.39594,10.38831,Europe,1,Chandler,392
+1028,Odessa,Odesa,Russian Federation,46.47747,30.73262,Europe,1,Chandler,2693
+1029,Ogbomosho,,Nigeria,8.133333,4.25,Sub-Saharan Africa,1,Chandler,3848
+1030,Ohrid,Ochrida,Bulgaria,43.454967,23.380704,Europe,3,Chandler,
+1031,Okayama,,Japan,34.661753,133.916667,East Asia,1,Chandler,4011
+1032,Olbia,,Italy,40.9167,9.5,Europe,2,Chandler,
+1033,Oldham,,United Kingdom,53.54051,-2.1183,Europe,1,Chandler,
+1034,Omaha,Nebraska,United States of America,41.252363,-95.997988,North America,1,Chandler,6965
+1035,Omdurman,,Sudan,15.64453,32.47773,Sub-Saharan Africa,1,Chandler,
+1036,Omsk,,Russian Federation,54.99244,73.36859,Europe,3,Chandler,7462
+1037,Opole,Oppeln,Poland,50.675107,17.921298,Europe,2,Chandler,2401
+1038,Oporto,Porto,Portugal,41.167972,-8.627064,Europe,1,Chandler,1030
+1039,Oradea,Nagyvarad,Romania,47.072222,21.921111,Europe,1,Chandler,417
+1040,Oran,,Algeria,35.69111,-0.64167,North Africa,1,Chandler,922
+1041,Orel,,Russian Federation,52.96508,36.0785,Europe,1,Chandler,
+1042,Orenburg,Chkalov,Russian Federation,51.7727,55.0988,Europe,1,Chandler,7113
+1043,Orlando,Florida,United States of America,28.53834,-81.37924,North America,1,Chandler,7432
+1044,Orleans,Orléans,France,47.902964,1.90925,Europe,1,Chandler,2745
+1045,Oruro,,Bolivia,-17.98333,-67.15,Latin America and the Caribbean,1,Chandler,505
+1046,Osaka,,Japan,34.693216,135.502082,East Asia,1,Chandler,4490
+1047,Osh,,Kyrgyzstan,40.51506,72.80826,West and Central Asia,1,Chandler,870
+1048,Oshogbo,,Nigeria,7.765845,4.561471,Sub-Saharan Africa,1,Chandler,4390
+1049,Oslo,Christiania,Norway,59.913869,10.752245,Europe,1,Chandler,931
+1050,Osnabruck,Osnabrück,Germany,52.27264,8.0498,Europe,1,Chandler,2545
+1051,Ostend,Oostende,Belgium,51.216667,2.9,Europe,1,Chandler,55
+1052,Ostia,,Italy,41.75551909,12.28966708,Europe,1,Chandler,4071
+1053,Ostrava,Ostrau,Czech Republic,49.835556,18.2925,Europe,1,Chandler,1383
+1054,Otaru,,Japan,43.18944,141.00222,East Asia,1,Chandler,170
+1055,Otsu,,Japan,35.017893,135.854607,East Asia,1,Chandler,4961
+1056,Ottawa,,Canada,45.41117,-75.69812,North America,1,Chandler,3488
+1057,Oualata,"Walata, Biru",Mauritania,17.3,-7.025,Sub-Saharan Africa,2,Chandler,
+1058,Oudong,"Udong, Odong",Cambodia,11.819431,104.742897,South-East Asia and Oceania,1,Chandler,
+1059,Ougadougou,Wagadugu,Burkina Faso,12.364636,-1.533864,Sub-Saharan Africa,1,Chandler,
+1060,Ouro Preto,Vila Rica,Brazil,-20.39484,-43.50517,Latin America and the Caribbean,1,Chandler,
+1061,Oxford,,United Kingdom,51.752021,-1.257726,Europe,1,Chandler,5278
+1062,Oxyrhyncus,,Egypt,28.53558797,30.65990829,North Africa,2,Chandler,
+1063,Oyo,Katunga,Nigeria,7.85,3.93333,Sub-Saharan Africa,1,Chandler,3114
+1064,Pachacamac,,Peru,-12.188786,-76.849033,Latin America and the Caribbean,2,Chandler,
+1065,Pachuca,,Mexico,20.097613,-98.709579,Latin America and the Caribbean,1,Chandler,5874
+1066,Padang,Pandang,Indonesia,-0.94924,100.35427,South-East Asia and Oceania,2,Chandler,3262
+1067,Padua,,Italy,45.406436,11.876761,Europe,1,Chandler,3607
+1068,Paisley,,United Kingdom,55.83173,-4.43254,Europe,1,Chandler,
+1069,Paithan,Prati??h?na,India,19.47506,75.38558,South Asia,3,Chandler,9037
+1070,Palembang,,Indonesia,-2.91673,104.7458,South-East Asia and Oceania,1,Chandler,5182
+1071,Palermo,,Italy,38.115689,13.361267,Europe,1,Chandler,4616
+1072,Palghat,Palakkad,India,10.78673,76.654793,South Asia,1,Chandler,9835
+1073,Palma,,Spain,39.56939,2.65024,Europe,1,Chandler,5191
+1074,Panama City,,Panama,8.994297,-79.518852,Latin America and the Caribbean,1,Chandler,640
+1075,Pandua,,India,23.07492,88.28637,South Asia,3,Chandler,11827
+1076,Paramaribo,,Suriname,5.86638,-55.16682,Latin America and the Caribbean,1,Chandler,29
+1077,Parana,Paraná,Argentina,-31.73197,-60.5238,Latin America and the Caribbean,1,Chandler,3383
+1078,Paris,,France,48.856614,2.352222,Europe,1,Chandler,2994
+1079,Parma,,Italy,44.80266,10.32898,Europe,1,Chandler,2618
+1080,Patan,Anhilvada,India,23.8507,72.12963,South Asia,1,Chandler Modelski,5611
+1081,Patan,,Nepal,27.666667,85.316667,South Asia,1,Chandler,
+1082,Paterson,New Jersey,United States of America,40.91677,-74.17181,North America,1,Chandler,
+1083,Patiala,,India,30.32715,76.40266,South Asia,1,Chandler,7376
+1084,Patna,Pataliputra,India,25.610533,85.14145,South Asia,1,Chandler Modelski,11039
+1085,Patras,,Greece,38.24664,21.734574,Europe,1,Chandler,268
+1086,Patzcuaro,,Mexico,19.51931,-101.6097,Latin America and the Caribbean,1,Chandler,4100
+1087,Pau,,France,43.3,0.37,Europe,2,Chandler,
+1088,Pavia,,Italy,45.18446,9.16145,Europe,1,Chandler,1931
+1089,Pecs,Pécs,Hungary,46.08333,18.23333,Europe,1,Chandler,690
+1090,Pegu,Bago,Myanmar,17.333333,96.483333,South-East Asia and Oceania,1,Chandler,5688
+1091,Pekalongan,,Indonesia,-6.8886,109.6753,South-East Asia and Oceania,1,Chandler,6858
+1092,Penang Serai,,Malaysia,5.263234,100.484623,South-East Asia and Oceania,3,Chandler,
+1093,Penglai,Tengchow,China,37.8086111,120.7508333,East Asia,2,Chandler,
+1094,Penza,,Russian Federation,53.20066,45.00464,Europe,3,Chandler,5505
+1095,Pergamum,,Turkey,39.13225127,27.1836318,West and Central Asia,1,Chandler Modelski,
+1096,Perm,,Russian Federation,58.013889,56.248889,Europe,1,Chandler,
+1097,Perspolis,,Iran,29.93448748,52.89096558,West and Central Asia,1,Chandler,
+1098,Perth,,Australia,-31.95224,115.8614,South-East Asia and Oceania,1,Chandler,330
+1099,Perth,,United Kingdom,56.394994,-3.430839,Europe,1,Chandler,
+1100,Peshawar,"Purusapura, Pushkalavati",Pakistan,34.008,71.57849,South Asia,1,Chandler Modelski,4408
+1101,Peterborough,,United Kingdom,52.583333,-0.25,Europe,2,Chandler,6110
+1102,Petra,,Jordan,30.325172,35.442581,West and Central Asia,1,Chandler,
+1103,Petrovaradin,Peterwardein,Serbia,45.25,19.866667,Europe,1,Chandler,
+1104,Pforzheim,,Germany,48.88436,8.69892,Europe,1,Chandler,3849
+1105,Philadelphia,Pennsylvania,United States of America,39.95,-75.1667,North America,1,Chandler,8270
+1106,Phnom Penh,,Cambodia,11.56245,104.91601,South-East Asia and Oceania,1,Chandler,1225
+1107,Phoenix,Arizona,United States of America,33.44838,-112.074143,North America,1,Chandler,4858
+1108,Piacenza,Fiacenza,Italy,45.04676,9.69937,Europe,1,Chandler,2322
+1109,Pilibhit,,India,28.63098,79.80338,South Asia,1,Chandler,9267
+1110,Piotrkow,,Poland,51.405172,19.703024,Europe,3,Chandler,3449
+1111,Pirmasens,,Germany,49.20145,7.60529,Europe,1,Chandler,
+1112,Pisa,,Italy,43.71553,10.39659,Europe,1,Chandler,2752
+1113,Pittsburgh,Pennsylvania,United States of America,40.44062,-79.99589,North America,1,Chandler,8067
+1114,Pliska,Aboba,Bulgaria,43.362531,27.125539,Europe,1,Chandler,
+1115,Ploiesti,Ploesti,Romania,44.94,26.03,Europe,1,Chandler,2253
+1116,Plovdiv,Philippopolis,Bulgaria,42.15,24.75,Europe,1,Chandler,424
+1117,Plymouth,,United Kingdom,50.375456,-4.14305,Europe,1,Chandler,665
+1118,Plzen,Pilsen,Czech Republic,49.738425,13.37362,Europe,3,Chandler,70
+1119,Pochow,,China,33.8772222,115.7702778,East Asia,3,Chandler,
+1120,Poitiers,,France,46.58333,0.33333,Europe,1,Chandler,2083
+1121,Polonnaruwa,,Sri Lanka,7.93965,81.00274,South Asia,1,Chandler,
+1122,Poltava,,Ukraine,49.59373,34.54073,Europe,1,Chandler,3561
+1123,Pondicherry,,India,11.91386,79.814472,South Asia,1,Chandler,
+1124,Porbandar,,India,21.64219,69.60929,South Asia,1,Chandler,2046
+1125,Port Louis,,Mauritius,-20.16194,57.504104,Sub-Saharan Africa,1,Chandler,146
+1126,Port Said,,Egypt,31.25654,32.28412,North Africa,1,Chandler,7111
+1127,Port-au-Prince,,Haiti,18.53917,-72.335,Latin America and the Caribbean,1,Chandler,1351
+1128,Portland,Maine,United States of America,43.661471,-70.25532,North America,1,Chandler,
+1129,Portland,Oregon,United States of America,45.523062,-122.676482,North America,1,Chandler,5157
+1130,Porto Alegre,Pôrto Alegre,Brazil,-30.03306,-51.23,Latin America and the Caribbean,1,Chandler,5995
+1131,Port-of-Spain,,Trinidad and Tobago,10.661702,-61.519442,Latin America and the Caribbean,1,Chandler,26
+1132,Portsmouth,,United Kingdom,50.816661,-1.083383,Europe,1,Chandler,5388
+1133,Potosi,Potosí,Bolivia,-19.58361,-65.75306,Latin America and the Caribbean,1,Chandler,904
+1134,Potsdam,,Germany,52.39886,13.06566,Europe,1,Chandler,5526
+1135,Poznan,Posen,Poland,52.40692,16.92993,Europe,1,Chandler,1381
+1136,Prague,,Austria,50.08804,14.42076,Europe,1,Chandler,542
+1137,Prambanan,temple in Indonesia,Indonesia,-7.752022,110.491369,South-East Asia and Oceania,2,Chandler,
+1138,Preslav,,Bulgaria,43.164542,26.817967,Europe,1,Chandler,
+1139,Preston,,United Kingdom,53.76667,-2.71667,Europe,1,Chandler,3168
+1140,Pretoria,,South Africa,-25.74486,28.18783,Sub-Saharan Africa,1,Chandler,4244
+1141,Prizren,Frizren,Serbia,42.21389,20.73972,Europe,1,Chandler,560
+1142,Prokopyevsk,Prokopievsk,Russian Federation,53.883137,86.715772,Europe,2,Chandler,
+1143,Providence,Rhode Island,United States of America,41.823989,-71.412833,North America,1,Chandler,8475
+1144,Provins,,France,48.55,3.3,Europe,1,Chandler,
+1145,Przemysl,,Poland,49.78498,22.76728,Europe,1,Chandler,4318
+1146,Pskov,,Russian Federation,57.8136,28.3496,Europe,1,Chandler,423
+1147,Puebla,Puebla de Zaragoza,Mexico,19.0514,-98.2178,Latin America and the Caribbean,1,Chandler,5915
+1148,Pula,Pola,Croatia,44.866667,13.85,Europe,2,Chandler,
+1149,Pundravardhana,,India,25.5,81.5,South Asia,2,Chandler,
+1150,Pune,Poona,India,18.52043,73.856744,South Asia,1,Chandler,8616
+1151,Puri,Jagganath,India,19.810556,85.831389,South Asia,2,Chandler,11599
+1152,Purnia,Purneah,India,25.78,87.47,South Asia,2,Chandler,11495
+1153,Pyay,"Sri Ksetra, Prome",Myanmar,18.82151,95.221029,South-East Asia and Oceania,3,Chandler Modelski,3633
+1154,Pyongyang,"P'yongyang, Tonggoo",Dem. People's Republic of Korea,39.03385,125.75432,East Asia,1,Chandler,3737
+1155,Qazvin,Kazvin,Iran,36.26877,50.0041,West and Central Asia,1,Chandler,4367
+1156,Qingdao,Tsingtao,China,36.067082,120.38264,East Asia,3,Chandler,10816
+1157,Qiqihar,Tsitsihar,China,47.354348,123.918186,East Asia,1,Chandler,8695
+1158,Qom,,Iran,34.6401,50.8764,West and Central Asia,1,Chandler,5374
+1159,Quebec,,Canada,46.81228,-71.21454,North America,1,Chandler,4103
+1160,Quilon,,India,8.88,76.6,South Asia,3,Chandler,
+1161,Quito,,Ecuador,-0.22985,-78.52495,Latin America and the Caribbean,1,Chandler,2524
+1162,Qum,"Kum, Qom, Com",Iran,34.64,50.876389,West and Central Asia,2,Chandler,
+1163,Rabat,,Morocco,34.01325,-6.83255,North Africa,1,Chandler,2739
+1164,Rabba,,Nigeria,9.2,5.033333,Sub-Saharan Africa,3,Chandler,
+1165,Radom,,Poland,51.40253,21.14714,Europe,1,Chandler,3851
+1166,Raichur,,India,16.2047,77.354,South Asia,1,Chandler,9753
+1167,Raipur,,India,21.14,81.38,South Asia,2,Chandler,10523
+1168,Rajahmundry,,India,17.00517,81.77784,South Asia,1,Chandler,
+1169,Rajkot,,India,22.29161,70.79322,South Asia,1,Chandler,4003
+1170,Rajmahal,,India,25.05303,87.83048,South Asia,3,Chandler,11595
+1171,Rampur,,India,28.789304,79.024952,South Asia,1,Chandler,9071
+1172,Rangpur,,India,25.74664,89.25166,South Asia,1,Chandler,2716
+1173,Ratlam,,India,23.33033,75.04032,South Asia,1,Chandler,8537
+1174,Ravenna,,Italy,44.4175,12.20111,Europe,1,Chandler,3896
+1175,Rawalpindi,,Pakistan,33.6007,73.0679,South Asia,1,Chandler,
+1176,Rawtenstall,,United Kingdom,53.70076,-2.28442,Europe,1,Chandler,
+1177,Rayy,"Rey, Ray",Iran,35.5833,51.4333,West and Central Asia,2,Chandler Modelski,
+1178,Reading,,United Kingdom,51.45625,-0.97113,Europe,1,Chandler,5573
+1179,Reading,Pennsylvania,United States of America,40.335647,-75.926875,North America,1,Chandler,8235
+1180,Real de Catorce,,Mexico,23.689397,-100.885547,Latin America and the Caribbean,2,Chandler,
+1181,Recife,Pernambuco,Brazil,-8.05389,-34.88111,Latin America and the Caribbean,1,Chandler,8535
+1182,Regensburg,Ratisbon,Germany,49.015,12.09556,Europe,1,Chandler,5418
+1183,Reggio di Calabria,,Italy,38.1113,15.647292,Europe,2,Chandler,
+1184,Reims,Rheims,France,49.25,4.03333,Europe,1,Chandler,3847
+1185,Remscheid,,Germany,51.17983,7.1925,Europe,1,Chandler,1756
+1186,Rennes,,France,48.11198,-1.67429,Europe,1,Chandler,1037
+1187,Rhodes,,Greece,36.4333,28.2167,Europe,2,Chandler,
+1188,Rhondda,,Wales,51.65896,-3.44885,Europe,1,Chandler,
+1189,Richmond,Virgina,United States of America,37.5333,77.4667,East Asia,3,Chandler,
+1190,Riga,,Russian Federation,56.946,24.10589,Europe,1,Chandler,260
+1191,Rio de Janeiro,,Brazil,-22.90278,-43.2075,Latin America and the Caribbean,1,Chandler,7935
+1192,Riobamba,,Ecuador,-1.67083,-78.64861,Latin America and the Caribbean,1,Chandler,2298
+1193,Roanne,,France,46.03333,4.06667,Europe,1,Chandler,21508
+1194,Rochdale,,United Kingdom,53.61766,-2.1552,Europe,1,Chandler,
+1195,Rochefort,,Belgium,50.1631,5.2216,Europe,1,Chandler,
+1196,Rochester,,United Kingdom,51.386067,0.487261,Europe,1,Chandler,
+1197,Rochester,New York,United States of America,43.161031,-77.610922,North America,1,Chandler,8277
+1198,Rockford,Illinois,United States of America,42.259444,-89.064444,North America,3,Chandler,7604
+1199,Rome,,Italy,41.89474,12.4839,Europe,1,Chandler Modelski,4156
+1200,Rosario,,Argentina,-32.94682,-60.63932,Latin America and the Caribbean,1,Chandler,3595
+1201,Roskilde,,Denmark,55.64152,12.08035,Europe,1,Chandler,
+1202,Rostock,,Germany,54.0887,12.14049,Europe,1,Chandler,5194
+1203,Rostov-on-Don,Rostov,Russian Federation,47.2333,39.41394,Europe,1,Chandler,5012
+1204,Rotherham,,United Kingdom,53.43012,-1.35678,Europe,1,Chandler,5099
+1205,Rotterdam,,Netherlands,51.9225,4.47917,Europe,1,Chandler,387
+1206,Roubaix,Roubaix-Tourcoing,France,50.692706,3.177847,Europe,2,Chandler,
+1207,Rouen,,France,49.44313,1.09932,Europe,1,Chandler,2239
+1208,Ruhr,,Germany,51.407415,6.862626,Europe,1,Chandler,
+1209,Ruse,Rustchuk,Bulgaria,43.835572,25.965656,Europe,2,Chandler,569
+1210,Ryazan,,Russian Federation,54.609542,39.712586,Europe,1,Chandler,4121
+1211,Saarbrucken,Saarbrücken,Germany,49.2354,6.98165,Europe,1,Chandler,
+1212,Sacramento,,United States of America,38.581487,-121.494237,North America,1,Chandler,4225
+1213,Sagar,Saugor,India,23.83,78.71,South Asia,2,Chandler,9499
+1214,Saginaw,Michigan,United States of America,43.41947,-83.950807,North America,3,Chandler,
+1215,Saharanpur,,India,29.9679,77.54522,South Asia,1,Chandler,8376
+1216,Saint Petersburg,Leningrad,Russian Federation,59.89444,30.26417,Europe,1,Chandler,568
+1217,Saint-Malo,,France,48.649336,-2.025675,Europe,1,Chandler,
+1218,Saint-Omer,,France,50.750114,2.252208,Europe,1,Chandler,
+1219,Saint-Quentin,,France,49.847066,3.2874,Europe,1,Chandler,20832
+1220,Sais,Sa el-Hagar,Egypt,30.96485438,30.76872699,North Africa,1,Chandler,
+1221,Sakai,Fukui,Japan,34.573333,135.483056,East Asia,1,Chandler,
+1222,Salamanca,,Spain,40.970103,-5.663539,Europe,1,Chandler,2536
+1223,Salem,,India,11.664325,78.146014,South Asia,1,Chandler,10215
+1224,Salem,Massachusetts,United States of America,42.519539,-70.896717,North America,1,Chandler,
+1225,Salerno,,Italy,40.67797,14.76599,Europe,1,Chandler,4973
+1226,Salt Lake City,Utah,United States of America,40.76078,-111.89105,North America,1,Chandler,5671
+1227,Salvador,"Sao Salvador, Bahia",Brazil,-12.97111,-38.51083,Latin America and the Caribbean,1,Chandler,8374
+1228,Salzburg,,Austria,47.79941,13.04399,Europe,1,Chandler,397
+1229,Samara,Kuibyshev,Russian Federation,53.2028,50.1408,Europe,3,Chandler,6468
+1230,Samaria,"Shomron, Šomron",Palestine,32.2761695611,35.19040505,West and Central Asia,1,Chandler,
+1231,Samarkand,Sumarqand,Uzbekistan,39.6576,66.947561,West and Central Asia,1,Chandler Modelski,
+1232,Samarra,Samarra',Iraq,34.198333,43.874167,West and Central Asia,1,Chandler Modelski,2771
+1233,Sambhal,,India,28.58323,78.56689,South Asia,3,Chandler,8987
+1234,San Antonio,Texas,United States of America,29.424122,-98.493628,North America,1,Chandler,5956
+1235,San Bernardino,California,United States of America,34.1,-117.3,North America,3,Chandler,
+1236,San Diego,California,United States of America,32.715328,-117.157256,North America,1,Chandler,2295
+1237,San Francisco,California,United States of America,37.77493,-122.419416,North America,1,Chandler,1233
+1238,San Juan,,Puerto Rico,18.45,-66.0667,Latin America and the Caribbean,1,Chandler,8242
+1239,San Luis Potosi,San Luis Potosí,Mexico,22.14993,-100.9828,Latin America and the Caribbean,1,Chandler,5218
+1240,San Salvador,,El Salvador,13.706899,-89.202258,Latin America and the Caribbean,1,Chandler,893
+1241,San Sebastian,,Spain,43.31283,-1.97499,Europe,1,Chandler,4191
+1242,Sana'a,Sanaa,Yemen,15.35472,44.20667,West and Central Asia,1,Chandler,4328
+1243,Sankt Gallen,,Switzerland,47.424482,9.376717,Europe,1,Chandler,
+1244,Santa Cruz,,Spain,28.466667,-16.25,Europe,3,Chandler,366
+1245,Santa Fe,,Argentina,-31.610658,-60.697294,Latin America and the Caribbean,1,Chandler,3163
+1246,Santander,,Spain,43.46472,-3.80444,Europe,1,Chandler,3599
+1247,Santiago,,Chile,-33.45,-70.666667,Latin America and the Caribbean,1,Chandler,2380
+1248,Santiago de Cuba,,Cuba,20.019833,-75.813917,Latin America and the Caribbean,1,Chandler,2377
+1249,Santiago de Queretaro,"Santiago de Querétaro, Queretaro",Mexico,20.588792,-100.389889,Latin America and the Caribbean,2,Chandler,5096
+1250,Santiago Tilantongo,Tilantongo,Mexico,17.25,-97.283333,Latin America and the Caribbean,2,Chandler,
+1251,Santo Domingo,,Dominican Republic,18.466667,-69.95,Latin America and the Caribbean,1,Chandler,1455
+1252,Santos,,Brazil,-23.96083,-46.33361,Latin America and the Caribbean,1,Chandler,7505
+1253,Sao Luis,"Maranhao, São Luís",Brazil,-2.5283,-44.3044,Latin America and the Caribbean,3,Chandler,7420
+1254,São Paulo,São Paulo,Brazil,-23.5475,-46.63611,Latin America and the Caribbean,1,Chandler,7303
+1255,Sapporo,,Japan,43.06417,141.34694,East Asia,1,Chandler,334
+1256,Saptagram,Satgaon,India,22.9667,88.3833,South Asia,3,Chandler,
+1257,Sarai,Serai,Russian Federation,53.74577,41.02126,Europe,1,Chandler,
+1258,Sarajevo,"Bosna-Serai, Serajevo",Bosnia and Herzegovina,43.84864,18.35644,Europe,1,Chandler,409
+1259,Saratov,,Russian Federation,51.54056,46.00861,Europe,1,Chandler,5903
+1260,Sardis,Sardes,Turkey,38.48226723,28.04759086,West and Central Asia,1,Chandler,
+1261,Sasebo,,Japan,33.15917,129.72278,East Asia,1,Chandler,626
+1262,Sassari,,Italy,40.72722,8.56028,Europe,1,Chandler,1377
+1263,Satara,,India,17.68589,73.99333,South Asia,1,Chandler,8784
+1264,Savannah,Georgia,United States of America,32.08354,-81.09983,North America,1,Chandler,7756
+1265,Schenectady,New York,United States of America,42.81424,-73.93957,North America,1,Chandler,8427
+1266,Scranton,Pennsylvania,United States of America,41.40897,-75.66241,North America,1,Chandler,8326
+1267,Seattle,Washington,United States of America,47.60621,-122.33207,North America,1,Chandler,5386
+1268,Segou,"Segu, Ségou",Mali,13.440597,-6.265319,Sub-Saharan Africa,1,Chandler,1033
+1269,Segovia,,Spain,40.943564,-4.113003,Europe,1,Chandler,
+1270,Seleucia,,Iraq,33.094444,44.522222,West and Central Asia,2,Chandler Modelski,
+1271,Semarang,,Indonesia,-6.9932,110.4203,South-East Asia and Oceania,1,Chandler,7063
+1272,Sendai,,Japan,38.266667,140.866667,East Asia,1,Chandler,5593
+1273,Sennar,,Sudan,13.567469,33.567203,Sub-Saharan Africa,1,Chandler,4980
+1274,Seoul,Hanyang,Republic of Korea,37.56826,126.97783,East Asia,1,Chandler,332
+1275,Serres,"Serrai, Seres",Greece,41.090922,23.541319,Europe,1,Chandler,
+1276,Sevastopol,,Russian Federation,44.58883,33.5224,Europe,1,Chandler,3810
+1277,Seville,,Spain,37.388097,-5.982331,Europe,1,Chandler Modelski,2157
+1278,Shahjahanpur,,India,27.88142,79.9109,South Asia,3,Chandler,9365
+1279,Shanghai,,China,31.22222,121.45806,East Asia,1,Chandler,11738
+1280,Shangrao,"Hsinchow, Shangjao",China,28.441944,117.963333,East Asia,2,Chandler,11594
+1281,Shaoxing,Shaohing,China,30.0,120.583333,East Asia,1,Chandler,
+1282,Sheffield,,United Kingdom,53.381128,-1.470086,Europe,1,Chandler,4792
+1283,Shenyang,"Fengtien, Mukden",China,41.79222,123.43278,East Asia,1,Chandler,10098
+1284,s'Hertogenbosch,Bois-le-Duc,Netherlands,51.697819,5.303667,Europe,1,Chandler,2615
+1285,Shijiazhuang,,China,38.042308,114.514861,East Asia,1,Chandler,9058
+1286,Shikarpur,,Pakistan,27.95,68.65,South Asia,2,Chandler,4445
+1287,Shimonoseki,,Japan,33.95,130.95,East Asia,1,Chandler,
+1288,Shiraz,,Iran,29.61031,52.53114,West and Central Asia,1,Chandler,6300
+1289,Shizuoka,Sumpu,Japan,34.97712,138.383084,East Asia,2,Chandler,6144
+1290,Shkoder,"Shkodra, Scutari",Albania,42.0743,19.527661,Europe,1,Chandler,93
+1291,Shuangcheng,Shuangchengpu,China,45.395992,126.293015,East Asia,3,Chandler,9792
+1292,Shumen,Shumla,Bulgaria,43.276667,26.929167,Europe,3,Chandler,20955
+1293,Sialkot,,Pakistan,32.5101,74.54313,South Asia,1,Chandler,8126
+1294,Sidjilmasa,Sijilmessa,Morocco,31.28,-4.28,North Africa,2,Chandler,
+1295,Sidon,,Lebanon,33.55993,35.37564,West and Central Asia,1,Chandler,286
+1296,Siena,,Italy,43.32004,11.33283,Europe,1,Chandler,
+1297,Silistra,Silistria,Bulgaria,44.114728,27.267189,Europe,1,Chandler,
+1298,Simferopol,,Crimea,44.952117,34.102417,Europe,1,Chandler,4034
+1299,Singapore,,Singapore,1.28967,103.85007,South-East Asia and Oceania,1,Chandler,165
+1300,Sioux City,Iowa,United States of America,42.49999,-96.40031,North America,1,Chandler,
+1301,Sira,,India,13.74155,76.9043,South Asia,1,Chandler,9779
+1302,Siraf,,Iran,27.666667,52.3425,West and Central Asia,1,Chandler,
+1303,Sivas,,Turkey,39.74833,37.01611,West and Central Asia,1,Chandler,5962
+1304,Skopje,"Uskub, Skoplje",Serbia,41.99646,21.43141,Europe,1,Chandler,266
+1305,Smolensk,,Russian Federation,54.7818,32.0401,Europe,1,Chandler,1393
+1306,Smyrna,Izmir,Turkey,38.41273,27.13838,West and Central Asia,1,Chandler Modelski,1069
+1307,Soba,,Sudan,15.523889,32.680833,Sub-Saharan Africa,3,Chandler,
+1308,Soest,,Germany,51.57558,8.10619,Europe,1,Chandler,
+1309,Sofia,,Bulgaria,42.69751,23.32415,Europe,1,Chandler,100
+1310,Soissons,,France,49.38167,3.32361,Europe,1,Chandler,
+1311,Sokoto,,Nigeria,13.06092,5.23902,Sub-Saharan Africa,1,Chandler,5746
+1312,Solapur,Sholapur,India,17.659919,75.906391,South Asia,1,Chandler,9287
+1313,Solingen,,Germany,51.17343,7.0845,Europe,1,Chandler,
+1314,Soltaniyeh,"Sultaniya, Sol??n?yeh, Sol??neyyeh, Sultaniye, Sult?n?yeh, Sa‘?d?yeh, Soltania",Iran,36.434722,48.7975,West and Central Asia,1,Chandler,
+1315,Somnath,,India,20.906002,70.384372,South Asia,1,Chandler,
+1316,Songadh,Songarh,India,22.702178,74.938414,South Asia,3,Chandler,
+1317,Sopron,,Hungary,47.68501,16.59049,Europe,1,Chandler,79
+1318,South Bend,Indiana,United States of America,41.68338,-86.25001,North America,1,Chandler,7889
+1319,Southampton,,United Kingdom,50.90395,-1.40428,Europe,3,Chandler,4684
+1320,Sovetsk,Tilsit,Russian Federation,55.083333,21.883333,Europe,2,Chandler,
+1321,Sparti,"Spárti, Sparta",Greece,37.08182158,22.4234456,Europe,1,Chandler,
+1322,Speyer,Spires,Germany,49.320478,8.436217,Europe,2,Chandler,
+1323,Spokane,Washington,United States of America,47.65966,-117.42908,North America,1,Chandler,5875
+1324,Springfield,Illinois,United States of America,39.783,-89.65,North America,1,Chandler,
+1325,Springfield,Massachusetts,United States of America,42.112411,-72.547455,North America,1,Chandler,8463
+1326,Springfield,Ohio,United States of America,39.926944,-83.804167,North America,1,Chandler,
+1327,Srimantapur,"Serampore, Serampur, Srirampur, Srirampore, Shreerampur, Shreerampore, Shrirampur, Shrirampore, Srerampore, Serampur",India,22.75,88.34,South Asia,2,Chandler,
+1328,Srinagar,,India,34.08842,74.80298,South Asia,1,Chandler,1967
+1329,Srirangapatna,"Shrirangapattana, Seringapatam",India,12.417956,76.694687,South Asia,3,Chandler,
+1330,St. Helens,Oregon,United States of America,45.859444,-122.816944,North America,2,Chandler,
+1331,St. John,,Canada,45.273315,-66.063308,North America,3,Chandler,
+1332,St. John's,,Canada,47.56494,-52.70931,North America,3,Chandler,4189
+1333,St. Louis,Missouri,United States of America,38.626978,-90.199403,North America,1,Chandler,7051
+1334,Stavanger,,Norway,58.97005,5.73332,Europe,1,Chandler,388
+1335,Stavropol,,Russian Federation,45.049999,41.96667,Europe,1,Chandler,5796
+1336,Stockholm,,Sweden,59.33258,18.0649,Europe,1,Chandler,1672
+1337,Stockport,,United Kingdom,53.40979,-2.15761,Europe,1,Chandler,
+1338,Stoke,,United Kingdom,53.25,-2.86667,Europe,1,Chandler,
+1339,Stralsund,,Germany,54.30911,13.0818,Europe,1,Chandler,21271
+1340,Strasbourg,Strassburg,France,48.58342,7.74296,Europe,1,Chandler,4832
+1341,Stuttgart,,Germany,48.78232,9.17702,Europe,1,Chandler,4113
+1342,Subotica,"Szabadka, Maria Theresiopel",Serbia,46.100278,19.665556,Europe,2,Chandler,89
+1343,Suceava,Suczawa,Romania,47.63333,26.25,Europe,1,Chandler,1939
+1344,Sudak,Soldaia,Russian Federation,44.84924,34.97471,Europe,1,Chandler,
+1345,Sukhothai,Sukotai,Thailand,17.005558,99.826372,South-East Asia and Oceania,1,Chandler,
+1346,Sunderland,,United Kingdom,54.90465,-1.38222,Europe,2,Chandler,5067
+1347,Surabaya,Soerabaja,Indonesia,-7.24917,112.75083,South-East Asia and Oceania,1,Chandler,7728
+1348,Surakarta,Soerakarta,Indonesia,-7.55611,110.83167,South-East Asia and Oceania,1,Chandler,7158
+1349,Surame,,Nigeria,13.0875,4.898611,Sub-Saharan Africa,2,Chandler,
+1350,Surat,,India,21.19594,72.83023,South Asia,1,Chandler,7233
+1351,Susa,,Iran,32.19085,48.246028,West and Central Asia,1,Chandler Modelski,
+1352,Suzhou,Soochow,China,31.3,120.6,East Asia,1,Chandler Modelski,11632
+1353,Sverdlovs'k,Sverdlovsk,Ukraine,48.08455,39.651631,Europe,1,Chandler,5044
+1354,Svishtov,Sistova,Bulgaria,43.616667,25.35,Europe,2,Chandler,
+1355,Swansea,,Wales,51.62079,-3.94323,Europe,1,Chandler,919
+1356,Swatow,Shantou,China,23.353299,116.681838,East Asia,2,Chandler,
+1357,Swindon,,United Kingdom,51.55797,-1.78116,Europe,1,Chandler,4349
+1358,Sydney,,Australia,-33.86785,151.20732,South-East Asia and Oceania,1,Chandler,2139
+1359,Syracuse,,Greece,37.06082237,15.29420264,Europe,2,Chandler Modelski,5135
+1360,Syracuse,New York,United States of America,43.048122,-76.147424,North America,1,Chandler,8361
+1361,Syzran,,Russian Federation,53.166667,48.466667,Europe,1,Chandler,6208
+1362,Szczecin,Stettin,Poland,53.416667,14.583333,Europe,2,Chandler,71
+1363,Szeged,Szegedin,Hungary,46.255,20.145,Europe,2,Chandler,1280
+1364,Szekesfehervar,Székesfehérvár,Hungary,47.18995,18.41034,Europe,1,Chandler,551
+1365,Szentes,,Hungary,46.65627,20.27201,Europe,1,Chandler,
+1366,Tabriz,,Iran,38.08,46.2919,West and Central Asia,1,Chandler,1412
+1367,Tacoma,Washington,United States of America,47.25288,-122.44429,North America,1,Chandler,5275
+1368,Taganrog,,Russian Federation,47.23617,38.89688,Europe,1,Chandler,4804
+1369,Taian,Shandong province,China,36.2,117.083333,East Asia,2,Chandler,
+1370,Taichung,,Taiwan,24.1469,120.6839,East Asia,1,Chandler,12126
+1371,Tainan City,Taiwan,China,22.983333,120.18333,East Asia,3,Chandler,
+1372,Taipei,,Taiwan,25.04776,121.53185,East Asia,1,Chandler,12128
+1373,Taiyuan,,China,37.87059,112.548879,East Asia,1,Chandler,8609
+1374,Takamatsu,,Japan,34.342788,134.046574,East Asia,1,Chandler,4340
+1375,Takaoka,,Japan,36.75,137.01667,East Asia,1,Chandler,4638
+1376,Takasaki,,Japan,36.33333,139.01667,East Asia,1,Chandler,
+1377,Taku,Dagu forts,China,38.974444,117.673611,East Asia,2,Chandler,
+1378,Talca,,Chile,-35.4264,-71.65542,Latin America and the Caribbean,1,Chandler,2455
+1379,Tallinn,Reval,Estonia,59.436961,24.753575,Europe,1,Chandler,91
+1380,Taluqan,"Taloqan, Takhar",Afghanistan,36.716667,69.516667,West and Central Asia,2,Chandler,4331
+1381,Tambov,,Russian Federation,52.73169,41.44326,Europe,1,Chandler,4659
+1382,Tammerfors,Tampere,Finland,61.498151,23.761025,Europe,1,Chandler,408
+1383,Tampa,Florida,United States of America,27.94752,-82.45843,North America,1,Chandler,7159
+1384,Tamralipti,Tamralipta,India,22.3,87.92,South Asia,2,Chandler,
+1385,Tangier,,Morocco,35.76727,-5.79975,North Africa,1,Chandler,3888
+1386,Tangshan,Hebei province,China,39.63333,118.18333,East Asia,1,Chandler,9540
+1387,Tanta,,Egypt,30.783333,31.0,North Africa,2,Chandler,3298
+1388,Taranto,"Tartentum, Tarentum",Italy,40.47054509,17.24555378,Europe,3,Chandler,5446
+1389,Targoviste,"Tirgovishtea, Târgoviste",Romania,44.924167,25.456667,Europe,1,Chandler,2018
+1390,Tarnow,,Poland,50.0125,20.988611,Europe,2,Chandler,3942
+1391,Tarsus,,Turkey,36.91876,34.8784,West and Central Asia,1,Chandler,5629
+1392,Tartu,Dorpat,Estonia,58.380685,26.725015,Europe,1,Chandler,267
+1393,Tashkent,,Uzbekistan,41.26465,69.21627,West and Central Asia,1,Chandler,3082
+1394,Taunton,Massachusetts,United States of America,41.9,-71.090278,North America,1,Chandler,
+1395,Taxila,Taxila,Pakistan,33.75743141,72.82952293,South Asia,1,Chandler Modelski,6824
+1396,Taza,,Morocco,34.2167,-4.0167,North Africa,1,Chandler,4572
+1397,Tbilisi,Tiflis,Georgia,41.709975,44.792989,West and Central Asia,1,Chandler,450
+1398,Tehran,Teheran,Iran,35.69439,51.42151,West and Central Asia,1,Chandler,5264
+1399,Tel Aviv,,Israel,32.08088,34.78057,West and Central Asia,1,Chandler,439
+1400,Tenayuca,,Mexico,19.532167,-99.168472,Latin America and the Caribbean,2,Chandler,
+1401,Teotihuacan,,Mexico,19.69291001,-98.84606,Latin America and the Caribbean,1,Chandler Modelski,
+1402,Teresina,Therezina,Brazil,-5.089212,-42.801627,Latin America and the Caribbean,1,Chandler,7775
+1403,Ternopol,Tarnopol,Ukraine,49.48479,25.621045,Europe,1,Chandler,
+1404,Terre Haute,Indiana,United States of America,39.4667,-87.41391,North America,1,Chandler,
+1405,Texcoco,Tezcoco,Mexico,19.504422,-98.891425,Latin America and the Caribbean,2,Chandler,5765
+1406,Thana,,India,19.218331,72.97809,South Asia,3,Chandler,
+1407,Thanesar,"Sthanishvara, Thaneswar",India,21.24099,86.689434,South Asia,3,Chandler,
+1408,Thanjavur,Tanjore,India,10.786999,79.137827,South Asia,1,Chandler Modelski,10581
+1409,Thatta,Tatta,India,24.746117,67.924336,South Asia,2,Chandler,5535
+1410,The Hague,s-Gravenhage,Netherlands,52.070492,4.300694,Europe,1,Chandler,228
+1411,Thebes,Waset,Egypt,25.720556,32.610278,North Africa,1,Chandler Modelski,
+1412,Thessaloniki,"Salonica, Thessalonica",Greece,40.63935,22.944606,Europe,1,Chandler Modelski,567
+1413,Thiruvananthapuram,Trivandrum,India,8.487495,76.948623,South Asia,3,Chandler,10013
+1414,Tiahuanaco,Tiwanaku,Bolivia,-16.55228,-68.67953,Latin America and the Caribbean,1,Chandler Modelski,
+1415,Tianjin,Tientsin,China,39.14222,117.17667,East Asia,1,Chandler,9414
+1416,Tianshui,"Tsinchow, Tienshui",China,34.57952,105.74238,East Asia,1,Chandler,6007
+1417,Tikal,Tical,Guatemala,17.222094,-89.623614,Latin America and the Caribbean,1,Chandler Modelski,
+1418,Tilburg,,Netherlands,51.55551,5.0913,Europe,1,Chandler,2166
+1419,Timisoara,Temesvar,Romania,45.755533,21.23,Europe,2,Chandler,262
+1420,Tinnis,Tennis,Egypt,31.2,32.233333,North Africa,3,Chandler Modelski,
+1421,Tiruchirappalli,Trichinopoly,India,10.805,78.685556,South Asia,3,Chandler,10415
+1422,Tlaxcala,,Mexico,19.32076,-98.20959,Latin America and the Caribbean,1,Chandler,6012
+1423,Tlemcen,Tlemsen,Algeria,34.87833,-1.315,North Africa,1,Chandler,527
+1424,Tokat,,Turkey,40.31389,36.55444,West and Central Asia,1,Chandler,5817
+1425,Tokushima,,Japan,34.070269,134.554844,East Asia,1,Chandler,4820
+1426,Tokyo,"Yedo, Edo",Japan,35.6895,139.69171,East Asia,1,Chandler,6030
+1427,Toledo,,Spain,39.862831,-4.027322,Europe,1,Chandler,
+1428,Toledo,Ohio,United States of America,41.571019,-83.966889,North America,1,Chandler,7983
+1429,Tollan,Tula,Mexico,20.06369902,-99.3409691,Latin America and the Caribbean,1,Chandler Modelski,5545
+1430,Tombouctou,Timbuktu,Mali,16.77348,-3.00742,Sub-Saharan Africa,1,Chandler,2000
+1431,Tomsk,,Russian Federation,56.49771,84.97437,Europe,1,Chandler,7498
+1432,Tonk,,India,26.16638,75.78824,South Asia,2,Chandler,8351
+1433,Topeka,Kansas,United States of America,39.04833,-95.67804,North America,1,Chandler,
+1434,Toronto,,Canada,43.70011,-79.4163,North America,1,Chandler,2925
+1435,Torquay,,United Kingdom,50.4792,-3.5305,Europe,3,Chandler,1466
+1436,Toulon,,France,43.11667,5.93333,Europe,1,Chandler,4540
+1437,Toulouse,,France,43.60426,1.44367,Europe,1,Chandler,2391
+1438,Toungoo,Taungoo,Myanmar,18.933333,96.433333,South-East Asia and Oceania,1,Chandler,5181
+1439,Tournai,Doornik,Belgium,50.60715,3.38932,Europe,1,Chandler,
+1440,Tours,,France,47.38333,0.68333,Europe,1,Chandler,2162
+1441,Toyama,,Japan,36.695952,137.213677,East Asia,3,Chandler,4712
+1442,Trabzon,Trebizond,Turkey,41.00145,39.717806,West and Central Asia,3,Chandler,6419
+1443,Trakai,Troki,Lithuania,54.633333,24.933333,Europe,2,Chandler,
+1444,Trapani,,Italy,38.01584,12.51077,Europe,1,Chandler,4505
+1445,Trenton,,United States of America,40.2237,-74.764,North America,1,Chandler,8333
+1446,Tres Zapotes,,Mexico,18.466667,-95.433333,Latin America and the Caribbean,2,Chandler,
+1447,Trier,Treves,Germany,49.75565,6.63935,Europe,1,Chandler Modelski,929
+1448,Trieste,Triest,Italy,45.633333,13.8,Europe,2,Chandler,4542
+1449,Tripoli,,Libya,32.876175,13.187508,North Africa,1,Chandler,400
+1450,Tripolis,"Tripoli, Tripolitza",Greece,37.516667,22.383333,Europe,3,Chandler,
+1451,Trondheim,,Norway,63.43049,10.39506,Europe,1,Chandler,677
+1452,Troy,New York,United States of America,42.728411,-73.691786,North America,1,Chandler,8445
+1453,Troyes,,France,48.3,4.08333,Europe,1,Chandler,3938
+1454,Tsinkiang,"Zayton, Chinchiang, Chuanchow",China,24.913889,118.58583,East Asia,3,Chandler,
+1455,Tsu,,Japan,34.716667,136.5,East Asia,2,Chandler,5491
+1456,Tucuman,Tucumán,Argentina,-26.808285,-65.21759,Latin America and the Caribbean,1,Chandler,1458
+1457,Tula,,Russian Federation,54.107722,37.573261,Europe,1,Chandler,3563
+1458,Tulsa,Oaklahoma,United States of America,36.15398,-95.99278,North America,1,Chandler,
+1459,Tunis,,Tunisia,36.818811,10.165961,North Africa,1,Chandler,1378
+1460,Turin,,Italy,45.07049,7.68682,Europe,1,Chandler,61
+1461,Turpan,"Turfan, Tulufan",China,42.93333,89.16667,East Asia,1,Chandler,
+1462,Tver,Kalinin,Russian Federation,56.858722,35.917597,Europe,1,Chandler,1684
+1463,Tynemouth,,United Kingdom,55.01788,-1.42559,Europe,2,Chandler,
+1464,Tyre,,Lebanon,33.27333,35.19389,West and Central Asia,1,Chandler Modelski,120
+1465,Tzintzuntzan,,Mexico,19.62903,-101.57857,Latin America and the Caribbean,1,Chandler,
+1466,Udaipur,,India,24.57127,73.691544,South Asia,3,Chandler,6990
+1467,Ufa,,Russian Federation,54.78517,56.04562,Europe,1,Chandler,7015
+1468,Ugarit,,Syria,35.60228865,35.78656277,West and Central Asia,1,Chandler Modelski,
+1469,Ujjain,,India,23.18239,75.77643,South Asia,3,Chandler Modelski,8820
+1470,Ulaanbaatar,"Ulan Bator, Urga",Mongolia,47.92,106.92,East Asia,3,Chandler,320
+1471,Ulm,,Germany,48.39841,9.99155,Europe,1,Chandler,4833
+1472,Ulyanovsk,Simbirsk,Russian Federation,54.316684,48.383413,Europe,1,Chandler,6058
+1473,Ur,,Iraq,30.962659,46.10321,West and Central Asia,1,Chandler Modelski,
+1474,Uralsk,Oral,Kazakhstan,51.233333,51.366667,West and Central Asia,1,Chandler,131
+1475,Urmieh,Urmia,Iran,37.555278,45.072499,West and Central Asia,3,Chandler,857
+1476,Uruk,Erech,Iraq,31.322222,45.636111,West and Central Asia,1,Chandler Modelski,
+1477,Urumqi,"Ürümqi, Tihwa, Bishbaliq, Urumchi",China,43.825644,87.616822,East Asia,1,Chandler,2715
+1478,Usti nad Labem,Aussig,Czech Republic,50.661116,14.053146,Europe,1,Chandler,240
+1479,Utica,New York,United States of America,43.096569,-75.231887,North America,1,Chandler,
+1480,Utrecht,,Netherlands,52.09083,5.12222,Europe,1,Chandler,2087
+1481,Utsunomiya,Utsonomiya,Japan,36.555112,139.882807,East Asia,1,Chandler,5992
+1482,Uwajima,Uajima,Japan,33.22334,132.560558,East Asia,3,Chandler,21414
+1483,Vadodara,Baroda,India,22.30731,73.181098,South Asia,3,Chandler,7337
+1484,Vaishali,Vaisali,India,25.6833,85.081782,South Asia,1,Chandler Modelski,
+1485,Valencia,,Spain,39.469908,-0.376289,Europe,1,Chandler,4574
+1486,Valencia,,Venezuela,10.174124,-67.999519,Latin America and the Caribbean,1,Chandler,3043
+1487,Valenciennes,,France,50.35,3.53333,Europe,1,Chandler,3753
+1488,Vallabhi,Vallabhipur,India,21.8878,71.8795,South Asia,2,Chandler,
+1489,Valladolid,,Spain,41.65518,-4.72372,Europe,1,Chandler,3109
+1490,Valletta,Valetta,Malta,35.89972,14.51472,Europe,1,Chandler,78
+1491,Valparaiso,,Chile,-33.05,-71.6167,Latin America and the Caribbean,1,Chandler,1020
+1492,Van,,Turkey,38.49239,43.38311,West and Central Asia,1,Chandler,6925
+1493,Vancouver,,Canada,49.24966,-123.11934,North America,1,Chandler,341
+1494,Varanasi,Benares,India,25.317645,82.973914,South Asia,2,Chandler,10447
+1495,Varna,,Bulgaria,43.21667,27.91667,Europe,1,Chandler,1180
+1496,Veliko Tarnovo,"Veliko, Tarnovo, Trnovo",Bulgaria,43.083333,25.65,Europe,2,Chandler,
+1497,Vellore,,India,12.9184,79.13255,South Asia,1,Chandler,10445
+1498,Venice,,Italy,45.440847,12.315514,Europe,1,Chandler Modelski,3850
+1499,Verona,,Italy,45.43419,10.99779,Europe,1,Chandler,2939
+1500,Versailles,,France,48.8,2.13333,Europe,1,Chandler,
+1501,Verviers,,Belgium,50.58907,5.86241,Europe,1,Chandler,1844
+1502,Viborg,,Denmark,56.45319,9.40201,Europe,1,Chandler,
+1503,Vicenza,,Italy,45.545478,11.535422,Europe,1,Chandler,3448
+1504,Vidin,,Bulgaria,43.99,22.8725,Europe,1,Chandler,21384
+1505,Vienna,Wien,Austria,48.20849,16.37208,Europe,1,Chandler,1054
+1506,Vienne,,France,45.51667,4.86667,Europe,3,Chandler,
+1507,Vijayanagar,,India,15.335,76.462,South Asia,3,Chandler,
+1508,Vijayawada,Bezwada,India,16.506174,80.648015,South Asia,3,Chandler,10677
+1509,Vilnius,Vilna,Lithuania,54.683333,25.283333,Europe,1,Chandler,699
+1510,Visakhapatnam,Vizagapatam,India,17.686816,83.218482,South Asia,2,Chandler,11255
+1511,Visby,,Sweden,57.64089,18.29602,Europe,1,Chandler,
+1512,Vitebsk,,Belarus,55.1904,30.2049,Europe,1,Chandler,
+1513,Vizianagaram,,India,18.107187,83.395302,South Asia,3,Chandler,11293
+1514,Vladikavkatz,,Russian Federation,43.083295,44.649944,Europe,1,Chandler,
+1515,Vladimir,,Russian Federation,56.13655,40.39658,Europe,1,Chandler,4078
+1516,Vladivostok,,Russian Federation,43.10562,131.87353,Europe,1,Chandler,7835
+1517,Volgograd,"Stalingrad, Tsaritsyn",Russian Federation,48.71939,44.50184,Europe,2,Chandler,5982
+1518,Voronezh,,Russian Federation,51.67204,39.1843,Europe,1,Chandler,4362
+1519,Wakayama,,Japan,34.225986,135.167508,East Asia,1,Chandler,5028
+1520,Wakefield,,United Kingdom,53.6801,-1.492,Europe,2,Chandler,4499
+1521,Wanxian,Wanhsien,China,30.9,108.467,East Asia,3,Chandler,
+1522,Warangal,,India,17.968901,79.58333,South Asia,1,Chandler,10231
+1523,Warrington,,United Kingdom,53.39254,-2.58024,Europe,1,Chandler,3335
+1524,Warsaw,,Poland,52.22977,21.01178,Europe,1,Chandler,3660
+1525,Washington D.C.,Washington,United States of America,38.914144,-77.0234,North America,1,Chandler,8123
+1526,Waterbury,Connecticut,United States of America,41.55815,-73.0515,North America,2,Chandler,8433
+1527,Waterford,,Ireland,52.25833,-7.11194,Europe,1,Chandler,
+1528,Weihai,Weihaiwei,China,37.516667,122.116667,East Asia,3,Chandler,10948
+1529,Weisbaden,Lainz-Weisbaden,Germany,50.06308,8.243344,Europe,1,Chandler,
+1530,Wellington,,New Zealand,-41.286452,174.776253,South-East Asia and Oceania,1,Chandler,486
+1531,Wenzhou,"Wenchow, Luchow",China,27.99942,120.66682,East Asia,1,Chandler,12032
+1532,Wheeling,West Virginia,United States of America,40.063962,-80.720915,North America,3,Chandler,
+1533,Wiener Neustadt,,Austria,47.8,16.25,Europe,1,Chandler,
+1534,Wigan,,United Kingdom,53.53333,-2.61667,Europe,1,Chandler,3280
+1535,Wilkes-Barre,Pennsylvania,United States of America,41.245915,-75.88131,North America,1,Chandler,8291
+1536,Winnipeg,,Canada,49.8844,-97.14704,North America,1,Chandler,2067
+1537,Wolverhampton,,United Kingdom,52.58547,-2.12296,Europe,1,Chandler,
+1538,Worcester,,United Kingdom,52.18935,-2.22001,Europe,2,Chandler,3844
+1539,Worcester,,United States of America,42.266667,-71.8,North America,1,Chandler,8469
+1540,Worms,,Germany,49.63278,8.35916,Europe,1,Chandler,
+1541,Wroclaw,Breslau,Germany,51.116667,17.033333,Europe,3,Chandler,
+1542,Wuhan,Wuchang,China,30.58333,114.26667,East Asia,1,Chandler,10474
+1543,Wuhu,,China,31.33728,118.37351,East Asia,1,Chandler,11312
+1544,Wuppertal,Barmen-Elberfeld,Germany,51.268752,7.18026,Europe,2,Chandler,1269
+1545,Wurzburg,Würzburg,Germany,49.791558,9.953694,Europe,1,Chandler,4725
+1546,Wuxi,"Jiangsu province, Wuchang, Wuhsi",China,31.49117,120.31191,East Asia,1,Chandler Modelski,11580
+1547,Wuzhou,Wuchow,China,23.476963,111.279115,East Asia,2,Chandler,10882
+1548,Xiamen,"Amoy, Hsiamen",China,24.47979,118.08187,East Asia,1,Chandler,11994
+1549,Xi'an,"Sian, Changan, Xi'an",China,34.341485,108.940404,East Asia,1,Chandler Modelski,8371
+1550,Xiangtan,Siangtan,China,27.85,112.9,East Asia,3,Chandler,10646
+1551,Xiangyang,"Siangfan, Siangyang",China,32.017,112.133,East Asia,3,Chandler,9746
+1552,Xingtai,Shunteh,China,37.0631,114.494,East Asia,3,Chandler,9306
+1553,Xining,,China,36.61667,101.76667,East Asia,1,Chandler,3826
+1554,Xuzhou,"Suchow, Suifu, Hsuchow",China,34.26,117.21,East Asia,1,Chandler,10490
+1555,Yadz,Yezd,Iran,31.896611,54.360681,West and Central Asia,1,Chandler,
+1556,Yamagata,,Japan,38.243127,140.341385,East Asia,1,Chandler,5383
+1557,Yamaguchi,,Japan,34.185956,131.47065,East Asia,1,Chandler,2292
+1558,Yangon,,Myanmar,16.80528,96.15611,South-East Asia and Oceania,1,Chandler,5433
+1559,Yangzhou,Yangchow,China,32.4,119.416667,East Asia,2,Chandler,11354
+1560,Yarkand,Yarcant,China,38.414289,77.246006,East Asia,2,Chandler,1104
+1561,Yaroslavl,,Russian Federation,57.626072,39.884464,Europe,2,Chandler,3615
+1562,Yekaterinburg,Ekaterinburg,Russian Federation,56.833333,60.6,Europe,1,Chandler,7152
+1563,Yelets,Elets,Russian Federation,52.616667,38.466667,Europe,2,Chandler,4163
+1564,Yerevan,Erivan,Armenia,40.183333,44.516667,West and Central Asia,1,Chandler,451
+1565,Yichang,Ichang,China,30.716667,111.283333,East Asia,2,Chandler,9790
+1566,Yinchuan,"Chunghsing, Yuwei, Erikhaya, Khotun, Ninghsia",China,38.4667,106.2667,East Asia,3,Chandler,4779
+1567,Yining,"Ili, Gulja, Kulja",China,43.916667,81.316667,East Asia,2,Chandler,
+1568,Yogyakarta,Jogjakarta,Indonesia,-7.797139,110.368833,South-East Asia and Oceania,1,Chandler,7035
+1569,Yokohama,,Japan,35.443708,139.638026,East Asia,1,Chandler,
+1570,Yonezawa,,Japan,37.91667,140.11667,East Asia,1,Chandler,20378
+1571,York,,United Kingdom,53.962301,-1.081884,Europe,1,Chandler,5548
+1572,Youngstown,Ohio,United States of America,41.1,-80.65,North America,1,Chandler,
+1573,Ypres,Leper,Belgium,50.849997,2.883339,Europe,1,Chandler,
+1574,Zacatecas,,Mexico,22.76843,-102.58141,Latin America and the Caribbean,1,Chandler,4305
+1575,Zafar,Dhafar,Yemen,14.21175142,44.40341925,West and Central Asia,2,Chandler,
+1576,Zagazig,,Egypt,30.58768,31.502,North Africa,1,Chandler,
+1577,Zagreb,,Croatia,45.81444,15.97798,Europe,1,Chandler,402
+1578,Zamfara,,Nigeria,12.184417,6.237594,Sub-Saharan Africa,3,Chandler,
+1579,Zanzibar,,Tanzania,-6.16394,39.19793,Sub-Saharan Africa,1,Chandler,3670
+1580,Zaporizhia,Zaporozhye,Ukraine,47.8388,35.139567,Europe,1,Chandler,
+1581,Zaragoza,,Spain,41.648792,-0.889581,Europe,1,Chandler,4388
+1582,Zaria,,Nigeria,11.11128,7.7227,Sub-Saharan Africa,1,Chandler,8055
+1583,Zempoala,Cempoala,Mexico,19.91608,-96.402969,Latin America and the Caribbean,1,Chandler,
+1584,Zhangjiakou,Kalgan,China,40.824418,114.887543,East Asia,2,Chandler,8268
+1585,Zhangye,Kanchow,China,38.93333,100.45,East Asia,3,Chandler,3473
+1586,Zhitomir,,Ukraine,50.25465,28.658667,Europe,1,Chandler,
+1587,Zhongshan,Chungshan,China,22.517646,113.392782,East Asia,3,Chandler,11420
+1588,Zibo,,China,36.79056,118.06333,East Asia,1,Chandler,10120
+1589,Zigong,,China,29.34162,104.77689,East Asia,2,Chandler,7953
+1590,Zimbabwe,Great Zimbabwe,Zimbabwe,-20.266667,30.933333,Sub-Saharan Africa,2,Chandler,
+1591,Zittau,,Germany,50.89772,14.80764,Europe,1,Chandler,
+1592,Zunyi,Tsunyi,China,27.6866667,106.9072222,East Asia,3,Chandler,
+1593,Zurich,,Switzerland,47.36667,8.55,Europe,1,Chandler,1668
+1594,Zwickau,,Germany,50.72724,12.48839,Europe,1,Chandler,5472
+1595,Adab,,Iraq,31.94700807,45.96842134,West and Central Asia,1,Modelski,
+1596,Akkad,,Iraq,32.77156192,44.32045916,West and Central Asia,2,Modelski,
+1597,Akrotiri,,Greece,36.351389,25.403611,Europe,1,Modelski,
+1598,Akshak,,Iraq,33.94720142,44.24471719,West and Central Asia,3,Modelski,
+1599,Anshan,,Iran,30.01201958,52.40857658,West and Central Asia,1,Modelski,
+1600,Anyi,,China,28.8389,115.599,East Asia,3,Modelski,11124
+1601,Assur,Ashur,Iraq,35.456667,43.2625,West and Central Asia,1,Modelski,
+1602,Badtibira,,Iraq,31.766667,46.004444,West and Central Asia,1,Modelski,
+1603,Bo,Yanshi,China,34.733333,112.783333,East Asia,1,Modelski,9392
+1604,Caracol,El Caracol,Mexico,16.763,-89.117,Latin America and the Caribbean,3,Modelski,
+1605,Carchemish,Karkemish,Turkey/Syria,36.829722,38.015,West and Central Asia,1,Modelski,
+1606,Dholavira,,India,23.886111,70.216667,South Asia,1,Modelski,
+1607,Dilmun,,Iraq,26.12163972,50.49894117,West and Central Asia,1,Modelski,
+1608,Dur-Untash,Chogha Zanbil,Iran,32.008333,48.520833,West and Central Asia,1,Modelski,
+1609,Elephantine,,Egypt,24.083333,32.883333,North Africa,1,Modelski,
+1610,Eridu,,Iraq,30.8158379,45.99607031,West and Central Asia,1,Modelski,
+1611,Erlitou,,China,34.701758,112.697078,East Asia,1,Modelski,
+1612,Eshnunna,Tell Asmar,Iraq,33.484167,44.728333,West and Central Asia,1,Modelski,
+1613,Girsu,,Iraq,31.56002579,46.1754283,West and Central Asia,1,Modelski,
+1614,Harappa,,Pakistan,30.62983646,72.86614561,South Asia,1,Modelski,14948
+1615,Hermopolis,,Egypt,27.781389,30.803889,North Africa,1,Modelski,
+1616,Isin,,Iraq,31.88487801,45.2692575,West and Central Asia,1,Modelski,
+1617,Jarkutan,,Uzbekistan,39.750833,68.775833,West and Central Asia,3,Modelski,
+1618,Kition,Citium,Cyprus,34.916667,33.633333,Europe,1,Modelski,
+1619,Lagash,,Iraq,31.41480316,46.40981591,West and Central Asia,1,Modelski,
+1620,Larak,Kesh,Iraq,32.31273751,45.66099799,West and Central Asia,1,Modelski,
+1621,Larsa,,Iraq,31.28397535,45.85304653,West and Central Asia,1,Modelski,
+1622,Linzi,,China,36.8167,118.3,East Asia,1,Modelski,10202
+1623,Maoling,,China,34.335853,108.570328,East Asia,3,Modelski,
+1624,Mari,,Syria,34.54962872,40.88925833,West and Central Asia,1,Modelski,
+1625,Mopsuetia,Mopsuestia,Turkey,36.957778,35.623889,West and Central Asia,1,Modelski,
+1626,Mundigak,,Afghanistan,31.90671754,65.49785591,West and Central Asia,1,Modelski,
+1627,Nagar,Tell Brak,Syria,36.66739231,41.05865393,West and Central Asia,1,Modelski,
+1628,Namazga-Tepe,Namazga-depe,Turkmenistan,37.372778,59.556944,West and Central Asia,1,Modelski,
+1629,Navarino,Pylos,Greece,36.916667,21.7,Europe,1,Modelski,
+1630,Nicomedia,,Turkey,40.766667,29.916667,West and Central Asia,1,Modelski,
+1631,Nina,Surghul,Iraq,31.411389,46.407222,West and Central Asia,3,Modelski,
+1632,Pi-Ramesses,,Egypt,30.798889,31.835833,North Africa,2,Modelski,
+1633,Qatna,,Syria,34.835,36.865833,West and Central Asia,1,Modelski,
+1634,Qufu,Lu,China,35.6,117.033333,East Asia,1,Modelski,10150
+1635,Rajagriha,Rajgir,India,25.03,85.42,South Asia,2,Modelski,11177
+1636,Rakhigarhi,Rakhi Garhi,India,29.288611,76.113056,South Asia,1,Modelski,
+1637,Sanxingdui,,China,30.993,104.2,East Asia,1,Modelski,
+1638,Sapinuwa,Shapinuwa,Turkey,40.266667,35.25,West and Central Asia,1,Modelski,
+1639,Shahr-e Sukhteh,Shakr-I-Sohta,Iran,30.595278,61.326389,West and Central Asia,1,Modelski,
+1640,Shangqi,Shanghi,China,34.41,115.65,East Asia,3,Modelski,
+1641,Shehna,"Tell Leilan, Shubat-Enlil",Syria,36.957222,41.505278,West and Central Asia,3,Modelski,
+1642,Shuruppak,,Iraq,31.77736278,45.50976115,West and Central Asia,1,Modelski,
+1643,Sippar,,Iraq,33.05882931,44.25215335,West and Central Asia,1,Modelski,
+1644,Tanis,,Egypt,30.976944,31.88,North Africa,1,Modelski,
+1645,Tell Taya,Samiatum,Iraq,36.33261877,42.4937529,West and Central Asia,1,Modelski,
+1646,Titris Hoyuk,,Turkey,37.47622,38.676116,West and Central Asia,3,Modelski,
+1647,Troy,,Turkey,39.9575,26.238889,West and Central Asia,1,Modelski,
+1648,Umma,,Sumer,31.6211048,45.93344587,West and Central Asia,1,Modelski,
+1649,Urkesh,"Urkiesh, Urkish, Tell Mozan",Syria,37.056944,40.997222,West and Central Asia,3,Modelski,
+1650,Xianyang,,China,34.35,108.716667,East Asia,1,Modelski,8191
+1651,Xinzheng,,China,34.233333,113.433333,East Asia,1,Modelski,9694
+1652,Yiyang,,China,28.583333,112.333333,East Asia,1,Modelski,10362
+1653,Zabalam,Zabala,Iraq,31.743333,45.876667,West and Central Asia,2,Modelski,

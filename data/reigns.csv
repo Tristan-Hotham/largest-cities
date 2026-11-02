@@ -1,0 +1,45 @@
+from,to,snapshots,largest,tie,region,peak_population
+-3700,-3700,1,Eridu,False,West and Central Asia,6000
+-3500,-2800,4,Uruk,False,West and Central Asia,80000
+-2500,-2500,1,Lagash,False,West and Central Asia,60000
+-2400,-2400,1,Mari,False,West and Central Asia,50000
+-2300,-2200,2,Girsu,False,West and Central Asia,80000
+-2100,-2100,1,Ur,False,West and Central Asia,100000
+-2000,-2000,1,Memphis,False,North Africa,60000
+-1900,-1900,1,Isin and Larsa,True,West and Central Asia,40000
+-1800,-1800,1,Mari,False,West and Central Asia,60000
+-1700,-1700,1,Babylon,False,West and Central Asia,60000
+-1600,-1600,1,Avaris,False,North Africa,75000
+-1500,-1360,3,Thebes,False,North Africa,80000
+-1300,-1300,1,Yin,False,East Asia,120000
+-1200,-1100,2,Pi-Ramesses,False,North Africa,160000
+-1000,-1000,1,Thebes,False,North Africa,120000
+-900,-800,2,"Babylon, Memphis and Thebes",True,West and Central Asia,100000
+-700,-700,1,"Babylon, Linzi, Memphis, Nineveh and Thebes",True,West and Central Asia,100000
+-650,-650,1,Nineveh,False,West and Central Asia,120000
+-600,-600,1,Babylon,False,West and Central Asia,139442
+-500,-500,1,Linzi,False,East Asia,200000
+-430,-430,1,Babylon and Linzi,True,West and Central Asia,200000
+-400,-400,1,"Babylon, Kaifeng and Linzi",True,West and Central Asia,200000
+-300,-300,1,Linzi,False,East Asia,350000
+-200,-100,2,Alexandria,False,North Africa,1000000
+1,400,6,Rome,False,Europe,800000
+500,600,2,Constantinople,False,West and Central Asia,500000
+622,622,1,Ctesiphon,False,West and Central Asia,500000
+700,700,1,Chang'an,False,East Asia,738888
+800,800,1,Baghdad and Chang'an,True,West and Central Asia,700000
+900,1000,2,Baghdad,False,West and Central Asia,900000
+1100,1100,1,Kaifeng,False,East Asia,442000
+1150,1150,1,Merv,False,West and Central Asia,200000
+1200,1350,4,Hangzhou,False,East Asia,432000
+1400,1400,1,Nanjing,False,East Asia,487000
+1450,1600,4,Beijing,False,East Asia,706000
+1650,1700,2,Istanbul,False,West and Central Asia,700000
+1750,1825,3,Beijing,False,East Asia,1350000
+1850,1914,4,London,False,Europe,7419000
+1925,1925,1,London and New York,True,Europe,7774000
+1950,1950,1,New York,False,North America,12463000
+1970,2005,8,Tokyo,False,East Asia,31352582
+2010,2010,1,Jakarta and Tokyo,True,South-East Asia and Oceania,32595795
+2015,2045,7,Jakarta,False,South-East Asia and Oceania,50611791
+2050,2050,1,Dhaka,False,South Asia,52122843

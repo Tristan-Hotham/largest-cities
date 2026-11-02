@@ -1,0 +1,735 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>The Largest City</title>
+<meta name="description" content="An interactive map of six thousand years of the world's biggest cities, from Uruk in 3700 BC to the UN's projections for 2050: which city was the largest at each moment, how big it was, and how the centre of the urban world moved.">
+<meta property="og:title" content="The largest city on Earth: six thousand years of the world's biggest cities">
+<meta property="og:description" content="Uruk, Babylon, Rome, Chang'an, Baghdad, Hangzhou, Beijing, London, New York, Tokyo, Jakarta and, by 2050, Dhaka. {{n_crown_sole|int}} cities have been the world's largest by these estimates.">
+<meta property="og:image" content="https://maps.tristanhotham.com/largest-cities/header.png">
+<meta property="og:url" content="https://maps.tristanhotham.com/largest-cities/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+<style>
+/* Paper, brick red, crown gold and river blue. */
+:root{
+  --bg:#F6F4EF; --panel:#EAE7DF; --fg:#1D2128; --muted:#5F666E; --rule:#DDD8CC; --card:#FFFEFA; --border:#CBC5B8;
+  --hot:#B8352B; --gold:#C99012; --cool:#2F5FA7; --ink:#1F2F4D; --land:#E4DFD3; --sea:#EEF1F2; --path:#1D2128;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#12151B; --panel:#1C2029; --fg:#ECEEF1; --muted:#A2A8B0; --rule:#30353F; --card:#171B22; --border:#444B57;
+  --hot:#FF6A5C; --gold:#F2B54E; --cool:#7DA7E6; --ink:#A9BBDD; --land:#262B33; --sea:#161A20; --path:#F2EFE8; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#12151B; --panel:#1C2029; --fg:#ECEEF1; --muted:#A2A8B0; --rule:#30353F; --card:#171B22; --border:#444B57;
+  --hot:#FF6A5C; --gold:#F2B54E; --cool:#7DA7E6; --ink:#A9BBDD; --land:#262B33; --sea:#161A20; --path:#F2EFE8; color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 18px/1.62 var(--body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));overflow-x:hidden}
+.wrap{max-width:700px;margin:0 auto;padding-block:28px 64px}
+.wrap .bleed{width:min(1180px,calc(100vw - 32px));margin-left:calc((100% - min(1180px,100vw - 32px))/2);margin-right:0}
+a{color:inherit;text-decoration-color:var(--hot);text-underline-offset:3px}
+.kicker{font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.kicker b{background:var(--ink);color:#fff;padding:5px 8px;font-weight:500}
+:root[data-theme="dark"] .kicker b{color:#12151B}
+header.hero{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px 24px;align-items:end;border-bottom:6px double var(--fg);padding-bottom:22px;margin-top:18px}
+h1{font:900 clamp(44px,11vw,94px)/.9 var(--display);letter-spacing:-.02em;margin:0;text-wrap:balance}
+h1 .a{color:var(--hot)} h1 .b{color:var(--gold)}
+.mark{width:clamp(78px,16vw,128px);height:auto;display:block;color:var(--fg)}
+.dek{grid-column:1/-1;font-size:21px;line-height:1.42;margin:8px 0 0;max-width:56ch}
+.byline{font:400 13px/1.4 var(--mono);color:var(--muted);margin-top:14px}
+h2{font:800 34px/1.04 var(--display);letter-spacing:-.01em;margin:54px 0 10px;text-wrap:balance}
+h2 .n{font:500 13px/1 var(--mono);color:var(--hot);display:block;letter-spacing:.1em;margin-bottom:10px}
+h3{font:600 20px/1.25 var(--display);margin:28px 0 6px}
+p{margin:0 0 16px}
+.lede::first-letter{font:900 72px/.8 var(--display);float:left;margin:6px 10px 0 0;color:var(--hot)}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);margin:26px 0 8px}
+.stats div{background:var(--card);padding:14px 12px}
+.stats b{display:block;font:900 clamp(22px,4.4vw,32px)/1 var(--display);letter-spacing:-.01em}
+.stats b.h{color:var(--hot)} .stats b.c{color:var(--cool)} .stats b.g{color:var(--gold)} .stats b.p{color:var(--ink)}
+.stats span{font:400 12px/1.35 var(--mono);color:var(--muted);display:block;margin-top:6px}
+@media (max-width:600px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.figure{margin:26px 0 30px}
+.fig-h{font:600 19px/1.25 var(--display);margin:0 0 4px}
+.fig-sub{font:400 13px/1.45 var(--mono);color:var(--muted);margin:0 0 12px}
+.src{font:400 12px/1.45 var(--mono);color:var(--muted);margin-top:10px}
+.chart{width:100%;position:relative}
+.chart svg{display:block;width:100%;height:auto;overflow:visible}
+svg text{font-family:var(--mono);fill:var(--fg)}
+.lab{font-size:12px}.lab.m{fill:var(--muted)}.lab.b{font-weight:500}.lab.s{font-size:11px}
+.tip{position:absolute;pointer-events:none;background:var(--fg);color:var(--bg);font:400 12px/1.45 var(--mono);padding:8px 10px;border-radius:3px;max-width:300px;z-index:100002;transform:translate(-50%,calc(-100% - 12px));display:none}
+.tip b{font-weight:500}
+.controls{display:flex;gap:8px;align-items:center;margin:0 0 10px;flex-wrap:wrap}
+.scrollrow{display:flex;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:thin;padding-bottom:2px;max-width:100%}
+.scrollrow .btn{flex:0 0 auto;white-space:nowrap}
+.ctl-l{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-right:2px;flex:0 0 auto;align-self:center}
+.btn{font:500 12px/1 var(--mono);background:var(--card);color:var(--fg);border:1px solid var(--border);border-radius:3px;padding:8px 10px;cursor:pointer;min-height:36px}
+.btn[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.btn:focus-visible,input:focus-visible,summary:focus-visible,select:focus-visible{outline:2px solid var(--hot);outline-offset:2px}
+.searchbox{position:relative;flex:1 1 260px;min-width:0}
+input[type=search]{font:400 15px/1 var(--mono);background:var(--card);color:var(--fg);border:1px solid var(--border);border-radius:3px;padding:10px 11px;min-height:40px;width:100%}
+.suggest{position:absolute;left:0;right:0;top:100%;margin:2px 0 0;padding:0;list-style:none;background:var(--card);border:1px solid var(--border);z-index:1001;font:400 13px/1.3 var(--mono);display:none;max-height:340px;overflow:auto}
+.suggest li{padding:8px 10px;cursor:pointer;border-bottom:1px solid var(--rule)}
+.suggest li span{color:var(--muted)}
+.suggest li[aria-selected="true"],.suggest li:hover{background:var(--panel)}
+#atlasbox{background:var(--bg);padding:2px 0 0}
+.timebox{display:grid;grid-template-columns:auto auto minmax(0,1fr);gap:10px;align-items:center;margin:0 0 2px;font:500 13px/1 var(--mono);padding-right:46px}
+.timebox .yv{font:900 26px/1 var(--display);min-width:5.6ch;text-align:center;color:var(--hot);white-space:nowrap}
+.timebox input[type=range]{width:100%;accent-color:var(--hot);height:28px;margin:0}
+.play{width:42px;height:38px;border-radius:3px;border:1px solid var(--fg);background:var(--fg);color:var(--bg);font:600 15px/1 var(--mono);cursor:pointer}
+@media (max-width:600px){.timebox .yv{font-size:21px;min-width:5ch}}
+.ticks{position:relative;height:16px;margin:0 46px 12px calc(42px + 5.6ch + 34px);font:400 10.5px/1 var(--mono);color:var(--muted)}
+@media (max-width:600px){.ticks{margin-left:calc(42px + 5ch + 30px)}}
+.ticks span{position:absolute;transform:translateX(-50%);white-space:nowrap}
+.ticks span::before{content:"";position:absolute;left:50%;top:-5px;height:4px;border-left:1px solid var(--border)}
+@media (max-width:600px){.ticks span.o{display:none}}
+.mapgrid{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:14px;align-items:start}
+@media (max-width:900px){.mapgrid{grid-template-columns:1fr}}
+.side{background:var(--card);border:1px solid var(--border);padding:12px 12px 10px;font:400 13px/1.45 var(--mono);max-height:640px;overflow:auto}
+@media (max-width:900px){.side{max-height:none}}
+.side h4{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:14px 0 8px}
+.side h4:first-child{margin-top:2px}
+.side .big{font:800 24px/1.1 var(--display);margin:2px 0 4px}
+.side .sub{color:var(--muted);font-size:12px;margin:0 0 8px}
+.race{position:relative;height:300px;margin:4px 0 6px}
+.race .row{position:absolute;left:0;right:0;height:30px;display:grid;grid-template-columns:20px minmax(0,1fr);align-items:start;gap:4px;transition:transform .45s ease,opacity .35s;cursor:pointer}
+.race .row .k{color:var(--muted);font-size:11px;text-align:right;line-height:16px}
+.race .row .bw{position:relative;height:30px}
+.race .row .bar{position:absolute;left:0;top:18px;height:8px;border-radius:2px;transition:width .45s ease;opacity:.9}
+.race .row .t{position:absolute;left:0;right:0;top:0;font:500 12px/16px var(--mono);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--fg)}
+.race .row .t small{color:var(--muted);font-weight:400}
+.race .row:hover .bar{opacity:1;outline:1px solid var(--fg)}
+.lmap{height:620px;border:1px solid var(--border);background:var(--sea);border-radius:2px;position:relative}
+@media (max-width:600px){.lmap{height:min(62vh,460px)}}
+#atlasbox:fullscreen,#atlasbox.mfs-fake{padding:10px 14px;overflow:auto}
+#atlasbox:fullscreen .lmap,#atlasbox.mfs-fake .lmap{height:calc(100vh - 110px)}
+#atlasbox:fullscreen .side,#atlasbox.mfs-fake .side{max-height:calc(100vh - 110px)}
+.nomap{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;font:400 14px/1.5 var(--mono);color:var(--muted)}
+.maplibregl-map{font:400 12px/1.4 var(--mono)}
+.maplibregl-ctrl-attrib{font:400 11px/1.3 var(--mono)!important;background:color-mix(in srgb,var(--card) 85%,transparent)!important;color:var(--muted)}
+.maplibregl-ctrl-attrib a{color:var(--fg)!important}
+.maplibregl-ctrl-group{background:var(--card)!important}
+.maplibregl-popup-content{background:var(--card);color:var(--fg);font:400 12.5px/1.45 var(--mono);border:1px solid var(--border);border-radius:4px;padding:10px 12px;box-shadow:0 3px 12px rgba(0,0,0,.22)}
+.maplibregl-popup-content b.t{display:block;font:700 17px/1.15 var(--display);margin-bottom:2px}
+.maplibregl-popup-content .pl{color:var(--muted);font-size:11.5px;margin-bottom:4px}
+.maplibregl-popup-content .src2{color:var(--muted);font-size:11px;margin-top:6px}
+.maplibregl-popup-content svg{display:block;width:100%;height:auto;margin-top:4px}
+.maplibregl-popup-tip{border-top-color:var(--card)!important;border-bottom-color:var(--card)!important}
+.maplibregl-popup-close-button{font-size:18px;color:var(--fg);padding:0 6px}
+.cityL{font:500 11px/1.1 var(--mono);color:var(--fg);white-space:nowrap;text-shadow:0 0 3px var(--bg),0 0 3px var(--bg),0 0 2px var(--bg);pointer-events:none}
+.cityL small{display:block;font-weight:400;color:var(--muted);font-size:10px}
+.cityL.big{font-size:12.5px;font-weight:600}
+.crown{pointer-events:none;filter:drop-shadow(0 1px 1px rgba(0,0,0,.35))}
+.crown svg{display:block;width:26px;height:20px}
+.cogL{font:600 10.5px/1.15 var(--mono);color:var(--path);white-space:nowrap;text-shadow:0 0 3px var(--bg),0 0 3px var(--bg);pointer-events:none}
+.yearBadge{pointer-events:none;margin:10px 0 0 54px!important;font:900 30px/1 var(--display);color:var(--fg);text-shadow:0 0 6px var(--bg),0 0 3px var(--bg),0 0 2px var(--bg)}
+.yearBadge small{display:block;font:500 11.5px/1.35 var(--mono);color:var(--fg);margin-top:4px;max-width:44vw}
+@media (max-width:600px){.yearBadge{font-size:22px}}
+.lyrBtn{background:var(--card,var(--bg));color:var(--fg);border:1px solid var(--border);border-radius:3px;font:600 12px/1 var(--mono);padding:8px 10px;cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.lyrBtn[aria-expanded="true"]{background:var(--fg);color:var(--bg)}
+.lyrPanel{background:var(--card,var(--bg));color:var(--fg);border:1px solid var(--border);border-radius:3px;padding:10px 12px 8px;margin-top:6px;width:250px;box-shadow:0 2px 10px rgba(0,0,0,.15);font:400 12px/1.3 var(--mono);max-height:min(70vh,520px);overflow:auto}
+.lyrPanel[hidden]{display:none}
+.lyrPanel .row{margin:0 0 9px}
+.lyrPanel label{display:flex;gap:6px;align-items:center;cursor:pointer;font-weight:600}
+.lyrPanel input[type=range]{width:100%;accent-color:var(--fg)}
+.lyrPanel select{font:400 12px var(--mono);background:var(--bg);color:var(--fg);border:1px solid var(--border);border-radius:2px;padding:2px 4px;width:100%;min-height:0}
+.lyrPanel .sub{display:flex;gap:6px;align-items:center;color:var(--muted);font-size:11px;margin-top:3px}
+.lyrPanel .sub span{flex:0 0 58px}
+.lyrPanel .hd{font:500 10.5px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:10px 0 7px;border-top:1px solid var(--rule);padding-top:9px}
+.lyrPanel .reset{font:400 11px var(--mono);color:var(--muted);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline}
+.legend{display:flex;gap:6px 14px;flex-wrap:wrap;font:400 12px/1.3 var(--mono);color:var(--muted);margin-top:8px;align-items:center}
+.legend span{display:inline-flex;align-items:center}
+.legend i{display:inline-block;width:13px;height:13px;margin-right:6px;border-radius:50%;border:1px solid rgba(0,0,0,.15)}
+.legend i.sq{border-radius:2px}
+.legend i.ln{border-radius:0;height:0;border:0;border-top:2.5px solid var(--path);width:18px}
+.pull{font:600 26px/1.25 var(--display);border-left:6px solid var(--hot);padding:4px 0 4px 18px;margin:30px 0}
+.note{background:var(--panel);border:1px solid var(--rule);padding:14px 16px;font-size:16px;margin:22px 0}
+.note h3{margin-top:0}
+table.tbl{width:100%;border-collapse:collapse;font:400 13px/1.4 var(--mono)}
+table.tbl th{font:500 11px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:left;padding:6px 6px 6px 0;border-bottom:2px solid var(--fg)}
+table.tbl td{padding:6px 6px 6px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+table.tbl td.r,table.tbl th.r{text-align:right;white-space:nowrap}
+table.tbl tr[data-k]{cursor:pointer}
+table.tbl tr[data-k]:hover td{background:var(--panel)}
+table.tbl i.d{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:0}
+.tablebox{max-height:460px;overflow:auto;border:1px solid var(--border);background:var(--card);padding:0 10px}
+details{margin:14px 0}
+summary{font:500 13px/1.4 var(--mono);cursor:pointer;color:var(--fg);padding:8px 0}
+.cta{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+.cta a{font:500 13px/1 var(--mono);text-decoration:none;border:1px solid var(--fg);padding:11px 14px;border-radius:3px}
+.cta a.p{background:var(--hot);border-color:var(--hot);color:#fff}
+footer{border-top:6px double var(--fg);margin-top:56px;padding-top:16px;font:400 13px/1.55 var(--mono);color:var(--muted)}
+footer p{margin:0 0 10px}
+.theme{position:fixed;right:12px;bottom:12px;z-index:1002}
+@media print{.theme,.controls{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="kicker"><b>Data study</b><span>Cities</span><span>World, 3700 BC to AD 2050</span></div>
+<header class="hero">
+  <h1>The largest <span class="a">city</span> on <span class="b">Earth</span></h1>
+  <svg class="mark" viewBox="0 0 120 120" aria-hidden="true"><g id="heroMark"></g></svg>
+  <p class="dek">Six thousand years of the world's biggest cities, from Uruk to Dhaka. Which city was the largest at each moment, how big it was, and how the centre of the urban world wandered from Mesopotamia to China, out to Europe and back to Asia.</p>
+</header>
+<div class="byline">Dr Tristan Hotham · Independent researcher · 2026 · Data: Reba, Reitsma and Seto (2016) from Chandler (1987) and Modelski (2003), CC BY 4.0; UN World Urbanization Prospects 2025, CC BY 3.0 IGO; Natural Earth</div>
+
+<div class="stats">
+  <div><b class="g">{{n_crown_sole|int}}</b><span>different cities have been the world's largest in these estimates, on their own</span></div>
+  <div><b class="p">{{reign.Uruk.peak|int}}</b><span>people in Uruk in 2800 BC, the largest city of its day</span></div>
+  <div><b class="h">{{un.jakarta2025|m1}}m</b><span>in Jakarta in 2025, the largest city in the UN's new count</span></div>
+  <div><b class="c">{{london.years_est|int}} years</b><span>roughly how long London was on top, from about {{london.cross_in|raw}} to {{london.cross_out|raw}}</span></div>
+</div>
+
+<p class="lede">Around 2800 BC the largest city in the world was Uruk, in the marshy south of what is now Iraq, with perhaps {{reign.Uruk.peak|int}} people. In 2025 it is Jakarta, with {{un.jakarta2025|m1}} million. In between, the title passed through the cities of Sumer and Egypt, Babylon, Alexandria and Rome, Constantinople, Chang'an and Baghdad, the capitals of Song and Ming China, London, New York and Tokyo. By the United Nations' latest projections it will belong to Dhaka by 2050.</p>
+<p>Nobody counted most of these people. The figures before the twentieth century are the estimates of two historians who spent years on them: Tertius Chandler, whose <i>Four Thousand Years of Urban Growth</i> (1987) gathered city sizes from censuses, travellers and earlier scholars, and George Modelski, whose <i>World Cities</i> (2003) did the same for the ancient world. In 2016 Meredith Reba, Femke Reitsma and Karen Seto turned both books into one geocoded dataset. After cleaning it holds {{source.places|int}} places and {{source.estimates|int}} population estimates. From 1975 I switch to the UN's World Urbanization Prospects 2025, which counts cities in a new way, explained below. Read every figure before 1950 as an informed estimate, and often a round one.</p>
+
+<h2><span class="n">01 · The map</span>{{source.n_snaps|int}} snapshots of the urban world</h2>
+<div class="bleed" id="atlas">
+<div id="atlasbox" data-fullscreen-map>
+<div class="timebox"><button class="play" id="play" aria-label="Play through time">&#9654;</button><span class="yv" id="yv">2025</span><input type="range" id="yr" min="0" max="1000" step="1" value="980" aria-label="Date"></div>
+<div class="ticks" id="ticks"></div>
+<div class="controls">
+  <div class="scrollrow" id="scaleRow"><span class="ctl-l">Circles</span><button class="btn" data-s="rel" aria-pressed="true">Relative to the largest then</button><button class="btn" data-s="abs" aria-pressed="false">One scale for all dates</button></div>
+  <div class="searchbox"><input type="search" id="q" placeholder="Search a city (Babylon, Hangzhou, Lagos...)" aria-label="Search a city" autocomplete="off"><ul class="suggest" id="sug" role="listbox"></ul></div>
+</div>
+<div class="controls"><div class="scrollrow" id="focusRow"><span class="ctl-l">Jump to</span></div></div>
+<div class="mapgrid">
+  <div><div id="map" class="lmap" role="application" aria-label="World map of the largest cities at the chosen date, with circles sized by population"></div>
+    <div class="legend" id="legend"></div></div>
+  <div class="side" id="side" aria-live="polite"></div>
+</div>
+</div>
+<p class="src">Circles: every place with a population estimate at the chosen date, coloured by region, with area proportional to population (by default relative to the largest city at that date, so that the ancient world is visible; switch to one scale to compare sizes across time). Crown: the largest city, or each of the cities tied for it (within {{source.tie_pct|f1}}%). Dark line: the population-weighted centre of the {{source.topn|int}} largest cities, snapshot by snapshot. Before 1975: Chandler and Modelski as compiled by Reba, Reitsma and Seto (2016), CC BY 4.0, with an average where both give a figure. From 1975: UN World Urbanization Prospects 2025, cities as defined by the Degree of Urbanisation, CC BY 3.0 IGO; cities under {{method.un_map_min|int}} are left off the map. Positions are the compilers' (before 1975) and the UN's population-weighted centres (after). Modern borders are for orientation only. Outlines: Natural Earth. Base map tiles © Esri.</p>
+</div>
+
+<h2><span class="n">02 · The crown</span>{{n_crown_sole|int}} cities, six thousand years</h2>
+<p>Modelski's list starts in 3700 BC with a single town, Eridu, at about {{S.-3700.pop|int}} people. By 3500 BC its neighbour Uruk had overtaken it, and Uruk stayed the largest city in every snapshot to {{reign.Uruk.last|yr}}, when Modelski puts it at {{reign.Uruk.peak|int}}. Then the crown moved around the city states of Sumer, Lagash, Mari and Girsu, to Ur, which in {{size.first_100k.y|yr}} became the first city of {{size.first_100k.pop|int}} in Modelski's list. In 2000 BC Chandler puts Memphis, Egypt's old capital, at {{S.-2000.pop|int}}; he gives Ur {{txt.ur2000_c|int}}, but Modelski gives it only {{txt.ur2000_m|int}}, so on the average Memphis comes out on top. Babylon led in {{reign.Babylon.first|yr}}. Egyptian capitals, Avaris, Thebes and Pi-Ramesses, led in {{txt.egypt_n|int}} of the {{txt.egypt_of|int}} snapshots from 1600 to 1000 BC; the exception is 1300 BC, when Yin, the last capital of China's Shang kings, had {{S.-1300.pop|int}}.</p>
+<div class="figure"><p class="fig-h">How big the biggest city was, and which city it was</p><p class="fig-sub">The largest population at each snapshot (log scale), with the bar below coloured by the region of the city on top. Dashed lines: the largest figure in each compilation on its own. The time axis is stretched towards the present. Hover or tap for each snapshot.</p><div class="chart" id="crownChart"></div><div class="legend" id="crownLegend"></div></div>
+<p>From 1000 BC Modelski lists only cities of at least 100,000, and for several centuries his top cities sit exactly on that line, so Babylon, Memphis and Thebes tie in 900 and 800 BC and {{txt.tie700_n|int}} cities tie in 700 BC. The classical world brought the first giants. Linzi, capital of the state of Qi in eastern China, led in 500 and 300 BC; Alexandria in 200 and 100 BC, when Modelski gives it {{peak.alexandria.m_peak|int}}, the first city of a million in his list; and then Rome, the largest city in every snapshot from AD 1 to AD {{reign.Rome.last|raw}}. Modelski puts Rome at {{peak.rome.m_peak|int}} in AD {{peak.rome.m_peak_y|raw}}; Chandler's highest figure for ancient Rome is {{peak.rome.c_peak1000|int}}.</p>
+<p>After Rome came Constantinople (AD 500 and 600), Ctesiphon, the Persian capital on the Tigris (622, in Chandler's figures), Chang'an, the Tang capital now called Xi'an (700), and Baghdad, which ties with Chang'an in 800 and leads alone in 900 and 1000. Chandler's own peak for Baghdad is {{baghdad_peak_c.pop|int}} in AD {{baghdad_peak_c.y|raw}}. From 1100 only Chandler's figures remain, and they keep the crown in China for most of the next seven centuries: Kaifeng, the Song capital ({{S.1100.pop|int}} in 1100), briefly Merv in Central Asia (1150), Hangzhou, the southern Song capital, from 1200 to 1350 (peaking at {{S.1300.pop|int}}), Nanjing in 1400, then Beijing from 1450 to 1600 and again from 1750 to 1825. In between, Ottoman Istanbul led in 1650 and 1700 with {{S.1700.pop|int}}.</p>
+<div class="figure"><p class="fig-h">Every reign</p><p class="fig-sub">Runs of consecutive snapshots with the same city on top. Ties are listed as their own rows. Click a row to see that date on the map.</p><div class="tablebox"><table class="tbl" id="reignTable"></table></div></div>
+<p>London took over in the middle of the nineteenth century, New York in the twentieth, and Tokyo by 1970. In the UN's figures Tokyo stays on top until Jakarta draws level in 2010 and passes it; Jakarta is then the largest in every snapshot to 2045, and Dhaka edges past it in {{un.dhaka_first|raw}}.</p>
+<p class="pull">From Kaifeng in 1100 to Beijing in 1825, the largest city in the world was Chinese in {{txt.china_n|int}} of {{txt.china_of|int}} snapshots, and until 1800 it never held more than {{size.max_1100_1750|int}} people.</p>
+
+<h2><span class="n">03 · Size</span>From tens of thousands to tens of millions</h2>
+<p>The biggest city grew slowly for most of history and then very fast. Uruk's {{reign.Uruk.peak|int}} of 2800 BC was not beaten until {{txt.uruk_passed_by|raw}} in {{txt.uruk_passed_y|yr}}, {{txt.uruk_passed_years|int}} years later. The largest city first reached 100,000 in {{size.first_100k.y|yr}} (Ur, in Modelski's list) and a million in {{size.first_1m.y|yr}} (Alexandria, also Modelski). Chandler is more cautious: his first city over 100,000 is Avaris in {{size.first_100k_c.y|yr}}, and at the snapshot dates his first million city is Beijing in {{size.first_1m_c.y|raw}}, with {{size.first_1m_c.pop|int}}. Between 1100 and 1750 the largest city in the combined estimates never passed {{size.max_1100_1750|int}}.</p>
+<p>Industrial London broke the pattern: {{size.y1900|int}} people in 1900. New York was the first city past ten million in these figures ({{size.first_10m.pop|int}} in 1950) and Tokyo the first past twenty million ({{size.first_20m.pop|int}} in Chandler's 1970 figure). In the UN's count Tokyo had {{size.y1975|int}} in 1975, Jakarta has {{size.y2025|int}} in 2025, and Dhaka is projected to reach {{size.y2050|int}} by 2050. The largest city of 2025 is {{size.x1800_2025|f1}} times the size of the largest in 1800.</p>
+<div class="figure"><p class="fig-h">How many cities passed 100,000 and a million</p><p class="fig-sub">Places at or above each size at each snapshot (log scale). Before 1975 these count only the places in the two compilations, which are far from complete for smaller cities, so the counts are floors; from 1975 they count every UN city. Hover or tap a point.</p><div class="chart" id="countChart"></div><div class="legend" id="countLegend"></div></div>
+<p>In AD 100 the compilations hold {{n.k100_100|int}} places of 100,000 or more; in 1800, {{n.k100_1800|int}}, and just {{n.m1_1800|int}} city of a million, Beijing. By 1900 there were {{n.m1_1900|int}} million cities, {{txt.m1_1900_eu_na|int}} of them in Europe and North America, and by 1950 at least {{n.m1_1950|int}}. The UN counts {{n.m1_1975|int}} in 1975, {{n.m1_2025|int}} in 2025 and {{n.m1_2050|int}} by 2050, when {{n.m10_2050|int}} cities will hold ten million or more (there were {{n.m10_1975|int}} in 1975).</p>
+
+<h2><span class="n">04 · Where</span>The wandering centre of the urban world</h2>
+<p>To see where the big cities were, I took the {{source.topn|int}} largest places at each snapshot and found their centre, weighted by population. Until 800 BC it never left the band between {{txt.meso_lon_min|int}}°E and {{txt.meso_lon_max|int}}°E, from the Nile to the edge of Iran: it was at {{cog_sum.c_m3000.lat|f1}}°N {{cog_sum.c_m3000.lon|f1}}°E in 3000 BC, close to Uruk. As Chinese and Indian cities joined the list in the first millennium BC it moved east into Central Asia, reaching {{cog_sum.c_m500.lon|int}}°E by 500 BC, and Rome then pulled it back west to {{cog_sum.c100.lon|int}}°E in AD 100. From AD 500 to 1825 it stayed between {{txt.lon500_1825_min|int}}°E and {{txt.lon500_1825_max|int}}°E, over Central Asia, poised between the Islamic world, India and China: {{cog_sum.c1500.lon|int}}°E in 1500 and {{cog_sum.c1800.lon|int}}°E in 1800.</p>
+<div class="figure"><p class="fig-h">Where the {{source.topn|int}} largest cities were</p><p class="fig-sub">Share of the population of the {{source.topn|int}} largest places at each snapshot, by region (fewer places before about 500 BC, when the lists are short). Hover or tap.</p><div class="chart" id="regionChart"></div><div class="legend" id="regionLegend"></div></div>
+<p>Then it lurched west. In the nineteenth century Europe's industrial cities and then America's took over the list: by 1900 {{reg_sum.eu_1900_n|int}} of the {{source.topn|int}} largest cities were European, holding {{reg_sum.eu_1900|int}}% of their people, and the centre sat at {{cog_sum.c1900.lat|int}}°N {{txt.c1900_lon|f1}}°{{txt.c1900_hem|raw}}, north of Scotland, {{cog_sum.km_1800_1900|int}} km from where it had been a century before. Its westernmost point came in {{cog_sum.west_y|raw}}, between Iceland and Greenland. After 1975 it raced back east and south: by 2025 it was at {{cog_sum.c2025.lat|int}}°N {{cog_sum.c2025.lon|int}}°E, in eastern Tibet, and by 2050 it is projected at {{cog_sum.c2050.lat|int}}°N {{cog_sum.c2050.lon|int}}°E, in eastern Nepal. In 2025, {{reg_sum.asia_2025_n|int}} of the {{source.topn|int}} largest cities are in Asia and {{reg_sum.eu_2025_n|int}} is in Europe.</p>
+<div class="figure"><p class="fig-h">The centre of the {{source.topn|int}} largest cities, east and west</p><p class="fig-sub">Longitude of the population-weighted centre of the {{source.topn|int}} largest places (solid) and of the 10 largest (thin), at each snapshot. Hover or tap.</p><div class="chart" id="cogChart"></div></div>
+<p>Two cautions. A centre found this way is the average of points on a globe, so when the big cities are spread across Europe, America and Asia it falls far to the north, between them: in {{cog_sum.west_y|raw}} it is at {{cog_sum.west.lat|int}}°N. And part of the jump between 1970 and 1975 is the change of source, because the UN's definition makes Asian cities larger and American ones smaller (section 07).</p>
+
+<h2><span class="n">05 · London</span>London's century</h2>
+<p>London was {{txt.london_rank1600_ord|raw}} in Chandler's list in 1600, with {{london.p1600|int}} people, {{txt.london_rank1700_ord|raw}} in 1700 and {{txt.london_rank1750_ord|raw}} in 1750. In 1800 it was second only to Beijing ({{london.p1800|int}} against {{london.bj1800|int}}), and in 1825 it was {{london.gap1825_pct|f1}}% behind ({{london.p1825|int}} against {{london.bj1825|int}}), well within the uncertainty of either figure. By 1850 it was clearly the largest city in the world, with {{london.p1850|int}}, {{london.x1850|f2}} times Beijing.</p>
+<div class="figure"><p class="fig-h">London and its rivals, 1500 to 2050</p><p class="fig-sub">Population at each snapshot (log scale), Chandler to 1970 and the UN from 1975, when the definition changes (dashed seam). Hover or tap.</p><div class="chart" id="londonChart"></div><div class="legend" id="londonLegend"></div></div>
+<p>London led in every snapshot from {{london.first|raw}} to {{london.last|raw}}. In 1900 it had {{london.p1900|int}}, {{london.x1900|f2}} times New York; in 1914 {{london.p1914|int}} to New York's {{london.ny1914|int}}. By 1925 the two were level: Chandler gives New York {{london.ny1925|int}} and London {{london.p1925|int}}, a difference of {{london.gap1925_pct|f1}}%. By 1950 New York was well ahead. Drawing straight lines between the snapshots puts London's reign at roughly {{london.cross_in|raw}} to {{london.cross_out|raw}}, about {{london.years_est|int}} years. In the UN's count London is a city of {{london.un2025|int}} in 2025, the {{txt.london_rank2025_ord|raw}} largest in the world.</p>
+
+<h2><span class="n">06 · Uncertainty</span>Two compilations, one crown</h2>
+<p>Chandler and Modelski often disagree, and before AD 1000 the choice of compilation can change the answer. At the {{n_both|int}} snapshots where both have figures for at least {{method.min_places|int}} places, they name a different largest city at {{n_disagree|int}}. The starkest case is AD 1000: Modelski gives Baghdad {{baghdad1000.m|int}}, Chandler gives it {{baghdad1000.c|int}} and makes {{baghdad1000.c_lead|raw}} in Spain the largest city, with {{baghdad1000.c_lead_pop|int}}. Averaged, Baghdad still leads with {{baghdad1000.comb|int}}. Chandler's highest figure for ancient Rome is {{txt.rome_c_share|int}}% of Modelski's, and for Alexandria {{txt.alex_c_share|int}}%.</p>
+<div class="figure"><p class="fig-h">Where the two compilations name different cities</p><p class="fig-sub">Snapshots where both have figures for at least {{method.min_places|int}} places and their largest cities differ, with the combined result used on the map.</p><div class="tablebox"><table class="tbl" id="disTable"></table></div></div>
+<p>Most snapshots before 1000 BC rest on Modelski alone, and many later ones on Chandler alone. Some estimates are interpolated: where Chandler has no figure for a place at a snapshot date, I draw a straight line on a log scale between his two nearest figures, if they are close enough in time; {{interp.top10_pct|f1}}% of the top ten places at the historical snapshots involve such a step. Reba and colleagues also gave each place a certainty score from 1 (most certain) to 3 for how securely it was identified and placed: {{cert.lead_c1|int}} of the {{cert.lead_n|int}} crown holders before 1975 score 1, and the exceptions are {{txt.cert_list|raw}}.</p>
+
+<h2><span class="n">07 · Definitions</span>What counts as a city? The 1975 seam</h2>
+<p>The UN's World Urbanization Prospects used to rely on each country's own idea of a city or urban agglomeration, which made comparisons awkward. The 2025 revision instead applies the Degree of Urbanisation, a method agreed by the UN Statistical Commission: a city is a cluster of contiguous 1 km grid cells with at least {{method.degurba_density|int}} people per square kilometre and at least {{method.degurba_min|int}} people in all, found in satellite-based population grids. It ignores administrative borders and asks only where people live densely. That changes the familiar rankings. Jakarta and Dhaka come out larger than in older lists, because their dense built-up areas sprawl across many districts; American cities come out smaller, because their suburbs are not dense enough to count; and some densely settled countrysides become very large "cities", such as Hajipur in Bihar, India, with {{un.hajipur.p2025|int}} people in 2025.</p>
+<div class="figure"><p class="fig-h">The same cities in 1975, counted two ways</p><p class="fig-sub">Chandler's {{txt.n_seam|int}} largest places in 1975, an urban agglomeration count, beside the UN's DEGURBA city that contains each one, and its rank among the UN's cities that year.</p><div class="tablebox"><table class="tbl" id="seamTable"></table></div></div>
+<p>The seam shows clearly in 1975. Chandler gives Tokyo {{seam_sum.tokyo_ch|int}} and the UN {{seam_sum.tokyo_un|int}}, close enough. But Chandler's New York, {{seam_sum.ny_ch|int}}, becomes {{seam_sum.ny_un|int}} under the UN's definition, and Jakarta grows from {{seam_sum.jakarta_ch|int}} ({{txt.jakarta_ch_rank_ord|raw}} in Chandler's list) to {{seam_sum.jakarta_un|int}} ({{txt.jakarta_un_rank_ord|raw}}). Chandler's 1975 list counts {{n.ch1975_m1|int}} places of a million or more and the UN {{n.m1_1975|int}}; Modelski's list of million cities in 2000 has {{n.mod2000_m1|int}}, the UN {{n.un2000_m1|int}}. I have not blended the two kinds of figure: on the map, the charts and in the text, 1975 and later is the UN, and everything before is Chandler and Modelski.</p>
+
+<h2><span class="n">08 · 2050</span>Who rises next</h2>
+<p>The UN projects every city forward to 2050. In its figures Jakarta passed Tokyo in {{un.jakarta_first|raw}} (they are within {{source.tie_pct|f1}}% of each other in that year's snapshot), Dhaka passed Tokyo in {{un.dhaka_over_tokyo|raw}}, and Dhaka is projected to pass Jakarta in {{un.dhaka_first|raw}}, reaching {{un.dhaka2050|m1}} million to Jakarta's {{un.jakarta2050|m1}} million. That is a margin of {{un.dhaka_margin_2050_pct|f1}}%, well within the uncertainty of a projection, so the honest reading is that Dhaka and Jakarta will be the two giants of 2050. Tokyo, which peaked at {{un.tokyo_peak|m1}} million in {{un.tokyo_peak_y|raw}}, is projected to shrink to {{un.tokyo2050|m1}} million.</p>
+<div class="figure"><p class="fig-h">The largest cities of 2050, and how far they have to grow</p><p class="fig-sub">The {{method.rise_n|int}} largest cities in the UN's 2050 projection: 2025 (open circle) and 2050 (solid). Coloured by region. Hover or tap.</p><div class="chart" id="riseChart"></div></div>
+<p>The biggest gains between 2025 and 2050 are in Dhaka (+{{un.gainers.0.gain|m1}} million), Karachi (+{{un.gainers.1.gain|m1}} million), which enters the top ten, and Jakarta (+{{un.gainers.2.gain|m1}} million), then Luanda (+{{un.gainers.3.gain|m1}} million) and Cairo (+{{un.gainers.4.gain|m1}} million). Among cities that will have ten million or more, the fastest growing are Luanda ({{un.fastest10m.0.pct|int}}%), Dar es Salaam ({{un.fastest10m.1.pct|int}}%) and Addis Ababa ({{un.fastest10m.2.pct|int}}%). Lagos rises from {{txt.lagos_r2025_ord|raw}} to {{txt.lagos_r2050_ord|raw}}. Sub-Saharan Africa has {{un.ssa_top100_2025|int}} of the {{method.top100|int}} largest cities in 2025 and {{un.ssa_top100_2050|int}} in 2050, and takes {{un.ssa_gain_share|int}}% of the growth among the 2050 top hundred. {{un.n_shrink_top100|int}} of them are projected to shrink, led by {{txt.shrink1|raw}} and {{txt.shrink2|raw}}.</p>
+
+<h2><span class="n">09 · How I did this</span>Methods and caveats</h2>
+<p><b>Data.</b> The historical figures are Reba, Reitsma and Seto's (2016) digitisation of Chandler (1987) and Modelski (2003), on figshare: Chandler's compilation ({{source.chandler_rows|int}} places, {{source.chandler_values|int}} figures from {{source.chandler_first|yr}} to 1975), Modelski's ancient cities ({{source.ancient_rows|int}} places, {{source.ancient_values|int}} figures, 3700 BC to AD 1000) and Modelski's {{source.modern_rows|int}} cities of a million or more in 2000. I used the V2 files. Compared with V1 they trim stray spaces from {{source.v1_padded|int}} names and countries (leaving {{source.v2_padded|int}}), correct "Instanbul" to Istanbul, move Kiev from the Russian Federation to Ukraine, and fold V1's duplicate Guadalajara row and a misspelt "Madgdeburg" row into one row each, which is why Chandler has {{source.v2_rows|int}} rows rather than {{source.v1_rows|int}}; no figure changes. The files are Windows-1252 text, not UTF-8, and must be read as such (Košice, Šomron); {{source.lost_chars|int}} alternative names had already lost characters to question marks before the files were written. The modern figures are the UN World Urbanization Prospects 2025 files 18 to 21: the 100 largest cities at each date, the 100 largest of 2025 through time, capitals, and all {{source.un_cities|int}} cities that reach 50,000 between 1975 and 2050, each with a population-weighted centre.</p>
+<p><b>Corrections.</b> I made {{source.fixes|int}} documented corrections, listed below. The largest is that Modelski's cities in the Americas carry, in the BC columns, exact copies of their AD figures {{method.mirror|int}} years later (Teotihuacan in 900 BC equals Teotihuacan in AD 400, and so on): I dropped those {{source.americas_copies|int}} copies. I also dropped single figures that are out by a factor of about ten from the same city's neighbours (Philadelphia in 1914 at {{txt.phil|m1}} million, for instance), figures attached to the wrong city (Memphis, Egypt, in 1975 carries the figure for Memphis, Tennessee) and two misplaced locations.</p>
+<details><summary>All corrections</summary><div class="tablebox"><table class="tbl" id="fixTable"></table></div></details>
+<p><b>Method.</b> The snapshots are Modelski's dates up to AD 1000, plus Chandler's cross-sections in 1360, 650 and 430 BC and AD 361 and 622, then Chandler's benchmark years from 1100 to 1970, then the UN every five years. At each snapshot each compilation gives a place its own figure for that date if it has one. Otherwise Chandler's figure is interpolated on a log scale between his two nearest dates for that place if they are no more than {{method.gap1|int}} years apart before AD {{method.gap_until1|raw}}, {{method.gap2|int}} years to {{method.gap_until2|raw}} and {{method.gap3|int}} years after; Modelski's are interpolated only between neighbouring dates of his own grid, because a gap in his grid means the place was not on his list. Nothing is extrapolated. Where both compilations have a figure, I use their average. Places within {{source.tie_pct|f1}}% of the largest count as tied. I matched {{source.matched|int}} places across the two compilations by name and distance (under {{method.match_km|int}} km), and linked {{links.n|int}} historical places to the UN city that contains them, by name within {{method.link_km|int}} km. The centre of gravity averages the positions of the {{source.topn|int}} largest places as points on a sphere, weighted by population.</p>
+<p><b>Where the record is thin.</b> The compilations are rich for Europe, the Middle East, India and China and thin elsewhere. Before AD 1000 they hold {{thin.am_pre1000|int}} places in the Americas (Modelski's are {{txt.thin_americas|raw}}) and {{thin.ssa_pre1000|int}} in sub-Saharan Africa. Between 1500 and 1799 they hold {{thin.eu_1500_1799|int}} European places, but {{thin.ea_1500_1799|int}} East Asian and {{thin.ssa_1500_1799|int}} in sub-Saharan Africa. Cahokia, on the Mississippi, has {{txt.cahokia_n|int}} figures in the whole record and Great Zimbabwe {{txt.zimbabwe_n|int}}, so the absence of a circle is not evidence that nobody lived there, and counts of cities before 1975 are floors.</p>
+<div class="figure"><p class="fig-h">How many places the compilations hold, by region and period</p><p class="fig-sub">Places with at least one population estimate in each period (Chandler and Modelski together, after corrections).</p><div class="tablebox"><table class="tbl" id="covTable"></table></div></div>
+<p><b>What this is not.</b> These are estimates, often rounded to the nearest 10,000 or 100,000, and often made by working back from city walls, house counts, food supplies or later censuses; a factor of two either way is entirely possible for an ancient city. "City" means different things in different sources: a walled town and its suburbs for Chandler, a metropolitan area in some modern counts, and a dense grid cluster for the UN. The 2025 to 2050 figures are projections. And the names are modern conveniences: I give period names where the text needs them (Chang'an, Constantinople, Edo), but the map uses one name per place.</p>
+<details><summary>Sources and licences</summary>
+<ul>
+<li>Reba, M., Reitsma, F. and Seto, K. C. (2016) Spatializing 6,000 years of global urbanization from 3700 BC to AD 2000. <i>Scientific Data</i> 3, 160034. doi:10.1038/sdata.2016.34. Data on figshare, CC BY 4.0: Chandler, doi:10.6084/m9.figshare.2059494.v3; Modelski ancient, doi:10.6084/m9.figshare.2059497.v2; Modelski modern, doi:10.6084/m9.figshare.2059500.v3.</li>
+<li>Chandler, T. (1987) <i>Four Thousand Years of Urban Growth: An Historical Census</i>. Lewiston: St David's University Press. Modelski, G. (2003) <i>World Cities: -3000 to 2000</i>. Washington: FAROS 2000.</li>
+<li>United Nations, Department of Economic and Social Affairs, Population Division (2025) World Urbanization Prospects: The 2025 Revision, files 18 to 21. CC BY 3.0 IGO.</li>
+<li>Natural Earth country outlines (public domain). Base map tiles © Esri.</li>
+</ul></details>
+
+<div class="cta"><a class="p" href="https://doi.org/10.5281/zenodo.23872999">Read the paper</a><a href="https://github.com/Tristan-Hotham/largest-cities">Data and code</a><a href="https://blog.tristanhotham.com/2026/10/31/largest-cities/">Blog post</a></div>
+
+<footer>
+<p>Dr Tristan Hotham, Independent researcher. ORCID <a href="https://orcid.org/0000-0003-4931-9349">0000-0003-4931-9349</a>.</p>
+<p>Cite as: Hotham, T. (2026) The largest city on Earth: six thousand years of the world's biggest cities, 3700 BC to AD 2050. Zenodo. <a href="https://doi.org/10.5281/zenodo.23872999">https://doi.org/10.5281/zenodo.23872999</a></p>
+<p>Data: Reba, Reitsma and Seto (2016), CC BY 4.0, from Chandler (1987) and Modelski (2003); UN World Urbanization Prospects 2025, CC BY 3.0 IGO. Licence: derived data and text CC BY 4.0, code MIT.</p>
+<p>I wrote the text, with drafting and editing assistance from Claude (Anthropic), which also helped prepare the analysis code. I reviewed and checked all text and results.</p>
+</footer>
+</div>
+<div class="tip" id="tip"></div>
+<button class="btn theme" id="theme" aria-label="Toggle dark mode">◐</button>
+<script src="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script>
+const R = /*RESULTS*/;
+const SITE = /*SITE*/;
+const WORLD = /*WORLD*/;
+const fmt = n => n == null || n === "" || isNaN(n) ? "n/a" : Math.round(n).toLocaleString("en-GB");
+const fmtP = n => n == null ? "n/a" : n >= 1e6 ? (n / 1e6).toFixed(n >= 1e7 ? 1 : 2) + " million" : n >= 1e4 ? fmt(Math.round(n / 1000) * 1000) : fmt(n);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const tip = document.getElementById("tip");
+function showTip(h, x, y) { tip.innerHTML = h; tip.style.display = "block"; const w = tip.offsetWidth; x = Math.max(w / 2 + 8, Math.min(innerWidth - w / 2 - 8, x)); tip.style.left = x + scrollX + "px"; tip.style.top = y + scrollY + "px"; }
+function hideTip() { tip.style.display = "none"; }
+document.addEventListener("click", hideTip);
+const NS = "http://www.w3.org/2000/svg";
+const el = (t, a, p) => { const e = document.createElementNS(NS, t); for (const k in a) e.setAttribute(k, a[k]); if (p) p.appendChild(e); return e; };
+const lbl = (svg, x, y, s, cls = "lab", anchor = "start") => { const t = el("text", { x, y, class: cls, "text-anchor": anchor }, svg); t.textContent = s; return t; };
+const redraws = [];
+function resp(box, render) { let last = 0; const go = force => { const w = Math.max(280, Math.round(box.clientWidth)); if (!force && Math.abs(w - last) < 4) return; last = w; box.innerHTML = ""; render(w, w < 560); }; new ResizeObserver(() => go()).observe(box); go(); redraws.push(() => go(true)); }
+const isDark = () => { const r = document.documentElement; return r.dataset.theme ? r.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches; };
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const small = () => innerWidth < 900;
+const REG = SITE.regions, RC = REG.map(r => r[1]), RN = REG.map(r => r[0]);
+const SN = SITE.snaps, NSN = SN.length, CT = SITE.cities, NP = SITE.np, UY = SITE.uyears;
+const PERIOD = new Map(SITE.period);
+const yl = y => y < 0 ? `${-y} BC` : y < 1000 ? `AD ${y}` : `${y}`;
+const nameAt = (i, y) => { const p = PERIOD.get(i); if (p) for (const [u, n] of p) if (y < u) return n; if (y >= 1975 && i < NP && CT[i][8] >= 0) return SITE.useries[CT[i][8]][UY.length + 3]; return CT[i][0]; };
+const ERA = { M: "Modelski and Chandler", C: "Chandler", U: "UN WUP 2025 (DEGURBA)" };
+/* the time scale: piecewise linear, stretched towards the present */
+const KN = [[0, -3700], [220, -1000], [340, 1], [500, 1000], [620, 1500], [740, 1800], [800, 1900], [860, 1975], [1000, 2050]];
+const p2y = p => { for (let i = 1; i < KN.length; i++) if (p <= KN[i][0]) { const [a, ya] = KN[i - 1], [b, yb] = KN[i]; return ya + (yb - ya) * (p - a) / (b - a); } return 2050; };
+const y2p = y => { for (let i = 1; i < KN.length; i++) if (y <= KN[i][1]) { const [a, ya] = KN[i - 1], [b, yb] = KN[i]; return a + (b - a) * (y - ya) / (yb - ya); } return 1000; };
+const SPOS = SN.map(y2p);
+const nearestSnap = p => { let b = 0, d = 1e9; SPOS.forEach((q, k) => { if (Math.abs(q - p) < d) { d = Math.abs(q - p); b = k; } }); return b; };
+const TICKS = [[-3000, ""], [-2000, "o"], [-1000, "o"], [1, "o"], [500, "o"], [1000, ""], [1500, "o"], [1800, "o"], [1900, ""], [2000, "o"], [2050, ""]];
+const tickLab = y => y < 0 ? `${-y} BC` : y === 1 ? "AD 1" : y < 1000 ? `AD ${y}` : String(y);
+
+/* hero mark: a crown over three towers of different heights */
+(function () {
+  const g = document.getElementById("heroMark");
+  el("path", { d: "M10 108 L110 108", stroke: "currentColor", "stroke-width": 3 }, g);
+  [[18, 80, 18, "#2E9A8C"], [46, 46, 26, "#B8352B"], [80, 68, 22, "#2F5FA7"]].forEach(([x, y, w, c]) => el("rect", { x, y, width: w, height: 108 - y, fill: c, stroke: "currentColor", "stroke-width": 2.2 }, g));
+  el("path", { d: "M44 38 L46 18 L54 28 L59 12 L64 28 L72 18 L74 38 Z", fill: "#C99012", stroke: "currentColor", "stroke-width": 2.2, "stroke-linejoin": "round" }, g);
+})();
+
+/* ---------- state ---------- */
+const kOf = y => SN.indexOf(y);
+const S = { k: kOf(2025), scale: "rel", play: null, sel: null };
+const LYDEF = { tiles: true, names: true, borders: true, relief: false, ref: false, modern: false, path: true, pathN: 25, crown: true, size: 1 };
+const LY = { ...LYDEF };
+try { Object.assign(LY, JSON.parse(localStorage.getItem("lc_layers") || "{}")); } catch (e) {}
+const saveLY = () => { try { localStorage.setItem("lc_layers", JSON.stringify(LY)); } catch (e) {} };
+const pos = (i, k) => { const c = CT[i]; if (SITE.era[k] === "U" && c[8] >= 0) { const u = SITE.useries[c[8]]; return [u[UY.length + 1], u[UY.length]]; } return [c[4], c[3]]; };
+const snapRows = k => { const d = SITE.snapdata[k]; return d[0].map((id, j) => ({ id, p: d[1][j] * 1000, interp: d[2][j] || 0 })); };
+const popAt = (i, k) => { const d = SITE.snapdata[k], j = d[0].indexOf(i); return j < 0 ? null : d[1][j] * 1000; };
+const radiusPx = (p, pmax) => { const base = (small() ? 20 : 27) * LY.size; const r = S.scale === "rel" ? base * Math.sqrt(p / pmax) : base * Math.sqrt(p / 5.3e7); return Math.max(1.4, r); };
+const zf = z => z <= 1 ? Math.pow(2, (z - 1) * .5) : Math.min(11, Math.pow(2, (z - 1) * .5));
+
+/* ---------- map ---------- */
+const ESRI = "https://server.arcgisonline.com/ArcGIS/rest/services/";
+let map = null, ready = false;
+const empty = { type: "FeatureCollection", features: [] };
+function style() {
+  return { version: 8, sources: {
+      baseL: { type: "raster", tiles: [ESRI + "Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}"], tileSize: 256, maxzoom: 16, attribution: "Tiles © Esri" },
+      baseD: { type: "raster", tiles: [ESRI + "Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}"], tileSize: 256, maxzoom: 16, attribution: "Tiles © Esri" },
+      hill: { type: "raster", tiles: [ESRI + "Elevation/World_Hillshade/MapServer/tile/{z}/{y}/{x}"], tileSize: 256, maxzoom: 16, attribution: "Hillshade © Esri" },
+      refL: { type: "raster", tiles: [ESRI + "Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}"], tileSize: 256, maxzoom: 16 },
+      refD: { type: "raster", tiles: [ESRI + "Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}"], tileSize: 256, maxzoom: 16 },
+      world: { type: "geojson", data: WORLD, attribution: "Natural Earth" },
+      modern: { type: "geojson", data: { type: "FeatureCollection", features: SITE.modern.map(([la, lo, p]) => ({ type: "Feature", geometry: { type: "Point", coordinates: [lo, la] }, properties: { p } })) } },
+      path: { type: "geojson", data: empty }, pathAll: { type: "geojson", data: empty }, cog: { type: "geojson", data: empty }, cities: { type: "geojson", data: empty } },
+    layers: [
+      { id: "bg", type: "background", paint: { "background-color": css("--sea") } },
+      { id: "land", type: "fill", source: "world", paint: { "fill-color": css("--land") } },
+      { id: "baseL", type: "raster", source: "baseL", layout: { visibility: "none" }, paint: { "raster-opacity": .95 } },
+      { id: "baseD", type: "raster", source: "baseD", layout: { visibility: "none" }, paint: { "raster-opacity": .95 } },
+      { id: "hill", type: "raster", source: "hill", layout: { visibility: "none" }, paint: { "raster-opacity": .38 } },
+      { id: "borders", type: "line", source: "world", paint: { "line-color": css("--border"), "line-width": .55 } },
+      { id: "refL", type: "raster", source: "refL", layout: { visibility: "none" } },
+      { id: "refD", type: "raster", source: "refD", layout: { visibility: "none" } },
+      { id: "modern", type: "circle", source: "modern", layout: { visibility: "none" }, paint: { "circle-radius": ["interpolate", ["linear"], ["zoom"], 1, ["max", 1.2, ["*", .045, ["sqrt", ["get", "p"]]]], 6, ["max", 2.5, ["*", .14, ["sqrt", ["get", "p"]]]]], "circle-color": "rgba(0,0,0,0)", "circle-stroke-color": css("--muted"), "circle-stroke-width": .8, "circle-stroke-opacity": .55 } },
+      { id: "pathAll", type: "line", source: "pathAll", layout: { "line-join": "round", "line-cap": "round" }, paint: { "line-color": css("--path"), "line-width": 1.2, "line-opacity": .25, "line-dasharray": [2, 2] } },
+      { id: "path", type: "line", source: "path", layout: { "line-join": "round", "line-cap": "round" }, paint: { "line-color": css("--path"), "line-width": 1.7, "line-opacity": .7 } },
+      { id: "cities", type: "circle", source: "cities", layout: { "circle-sort-key": ["-", 0, ["get", "p"]] }, paint: {
+        "circle-radius": ["interpolate", ["exponential", 2], ["zoom"], 0, ["*", ["get", "r"], .71], 1, ["get", "r"], 8, ["*", ["get", "r"], 11]],
+        "circle-color": ["get", "c"], "circle-opacity": .82, "circle-stroke-color": isDark() ? "rgba(0,0,0,.6)" : "rgba(255,255,255,.95)", "circle-stroke-width": .9 } },
+      { id: "sel", type: "circle", source: "cities", filter: ["==", ["get", "id"], -1], paint: { "circle-radius": ["interpolate", ["exponential", 2], ["zoom"], 0, ["+", 5, ["*", ["get", "r"], .71]], 1, ["+", 5, ["get", "r"]], 8, ["+", 5, ["*", ["get", "r"], 11]]], "circle-color": "rgba(0,0,0,0)", "circle-stroke-color": css("--fg"), "circle-stroke-width": 2 } },
+      { id: "cog", type: "circle", source: "cog", paint: { "circle-radius": 6, "circle-color": css("--path"), "circle-stroke-color": css("--bg"), "circle-stroke-width": 2 } }
+    ] };
+}
+function themeMap() {
+  if (!ready) return; const d = isDark();
+  map.setPaintProperty("bg", "background-color", css("--sea")); map.setPaintProperty("land", "fill-color", css("--land")); map.setPaintProperty("borders", "line-color", css("--border"));
+  ["path", "pathAll"].forEach(l => map.setPaintProperty(l, "line-color", css("--path"))); map.setPaintProperty("cog", "circle-color", css("--path")); map.setPaintProperty("cog", "circle-stroke-color", css("--bg"));
+  map.setPaintProperty("cities", "circle-stroke-color", d ? "rgba(0,0,0,.6)" : "rgba(255,255,255,.95)"); map.setPaintProperty("sel", "circle-stroke-color", css("--fg")); map.setPaintProperty("modern", "circle-stroke-color", css("--muted"));
+  applyLayers();
+}
+function applyLayers() {
+  if (!ready) return; const d = isDark(), v = b => b ? "visible" : "none";
+  map.setLayoutProperty("baseL", "visibility", v(LY.tiles && !d)); map.setLayoutProperty("baseD", "visibility", v(LY.tiles && d));
+  map.setLayoutProperty("refL", "visibility", v(LY.ref && !d)); map.setLayoutProperty("refD", "visibility", v(LY.ref && d));
+  map.setLayoutProperty("hill", "visibility", v(LY.relief)); map.setLayoutProperty("borders", "visibility", v(LY.borders)); map.setLayoutProperty("modern", "visibility", v(LY.modern));
+  ["path", "pathAll", "cog"].forEach(l => map.setLayoutProperty(l, "visibility", v(LY.path)));
+  draw();
+}
+let crowns = [], labels = [], cogLab = null;
+function clearMarkers() { crowns.forEach(m => m.remove()); labels.forEach(m => m.remove()); crowns = []; labels = []; if (cogLab) { cogLab.remove(); cogLab = null; } }
+const CROWN = '<svg viewBox="0 0 26 20"><path d="M2 18 L3.5 5 L8.5 10.5 L13 2 L17.5 10.5 L22.5 5 L24 18 Z" fill="#E0A11B" stroke="#3A2A05" stroke-width="1.4" stroke-linejoin="round"/><circle cx="13" cy="2.6" r="1.6" fill="#E0A11B" stroke="#3A2A05" stroke-width="1"/></svg>';
+let ROWS = [], PMAX = 1;
+function draw() {
+  const k = S.k, rows = snapRows(k); ROWS = rows; PMAX = rows.length ? rows[0].p : 1;
+  if (!ready) return;
+  const feats = rows.map(r => ({ type: "Feature", geometry: { type: "Point", coordinates: pos(r.id, k) }, properties: { id: r.id, p: r.p, r: radiusPx(r.p, PMAX), c: RC[CT[r.id][5]] } }));
+  map.getSource("cities").setData({ type: "FeatureCollection", features: feats });
+  map.setFilter("sel", ["==", ["get", "id"], S.sel == null ? -1 : S.sel]);
+  const ci = LY.pathN === 10 ? 2 : 0, line = SITE.cog.map(c => [c[ci + 1], c[ci]]);
+  map.getSource("pathAll").setData({ type: "Feature", geometry: { type: "LineString", coordinates: line }, properties: {} });
+  map.getSource("path").setData({ type: "Feature", geometry: { type: "LineString", coordinates: line.slice(0, k + 1).length > 1 ? line.slice(0, k + 1) : [line[0], line[0]] }, properties: {} });
+  map.getSource("cog").setData({ type: "Feature", geometry: { type: "Point", coordinates: line[k] }, properties: {} });
+  placeMarkers();
+}
+function overlap(bx, bxs) { return bxs.some(o => bx[0] < o[2] && bx[2] > o[0] && bx[1] < o[3] && bx[3] > o[1]); }
+function placeMarkers() {
+  clearMarkers(); if (!ready) return;
+  const k = S.k, z = map.getZoom(), f = zf(z), W = map.getContainer().clientWidth, H = map.getContainer().clientHeight;
+  const crownSet = new Set(SITE.crown[k]); const bxs = [];
+  ROWS.forEach(r => { if (r.p < PMAX * .2) return; const pt = map.project(pos(r.id, k)), rr = radiusPx(r.p, PMAX) * f; bxs.push([pt.x - rr, pt.y - rr, pt.x + rr, pt.y + rr]); });
+  if (LY.crown) SITE.crown[k].forEach(i => { const ll = pos(i, k), rr = radiusPx(popAt(i, k), PMAX) * f; const e = document.createElement("div"); e.className = "crown"; e.innerHTML = CROWN;
+    crowns.push(new maplibregl.Marker({ element: e, anchor: "bottom", offset: [0, -rr + 2] }).setLngLat(ll).addTo(map)); const pt = map.project(ll); bxs.push([pt.x - 13, pt.y - rr - 20, pt.x + 13, pt.y - rr]); });
+  if (LY.path) { const ci = LY.pathN === 10 ? 2 : 0, c = SITE.cog[k], pt = map.project([c[ci + 1], c[ci]]); const e = document.createElement("div"); e.className = "cogL"; e.innerHTML = `centre of the ${LY.pathN} largest`;
+    const bx = [pt.x + 9, pt.y - 7, pt.x + 9 + 7 * 22, pt.y + 7]; if (!overlap(bx, bxs)) { cogLab = new maplibregl.Marker({ element: e, anchor: "left", offset: [9, 0] }).setLngLat([c[ci + 1], c[ci]]).addTo(map); bxs.push(bx); } }
+  if (!LY.names) return;
+  const maxN = small() ? 7 : 14; let n = 0;
+  for (const r of ROWS) {
+    if (n >= maxN) break;
+    const ll = pos(r.id, k), pt = map.project(ll); if (pt.x < 0 || pt.y < 0 || pt.x > W || pt.y > H) continue;
+    const rr = radiusPx(r.p, PMAX) * f, nm = nameAt(r.id, SN[k]), big = n < 3, w = (big ? 7.8 : 6.9) * Math.max(nm.length, 7) + 4;
+    let placed = false;
+    for (const [dx, dy, anc] of [[rr + 3, 0, "left"], [-rr - 3, 0, "right"], [0, rr + 2, "top"]]) {
+      const x0 = anc === "left" ? pt.x + dx : anc === "right" ? pt.x + dx - w : pt.x - w / 2, y0 = anc === "top" ? pt.y + dy : pt.y - 13;
+      const bx = [x0, y0, x0 + w, y0 + 26]; if (x0 < 2 || x0 + w > W - 2 || overlap(bx, bxs.filter(b => !(b[0] <= pt.x && b[2] >= pt.x && b[1] <= pt.y && b[3] >= pt.y && (b[2] - b[0]) < 2 * rr + 2)))) continue;
+      bxs.push(bx); const e = document.createElement("div"); e.className = "cityL" + (big ? " big" : ""); e.innerHTML = `${esc(nm)}<small>${fmtP(r.p)}</small>`;
+      labels.push(new maplibregl.Marker({ element: e, anchor: anc, offset: [anc === "left" ? rr + 3 : anc === "right" ? -rr - 3 : 0, anc === "top" ? rr + 2 : 0] }).setLngLat(ll).addTo(map)); placed = true; break;
+    }
+    if (placed) n++;
+  }
+}
+class LayerCtl {
+  onAdd() {
+    const d = document.createElement("div"); d.className = "maplibregl-ctrl";
+    d.innerHTML = `<button class="lyrBtn" aria-expanded="false">Map layers</button>
+<div class="lyrPanel" hidden>
+ <div class="row"><label><input type="checkbox" data-k="names"> City names</label></div>
+ <div class="row"><label><input type="checkbox" data-k="crown"> Crown on the largest</label></div>
+ <div class="row"><label><input type="checkbox" data-k="path"> Centre of gravity path</label><div class="sub"><span>of the</span><select data-k="pathN" aria-label="Centre of how many cities"><option value="25">25 largest</option><option value="10">10 largest</option></select></div></div>
+ <div class="row"><label><input type="checkbox" data-k="modern"> Modern cities (UN 2025, a million or more)</label></div>
+ <div class="hd">Base map</div>
+ <div class="row"><label><input type="checkbox" data-k="borders"> Modern borders</label></div>
+ <div class="row"><label><input type="checkbox" data-k="relief"> Relief (hill shading)</label></div>
+ <div class="row"><label><input type="checkbox" data-k="ref"> Modern place names (tiles)</label></div>
+ <div class="row"><label><input type="checkbox" data-k="tiles"> Base map tiles</label></div>
+ <div class="row"><label style="font-weight:600">Circle size</label><div class="sub"><input type="range" data-k="size" min=".5" max="2" step=".1" aria-label="Circle size"></div></div>
+ <button class="reset">Reset layers</button>
+</div>`;
+    ["click", "dblclick", "mousedown", "touchstart", "wheel"].forEach(t => d.addEventListener(t, e => e.stopPropagation(), { passive: t !== "click" }));
+    const btn = d.querySelector(".lyrBtn"), pan = d.querySelector(".lyrPanel");
+    btn.onclick = () => { const o = pan.hidden; pan.hidden = !o; btn.setAttribute("aria-expanded", o); };
+    const sync = () => pan.querySelectorAll("[data-k]").forEach(i => { const k = i.dataset.k; if (i.type === "checkbox") i.checked = LY[k]; else i.value = LY[k]; });
+    pan.querySelectorAll("[data-k]").forEach(i => i.addEventListener(i.type === "range" ? "input" : "change", () => {
+      const k = i.dataset.k; LY[k] = i.type === "checkbox" ? i.checked : +i.value; if (k === "pathN") LY.path = true;
+      sync(); saveLY(); applyLayers(); legend(); }));
+    pan.querySelector(".reset").onclick = () => { Object.assign(LY, LYDEF); saveLY(); sync(); applyLayers(); legend(); };
+    sync(); this._d = d; return d;
+  }
+  onRemove() { this._d.remove(); }
+}
+class BadgeCtl { onAdd() { const d = document.createElement("div"); d.className = "maplibregl-ctrl yearBadge"; d.id = "badge"; this._d = d; return d; } onRemove() { this._d.remove(); } }
+if (window.maplibregl) {
+  try {
+    map = new maplibregl.Map({ container: "map", style: style(), center: small() ? [60, 28] : [55, 30], zoom: small() ? .35 : 1.15, minZoom: 0, maxZoom: 9, renderWorldCopies: false, attributionControl: false, dragRotate: false, pitchWithRotate: false });
+    map.touchZoomRotate.disableRotation();
+    map.addControl(new maplibregl.AttributionControl({ compact: true, customAttribution: "Reba et al. 2016 (Chandler, Modelski) · UN WUP 2025" }), "bottom-right");
+    map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "bottom-right");
+    map.addControl(new LayerCtl(), "top-right");
+    map.addControl(new BadgeCtl(), "top-left");
+    map.on("error", e => { if (e && e.sourceId && /base|hill|ref/.test(e.sourceId)) return; if (e && e.error && /tile|Failed to fetch|NetworkError|AJAXError/i.test(String(e.error.message || e.error))) return; console.warn(e && e.error); });
+    map.on("load", () => { ready = true; applyLayers(); setSnap(S.k); });
+    map.on("moveend", placeMarkers);
+    map.on("click", "cities", e => { const f = e.features && e.features[0]; if (f) pick(f.properties.id, false); });
+    map.on("mouseenter", "cities", () => map.getCanvas().style.cursor = "pointer"); map.on("mouseleave", "cities", () => { map.getCanvas().style.cursor = ""; hideTip(); });
+    map.on("mousemove", "cities", e => { const f = e.features && e.features[0]; if (!f) return; const i = f.properties.id; showTip(`<b>${esc(nameAt(i, SN[S.k]))}</b>, ${esc(CT[i][2])}<br>${fmtP(f.properties.p)} in ${yl(SN[S.k])}`, e.originalEvent.clientX, e.originalEvent.clientY); });
+  } catch (err) { map = null; }
+}
+if (!map) document.getElementById("map").innerHTML = '<div class="nomap">The interactive map needs WebGL, which this browser has turned off. The ranked list beside it, the charts and the tables below all still work.</div>';
+
+/* ---------- popup with the population history ---------- */
+let popup = null;
+function spark(i) {
+  const w = 280, h = 104, m = { l: 34, r: 6, t: 8, b: 16 }, X = y => m.l + (w - m.l - m.r) * y2p(y) / 1000;
+  const pts = { M: [], C: [], U: [] }; if (i < NP) { SITE.hist[i][0].forEach(([y, v]) => pts.M.push([y, v])); SITE.hist[i][1].forEach(([y, v]) => pts.C.push([y, v])); }
+  const c = CT[i]; if (c[8] >= 0) SITE.useries[c[8]].slice(0, UY.length).forEach((v, j) => { if (v != null) pts.U.push([UY[j], v * 1000]); });
+  const all = [...pts.M, ...pts.C, ...pts.U].map(p => p[1]); if (!all.length) return "";
+  let lo = Math.floor(Math.log10(Math.min(...all))), hi = Math.ceil(Math.log10(Math.max(...all))); if (hi - lo < 2) lo = hi - 2;
+  const Y = v => h - m.b - (h - m.t - m.b) * (Math.log10(v) - lo) / (hi - lo);
+  let s = `<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="Population estimates through time">`;
+  for (let e = lo; e <= hi; e++) { s += `<line x1="${m.l}" x2="${w - m.r}" y1="${Y(10 ** e)}" y2="${Y(10 ** e)}" stroke="var(--rule)"/><text x="${m.l - 4}" y="${Y(10 ** e) + 3.5}" class="lab s m" text-anchor="end">${e >= 6 ? 10 ** (e - 6) + "m" : 10 ** (e - 3) + "k"}</text>`; }
+  [[-3000, "start", "3000 BC"], [1, "middle", "AD 1"], [1800, "middle", "1800"], [2050, "end", "2050"]].forEach(([y, a, t]) => s += `<text x="${X(y) + (a === "start" ? -4 : 0)}" y="${h - 3}" class="lab s m" text-anchor="${a}">${t}</text>`);
+  s += `<line x1="${X(1975)}" x2="${X(1975)}" y1="${m.t}" y2="${h - m.b}" stroke="var(--muted)" stroke-dasharray="2 2"/>`;
+  s += `<line x1="${X(SN[S.k])}" x2="${X(SN[S.k])}" y1="${m.t}" y2="${h - m.b}" stroke="var(--hot)" stroke-width="1.4"/>`;
+  const line = (a, col, dash) => a.length > 1 ? `<polyline points="${a.map(p => X(p[0]) + "," + Y(p[1])).join(" ")}" fill="none" stroke="${col}" stroke-width="1.5" ${dash ? 'stroke-dasharray="3 2"' : ""}/>` : "";
+  s += line(pts.C, "#2F5FA7") + line(pts.M, "#C99012", 1) + line(pts.U, "#B8352B");
+  pts.C.forEach(p => s += `<circle cx="${X(p[0])}" cy="${Y(p[1])}" r="2" fill="#2F5FA7"/>`); pts.M.forEach(p => s += `<rect x="${X(p[0]) - 2}" y="${Y(p[1]) - 2}" width="4" height="4" fill="#C99012"/>`);
+  return s + "</svg>";
+}
+function popHtml(i) {
+  const c = CT[i], k = S.k, y = SN[k], p = popAt(i, k), srcs = [];
+  if (c[7].includes("C")) srcs.push(`Chandler (${SITE.hist[i] ? SITE.hist[i][1].length : 0} figures)`); if (c[7].includes("M")) srcs.push(`Modelski (${SITE.hist[i] ? SITE.hist[i][0].length : 0})`); if (c[8] >= 0) srcs.push("UN WUP 2025");
+  const u = c[8] >= 0 ? SITE.useries[c[8]] : null, rank = (() => { const d = SITE.snapdata[k][0], j = d.indexOf(i); return j < 0 ? null : j + 1; })();
+  const nm = nameAt(i, y), alt = [c[0] !== nm ? c[0] : "", c[1]].filter(Boolean).join(", ");
+  return `<b class="t">${esc(nm)}</b><div class="pl">${esc(alt ? alt + " · " : "")}${esc(c[2])} · ${esc(RN[c[5]])}</div>` +
+    (p ? `${fmtP(p)} in ${yl(y)}${rank ? `, ${rank === 1 ? "the largest" : "number " + rank}` : ""}${SITE.snapdata[k][2][SITE.snapdata[k][0].indexOf(i)] ? " (interpolated)" : ""}` : `No estimate for ${yl(y)}`) +
+    spark(i) + `<div class="legend" style="margin-top:2px;font-size:10.5px;gap:4px 10px"><span><i class="sq" style="background:#2F5FA7;width:9px;height:9px"></i>Chandler</span><span><i class="sq" style="background:#C99012;width:9px;height:9px"></i>Modelski</span><span><i class="sq" style="background:#B8352B;width:9px;height:9px"></i>UN (from 1975)</span></div>` +
+    `<div class="src2">Sources: ${srcs.join("; ")}.${c[6] ? ` Certainty ${c[6]} of 3 (1 most certain).` : ""}${u && u[UY.length + 2] ? ` UN plausibility: ${esc(u[UY.length + 2])}.` : ""}${c[7] === "U" ? " DEGURBA city." : ""}</div>`;
+}
+function openPopup(i) {
+  if (!ready) return; if (popup) popup.remove();
+  popup = new maplibregl.Popup({ maxWidth: "310px", closeButton: true, focusAfterOpen: false }).setLngLat(pos(i, S.k)).setHTML(popHtml(i)).addTo(map);
+  popup.on("close", () => { if (S.sel === i) { S.sel = null; map.setFilter("sel", ["==", ["get", "id"], -1]); } });
+}
+function pick(i, move) {
+  S.sel = i; if (ready) { map.setFilter("sel", ["==", ["get", "id"], i]); if (move) map.flyTo({ center: pos(i, S.k), zoom: Math.max(map.getZoom(), 3.2), speed: 1.6 }); openPopup(i); }
+  side();
+}
+function toMap() { if (small()) document.getElementById("map").scrollIntoView({ behavior: "smooth", block: "start" }); }
+
+/* ---------- time controls ---------- */
+const yr = document.getElementById("yr");
+(function ticks() { const t = document.getElementById("ticks"); TICKS.forEach(([y, c]) => { const s = document.createElement("span"); s.className = c; s.style.left = y2p(y) / 10 + "%"; s.textContent = tickLab(y); if (y === 2050) s.style.transform = "translateX(-100%)"; if (y === -3000) s.style.transform = "translateX(-30%)"; t.appendChild(s); }); })();
+function setSnap(k, fromSlider) {
+  S.k = Math.max(0, Math.min(NSN - 1, k)); if (!fromSlider) yr.value = Math.round(SPOS[S.k]);
+  document.getElementById("yv").textContent = yl(SN[S.k]);
+  const b = document.getElementById("badge"); if (b) b.innerHTML = `${yl(SN[S.k])}<small>${SITE.era[S.k] === "U" ? (SN[S.k] > 2025 ? "UN projection" : "UN WUP 2025") : SITE.era[S.k] === "C" ? "Chandler" : "Modelski and Chandler"}</small>`;
+  draw(); side();
+  if (popup && S.sel != null && ready) { if (popAt(S.sel, S.k) != null) { popup.setLngLat(pos(S.sel, S.k)).setHTML(popHtml(S.sel)); } else popup.setHTML(popHtml(S.sel)); }
+}
+yr.addEventListener("input", () => { stop(); setSnap(nearestSnap(+yr.value), true); });
+function stop() { if (S.play) { clearInterval(S.play); S.play = null; document.getElementById("play").innerHTML = "&#9654;"; } }
+document.getElementById("play").onclick = () => {
+  if (S.play) return stop();
+  if (S.k >= NSN - 1) setSnap(0);
+  document.getElementById("play").innerHTML = "&#10074;&#10074;";
+  S.play = setInterval(() => { if (S.k >= NSN - 1) return stop(); setSnap(S.k + 1); }, 650);
+};
+const press = (row, b) => document.querySelectorAll(row + " .btn").forEach(x => x.setAttribute("aria-pressed", x === b));
+document.querySelectorAll("#scaleRow .btn").forEach(b => b.onclick = () => { S.scale = b.dataset.s; press("#scaleRow", b); draw(); legend(); });
+const JUMPS = [["Uruk", -2800], ["Memphis", -2000], ["Babylon", -600], ["Alexandria", -100], ["Rome", 200], ["Constantinople", 600], ["Chang'an", 700], ["Baghdad", 900], ["Kaifeng", 1100], ["Hangzhou", 1300], ["Beijing", 1800], ["London", 1900], ["New York", 1950], ["Tokyo", 1975], ["Jakarta", 2025], ["Dhaka", 2050]];
+(function focusRow() {
+  const row = document.getElementById("focusRow");
+  JUMPS.forEach(([n, y]) => { const x = document.createElement("button"); x.className = "btn"; x.textContent = `${n}, ${yl(y)}`; x.onclick = () => { stop(); const k = kOf(y); setSnap(k); const i = SITE.crown[k][0]; if (ready) { map.flyTo({ center: pos(i, k), zoom: small() ? 2.4 : 3, speed: 1.4 }); pick(i, false); } else side(); toMap(); }; row.appendChild(x); });
+  const w = document.createElement("button"); w.className = "btn"; w.textContent = "Whole world"; w.onclick = () => { if (ready) { if (popup) popup.remove(); S.sel = null; draw(); map.flyTo({ center: small() ? [60, 28] : [55, 30], zoom: small() ? .35 : 1.15 }); } side(); }; row.appendChild(w);
+})();
+
+/* ---------- search ---------- */
+(function search() {
+  const inp = document.getElementById("q"), sug = document.getElementById("sug"); let opts = [], k = -1;
+  const norm = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  const NAMES = CT.map((c, i) => [i, norm(c[0] + " " + c[1] + " " + (PERIOD.get(i) || []).map(p => p[1]).join(" "))]);
+  const best = i => { let bk = -1, br = 1e9; SITE.snapdata.forEach((d, kk) => { const j = d[0].indexOf(i); if (j >= 0 && j < br) { br = j; bk = kk; } }); return [bk, br + 1]; };
+  function build(q) { const nq = norm(q); if (nq.length < 2) return []; const out = [];
+    for (const [i, n] of NAMES) { if (n.includes(nq)) { const [bk, br] = best(i); if (bk < 0) continue; out.push({ i, bk, br, s: (norm(CT[i][0]).startsWith(nq) ? 10 : 2) + 1 / br }); } }
+    return out.sort((a, b) => b.s - a.s).slice(0, 12); }
+  const show = () => { sug.innerHTML = opts.map((o, j) => `<li role="option" aria-selected="${j === k}" data-j="${j}">${esc(CT[o.i][0])} <span>${esc(CT[o.i][2])}, best rank ${o.br} in ${yl(SN[o.bk])}</span></li>`).join(""); sug.style.display = opts.length ? "block" : "none"; };
+  const choose = o => { sug.style.display = "none"; inp.value = CT[o.i][0]; inp.blur(); stop(); const kk = popAt(o.i, S.k) != null ? S.k : o.bk; setSnap(kk); pick(o.i, true); toMap(); };
+  inp.addEventListener("input", () => { opts = build(inp.value); k = -1; show(); });
+  inp.addEventListener("keydown", e => { if (e.key === "ArrowDown") { k = Math.min(opts.length - 1, k + 1); show(); e.preventDefault(); } else if (e.key === "ArrowUp") { k = Math.max(0, k - 1); show(); e.preventDefault(); } else if (e.key === "Enter" && opts.length) choose(opts[Math.max(0, k)]); else if (e.key === "Escape") sug.style.display = "none"; });
+  sug.addEventListener("click", e => { const li = e.target.closest("li"); if (li) choose(opts[+li.dataset.j]); });
+  document.addEventListener("click", e => { if (!e.target.closest(".searchbox")) sug.style.display = "none"; });
+})();
+
+/* ---------- legend and side panel (ranked list) ---------- */
+function legend() {
+  const e = document.getElementById("legend");
+  let h = REG.map(([n, c]) => `<span><i style="background:${c}"></i>${esc(n)}</span>`).join("");
+  h += `<span><svg width="18" height="14" viewBox="0 0 26 20" style="margin-right:5px">${CROWN.replace(/<\/?svg[^>]*>/g, "")}</svg>largest city</span>`;
+  if (LY.path) h += `<span><i class="ln"></i>centre of the ${LY.pathN} largest</span>`;
+  if (LY.modern) h += `<span><i style="background:transparent;border:1px solid var(--muted)"></i>UN city of a million or more, 2025</span>`;
+  h += `<span>${S.scale === "rel" ? "circle area relative to the largest city at that date" : "circle area on one scale for all dates"}</span>`;
+  e.innerHTML = h;
+}
+const raceRows = new Map();
+function side() {
+  const box = document.getElementById("side"), k = S.k, y = SN[k], rows = snapRows(k), top = rows.slice(0, 10), mx = top.length ? top[0].p : 1;
+  if (!box.querySelector(".race")) box.innerHTML = `<h4>Largest cities</h4><div class="big" id="sideY"></div><p class="sub" id="sideSub"></p><div class="race" id="race"></div><div id="sideMore"></div>`;
+  document.getElementById("sideY").textContent = yl(y);
+  document.getElementById("sideSub").innerHTML = `${esc(ERA[SITE.era[k]])}${y > 2025 ? ", projection" : ""} · ${fmt(rows.length)} place${rows.length === 1 ? "" : "s"} with an estimate${SITE.era[k] === "U" ? " (300,000 or more shown)" : ""}`;
+  const race = document.getElementById("race"), seen = new Set(), RH = 30; race.style.height = Math.max(1, top.length) * RH + "px";
+  top.forEach((r, j) => { seen.add(r.id); let e = raceRows.get(r.id);
+    if (!e) { e = document.createElement("div"); e.className = "row"; e.innerHTML = `<span class="k"></span><div class="bw"><div class="bar"></div><span class="t"></span></div>`; e.style.transform = `translateY(${10 * RH}px)`; e.style.opacity = 0; race.appendChild(e); raceRows.set(r.id, e); e.onclick = () => { stop(); pick(r.id, true); toMap(); }; }
+    e.onclick = () => { stop(); pick(r.id, true); toMap(); };
+    requestAnimationFrame(() => { e.style.transform = `translateY(${j * RH}px)`; e.style.opacity = 1; });
+    e.querySelector(".k").textContent = j + 1; e.querySelector(".bar").style.width = Math.max(1, 100 * r.p / mx) + "%"; e.querySelector(".bar").style.background = RC[CT[r.id][5]];
+    e.querySelector(".t").innerHTML = `${SITE.crown[k].includes(r.id) ? "♛ " : ""}${esc(nameAt(r.id, y))} <small>${fmtP(r.p)}${r.interp ? "*" : ""}</small>`; });
+  for (const [id, e] of raceRows) if (!seen.has(id)) { e.style.opacity = 0; e.style.transform = `translateY(${10 * RH}px)`; raceRows.delete(id); setTimeout(() => e.remove(), 400); }
+  const c = SITE.cog[k], rg = R.regions[k], rgTop = rg.share.map((v, j) => [v, j]).sort((a, b) => b[0] - a[0]).slice(0, 3);
+  let h = `<h4>The crown</h4><p style="margin:0 0 6px">${SITE.crown[k].map(i => `<b>${esc(nameAt(i, y))}</b>`).join(", ")}${SITE.crown[k].length > 1 ? ` <small>(tied within ${R.source.tie_pct}%)</small>` : ""}, ${fmtP(rows[0] ? rows[0].p : null)}</p>`;
+  const rr = SITE.reigns.find(r => r.first <= y && r.last >= y); if (rr) h += `<p class="sub">${rr.n === 1 ? "On top in this snapshot only" : `On top in ${rr.n} snapshots in a row, ${yl(rr.first)} to ${yl(rr.last)}`}</p>`;
+  h += `<h4>Where the ${rg.n} largest were</h4><p class="sub" style="color:var(--fg)">${rgTop.filter(x => x[0] > 0).map(([v, j]) => `<i style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${RC[j]};margin-right:5px"></i>${esc(RN[j])} ${Math.round(v)}%`).join("<br>")}</p>`;
+  h += `<p class="sub">Their centre: ${Math.abs(c[0]).toFixed(1)}°${c[0] < 0 ? "S" : "N"} ${Math.abs(c[1]).toFixed(1)}°${c[1] < 0 ? "W" : "E"}</p>`;
+  if (rows.some(r => r.interp)) h += `<p class="sub">* interpolated between the compiler's nearest dates</p>`;
+  if (SITE.era[k] === "U" && SN[k] === 1975) h += `<p class="sub" style="color:var(--hot)">From 1975 the source and the definition of a city change (section 07).</p>`;
+  h += `<p class="sub">Press play, drag the date, or click a circle for its history.</p>`;
+  document.getElementById("sideMore").innerHTML = h;
+}
+
+/* ---------- charts ---------- */
+const XS = (w, m) => y => m.l + (w - m.l - m.r) * y2p(y) / 1000;
+function xAxis(svg, X, h, m, sm) { [-3000, -2000, -1000, 1, 1000, 1500, 1800, 1900, 1975, 2050].filter(y => !sm || [-3000, -1000, 1000, 1800, 1975].includes(y) || y === 2050).forEach(y => { lbl(svg, X(y), h - 9, y < 0 ? `${-y} BC` : y === 1 ? "AD 1" : y, "lab s m", y === 2050 ? "end" : "middle"); el("line", { x1: X(y), x2: X(y), y1: h - m.b, y2: h - m.b + 4, stroke: css("--muted") }, svg); }); }
+function seam(svg, X, m, h) { el("line", { x1: X(1975), x2: X(1975), y1: m.t, y2: h - m.b, stroke: css("--muted"), "stroke-dasharray": "3 3" }, svg); }
+const logTick = v => v >= 1e6 ? v / 1e6 + "m" : v >= 1e3 ? v / 1e3 + "k" : v;
+function crownChart() {
+  const SR = R.snaps;
+  resp(document.getElementById("crownChart"), (w, sm) => {
+    const h = sm ? 310 : 380, m = { l: 44, r: 12, t: 14, b: 34 }, svg = el("svg", { viewBox: `0 0 ${w} ${h}`, role: "img", "aria-label": "Line chart of the population of the largest city from 3700 BC to 2050 on a log scale, with a band showing which region the largest city was in" }, document.getElementById("crownChart"));
+    const X = XS(w, m), ph = h - m.t - m.b - 22, Y = v => m.t + ph - ph * (Math.log10(v) - 3.5) / (8 - 3.5);
+    [1e4, 1e5, 1e6, 1e7, 5e7].forEach(v => { el("line", { x1: m.l, x2: w - m.r, y1: Y(v), y2: Y(v), stroke: css("--rule") }, svg); lbl(svg, m.l - 6, Y(v) + 4, logTick(v), "lab s m", "end"); });
+    seam(svg, X, m, h - 22); lbl(svg, X(1975) - 4, m.t + 10, "UN from 1975", "lab s m", "end");
+    const ln = (key, col, dash) => { const pts = SR.filter(s => s[key] && s.era !== "U").map(s => `${X(s.y)},${Y(s[key])}`); if (pts.length > 1) el("polyline", { points: pts.join(" "), fill: "none", stroke: col, "stroke-width": 1.4, "stroke-dasharray": dash, opacity: .85 }, svg); };
+    ln("pop_m", "#C99012", "4 3"); ln("pop_c", "#2F5FA7", "2 3");
+    el("polyline", { points: SR.map(s => `${X(s.y)},${Y(s.pop)}`).join(" "), fill: "none", stroke: css("--fg"), "stroke-width": 2 }, svg);
+    SR.forEach((s, k) => el("circle", { cx: X(s.y), cy: Y(s.pop), r: 2.6, fill: RC[CT[SITE.crown[k][0]][5]], stroke: css("--bg"), "stroke-width": .6 }, svg));
+    const yb = h - m.b - 16;
+    SITE.reigns.forEach(r => { const k0 = SN.indexOf(r.first), k1 = SN.indexOf(r.last); const x0 = k0 > 0 ? (X(SN[k0 - 1]) + X(SN[k0])) / 2 : X(SN[0]), x1 = k1 < NSN - 1 ? (X(SN[k1]) + X(SN[k1 + 1])) / 2 : X(SN[k1]) + 3;
+      el("rect", { x: x0, y: yb, width: Math.max(1, x1 - x0 - .5), height: 14, fill: r.tie ? css("--panel") : RC[r.reg], stroke: r.tie ? css("--border") : "none" }, svg); });
+    const LAB = sm ? [["Uruk", -2800, 0, -9, "middle"], ["Babylon", -600, 6, 16, "start"], ["Rome", 200, 0, -9, "middle"], ["Beijing", 1800, -6, -6, "end"], ["London", 1900, -6, -4, "end"], ["Tokyo", 1975, -6, -6, "end"], ["Dhaka", 2050, -3, -9, "end"]]
+      : [["Uruk", -2800, 0, -9, "middle"], ["Ur", -2100, 0, 16, "middle"], ["Babylon", -600, 6, 16, "start"], ["Alexandria", -100, -6, -6, "end"], ["Rome", 200, -4, -8, "end"], ["Constantinople", 600, 0, 18, "middle"],
+         ["Chang'an", 700, 0, -10, "middle"], ["Baghdad", 900, 4, -12, "start"], ["Hangzhou", 1300, 0, 18, "middle"], ["Beijing", 1800, -6, -6, "end"], ["London", 1900, -6, -4, "end"],
+         ["New York", 1950, 6, 12, "start"], ["Tokyo", 1975, -6, -6, "end"], ["Jakarta", 2025, 0, 18, "middle"], ["Dhaka", 2050, -3, -9, "end"]];
+    LAB.forEach(([n, y, dx, dy, an]) => { const s = SR.find(q => q.y === y); if (!s) return; const t = lbl(svg, X(y) + dx, Y(s.pop) + dy, n, "lab s b", an); t.setAttribute("style", `paint-order:stroke;stroke:${css("--bg")};stroke-width:3px`); });
+    xAxis(svg, X, h, m, sm);
+    const g = el("line", { x1: 0, x2: 0, y1: m.t, y2: yb + 14, stroke: css("--fg"), opacity: 0 }, svg);
+    const hit = el("rect", { x: m.l, y: m.t, width: w - m.l - m.r, height: yb + 14 - m.t, fill: "transparent" }, svg);
+    const mv = ev => { const r = svg.getBoundingClientRect(), x = (ev.clientX - r.left) * w / r.width, p = (x - m.l) / (w - m.l - m.r) * 1000, k = nearestSnap(p), s = SR[k];
+      g.setAttribute("x1", X(s.y)); g.setAttribute("x2", X(s.y)); g.setAttribute("opacity", .4);
+      showTip(`<b>${yl(s.y)}</b>: ${s.lead.map(esc).join(", ")}${s.lead.length > 1 ? " (tied)" : ""}, ${fmtP(s.pop)}<br>${s.second ? `next: ${esc(s.second)}, ${fmtP(s.second_pop)}<br>` : ""}${s.era !== "U" ? `Modelski: ${s.lead_m.length ? esc(s.lead_m.join(", ")) + ", " + fmtP(s.pop_m) : "none"}<br>Chandler: ${s.lead_c.length ? esc(s.lead_c.join(", ")) + ", " + fmtP(s.pop_c) : "none"}` : "UN WUP 2025"}`, ev.clientX, ev.clientY); };
+    hit.addEventListener("mousemove", mv); hit.addEventListener("click", ev => { ev.stopPropagation(); mv(ev); }); hit.addEventListener("mouseleave", () => { hideTip(); g.setAttribute("opacity", 0); });
+  });
+  document.getElementById("crownLegend").innerHTML = REG.map(([n, c]) => `<span><i class="sq" style="background:${c}"></i>${esc(n)}</span>`).join("") + `<span><i class="sq" style="background:var(--panel);border:1px solid var(--border)"></i>tie</span><span><i class="ln" style="border-top:2px dashed #C99012"></i>Modelski's largest</span><span><i class="ln" style="border-top:2px dotted #2F5FA7"></i>Chandler's largest</span>`;
+}
+function countChart() {
+  const D = R.counts;
+  resp(document.getElementById("countChart"), (w, sm) => {
+    const h = sm ? 260 : 310, m = { l: 44, r: 12, t: 14, b: 28 }, svg = el("svg", { viewBox: `0 0 ${w} ${h}`, role: "img", "aria-label": "Counts of cities of 100,000 and a million or more through time, log scale" }, document.getElementById("countChart"));
+    const X = XS(w, m), Y = v => h - m.b - (h - m.t - m.b) * Math.log10(v) / 4.2;
+    [1, 10, 100, 1000, 10000].forEach(v => { el("line", { x1: m.l, x2: w - m.r, y1: Y(v), y2: Y(v), stroke: css("--rule") }, svg); lbl(svg, m.l - 6, Y(v) + 4, fmt(v), "lab s m", "end"); });
+    seam(svg, X, m, h);
+    [["n100k", css("--cool")], ["n1m", css("--hot")]].forEach(([key, col]) => { const pts = D.filter(d => d[key] > 0);
+      const segs = []; let cur = []; D.forEach((d, i) => { if (d[key] > 0 && (!cur.length || D[i - 1].era === "U" || d.era !== "U")) cur.push(d); else { if (cur.length > 1) segs.push(cur); cur = d[key] > 0 ? [d] : []; } }); if (cur.length > 1) segs.push(cur);
+      segs.forEach(p => el("polyline", { points: p.map(d => `${X(d.y)},${Y(d[key])}`).join(" "), fill: "none", stroke: col, "stroke-width": 2 }, svg));
+      pts.forEach(d => { const c = el("circle", { cx: X(d.y), cy: Y(d[key]), r: 2.6, fill: col }, svg); c.addEventListener("mousemove", ev => showTip(`<b>${yl(d.y)}</b> (${esc(ERA[d.era])})<br>${fmt(d.n100k)} places of 100,000 or more<br>${fmt(d.n1m)} of a million or more`, ev.clientX, ev.clientY)); c.addEventListener("mouseleave", hideTip); }); });
+    lbl(svg, X(1975) - 4, m.t + 10, "UN from 1975", "lab s m", "end");
+    xAxis(svg, X, h, m, sm);
+  });
+  document.getElementById("countLegend").innerHTML = `<span><i class="sq" style="background:var(--cool)"></i>100,000 or more</span><span><i class="sq" style="background:var(--hot)"></i>a million or more</span>`;
+}
+function regionChart() {
+  const D = R.regions;
+  resp(document.getElementById("regionChart"), (w, sm) => {
+    const h = sm ? 260 : 320, m = { l: 36, r: 12, t: 10, b: 28 }, svg = el("svg", { viewBox: `0 0 ${w} ${h}`, role: "img", "aria-label": "Stacked area chart of the share of the 25 largest cities' population by region through time" }, document.getElementById("regionChart"));
+    const X = XS(w, m), Y = v => h - m.b - (h - m.t - m.b) * v / 100;
+    const cum = D.map(() => 0);
+    RN.forEach((n, j) => { const lo = cum.slice(); D.forEach((d, i) => cum[i] += d.share[j]);
+      const pts = D.map((d, i) => `${X(d.y)},${Y(cum[i])}`).join(" ") + " " + D.map((d, i) => `${X(d.y)},${Y(lo[i])}`).reverse().join(" "); el("polygon", { points: pts, fill: RC[j], opacity: .9 }, svg); });
+    [0, 50, 100].forEach(v => lbl(svg, m.l - 6, Y(v) + 4, v + "%", "lab s m", "end")); seam(svg, X, m, h); xAxis(svg, X, h, m, sm);
+    const g = el("line", { x1: 0, x2: 0, y1: m.t, y2: h - m.b, stroke: css("--fg"), opacity: 0 }, svg), hit = el("rect", { x: m.l, y: m.t, width: w - m.l - m.r, height: h - m.t - m.b, fill: "transparent" }, svg);
+    const mv = ev => { const r = svg.getBoundingClientRect(), x = (ev.clientX - r.left) * w / r.width, k = nearestSnap((x - m.l) / (w - m.l - m.r) * 1000), d = D[k]; g.setAttribute("x1", X(d.y)); g.setAttribute("x2", X(d.y)); g.setAttribute("opacity", .5);
+      showTip(`<b>${yl(d.y)}</b>, the ${d.n} largest<br>` + d.share.map((v, j) => [v, j]).filter(x => x[0] > .5).sort((a, b) => b[0] - a[0]).map(([v, j]) => `<span style="color:${RC[j]}">■</span> ${esc(RN[j])} ${Math.round(v)}%`).join("<br>"), ev.clientX, ev.clientY); };
+    hit.addEventListener("mousemove", mv); hit.addEventListener("click", ev => { ev.stopPropagation(); mv(ev); }); hit.addEventListener("mouseleave", () => { hideTip(); g.setAttribute("opacity", 0); });
+  });
+  document.getElementById("regionLegend").innerHTML = REG.map(([n, c]) => `<span><i class="sq" style="background:${c}"></i>${esc(n)}</span>`).join("");
+}
+function cogChart() {
+  const D = R.cog;
+  resp(document.getElementById("cogChart"), (w, sm) => {
+    const h = sm ? 240 : 290, m = { l: 44, r: 12, t: 12, b: 28 }, svg = el("svg", { viewBox: `0 0 ${w} ${h}`, role: "img", "aria-label": "Line chart of the longitude of the centre of the largest cities through time" }, document.getElementById("cogChart"));
+    const X = XS(w, m), Y = v => m.t + (h - m.t - m.b) * (140 - v) / 220;
+    [[-60, "60°W"], [0, "0°"], [45, "45°E"], [90, "90°E"], [135, "135°E"]].forEach(([v, t]) => { el("line", { x1: m.l, x2: w - m.r, y1: Y(v), y2: Y(v), stroke: css("--rule") }, svg); lbl(svg, m.l - 6, Y(v) + 4, t, "lab s m", "end"); });
+    [[45, "Baghdad"], [116, "Beijing"], [0, "London"]].forEach(([v, t]) => lbl(svg, w - m.r - 2, Y(v) - 4, t, "lab s m", "end"));
+    seam(svg, X, m, h);
+    el("polyline", { points: D.map(d => `${X(d.y)},${Y(d.lon10)}`).join(" "), fill: "none", stroke: css("--muted"), "stroke-width": 1, opacity: .7 }, svg);
+    el("polyline", { points: D.map(d => `${X(d.y)},${Y(d.lon)}`).join(" "), fill: "none", stroke: css("--fg"), "stroke-width": 2.2 }, svg);
+    D.forEach(d => { const c = el("circle", { cx: X(d.y), cy: Y(d.lon), r: 2.4, fill: css("--fg") }, svg); c.addEventListener("mousemove", ev => showTip(`<b>${yl(d.y)}</b><br>25 largest: ${Math.abs(d.lat).toFixed(1)}°N ${Math.abs(d.lon).toFixed(1)}°${d.lon < 0 ? "W" : "E"}<br>10 largest: ${Math.abs(d.lat10).toFixed(1)}°N ${Math.abs(d.lon10).toFixed(1)}°${d.lon10 < 0 ? "W" : "E"}`, ev.clientX, ev.clientY)); c.addEventListener("mouseleave", hideTip); });
+    xAxis(svg, X, h, m, sm);
+  });
+}
+function cityTrack(nameIdx) { const out = []; SN.forEach((y, k) => { const p = popAt(nameIdx, k); if (p != null) out.push([y, p, SITE.era[k]]); }); return out; }
+function londonChart() {
+  const pick = (n, ctry) => CT.findIndex((c, i) => i < NP && c[0] === n && (!ctry || c[2] === ctry));
+  const L = [["London", pick("London", "United Kingdom"), "#B8352B"], ["Beijing", pick("Beijing"), "#2E9A8C"], ["Istanbul", pick("Istanbul"), "#C99012"], ["Paris", pick("Paris"), "#7B57A8"], ["New York", pick("New York"), "#1F2F4D"], ["Tokyo", pick("Tokyo"), "#D46A8C"]];
+  resp(document.getElementById("londonChart"), (w, sm) => {
+    const h = sm ? 280 : 340, m = { l: 44, r: sm ? 12 : 70, t: 12, b: 28 }, svg = el("svg", { viewBox: `0 0 ${w} ${h}`, role: "img", "aria-label": "Population of London, Beijing, Istanbul, Paris, New York and Tokyo from 1500 to 2050, log scale" }, document.getElementById("londonChart"));
+    const X = y => m.l + (w - m.l - m.r) * (y - 1500) / 550, Y = v => h - m.b - (h - m.t - m.b) * (Math.log10(v) - 4.7) / (7.7 - 4.7);
+    [1e5, 1e6, 1e7, 3e7].forEach(v => { el("line", { x1: m.l, x2: w - m.r, y1: Y(v), y2: Y(v), stroke: css("--rule") }, svg); lbl(svg, m.l - 6, Y(v) + 4, logTick(v), "lab s m", "end"); });
+    for (let y = 1500; y <= 2050; y += sm ? 100 : 50) lbl(svg, X(y), h - 9, y, "lab s m", "middle");
+    el("line", { x1: X(1975), x2: X(1975), y1: m.t, y2: h - m.b, stroke: css("--muted"), "stroke-dasharray": "3 3" }, svg);
+    const ends = []; L.forEach(([n, i, col]) => { if (i < 0) return; const t = cityTrack(i).filter(p => p[0] >= 1500 && p[1] >= 5e4);
+      [t.filter(p => p[2] !== "U"), t.filter(p => p[2] === "U")].forEach((pp, j) => { if (pp.length > 1) el("polyline", { points: pp.map(p => `${X(p[0])},${Y(p[1])}`).join(" "), fill: "none", stroke: col, "stroke-width": n === "London" ? 2.8 : 1.6, opacity: j ? .75 : 1 }, svg); });
+      t.forEach(p => { const c = el("circle", { cx: X(p[0]), cy: Y(p[1]), r: n === "London" ? 3 : 2, fill: col }, svg); c.addEventListener("mousemove", ev => showTip(`<b>${esc(n)}</b>, ${p[0]}<br>${fmtP(p[1])} (${p[2] === "U" ? "UN" : "Chandler"})`, ev.clientX, ev.clientY)); c.addEventListener("mouseleave", hideTip); });
+      if (!sm && t.length) { const lp = t[t.length - 1]; ends.push([Y(lp[1]) + 4, X(lp[0]) + 6, n, col]); } });
+    ends.sort((a, b) => a[0] - b[0]); for (let j = 1; j < ends.length; j++) ends[j][0] = Math.max(ends[j][0], ends[j - 1][0] + 13);
+    ends.forEach(([y, x, n, col]) => lbl(svg, x, y, n, "lab s b").setAttribute("style", `fill:${col}`));
+  });
+  document.getElementById("londonLegend").innerHTML = L.map(([n, , c]) => `<span><i class="sq" style="background:${c}"></i>${n}</span>`).join("");
+}
+function riseChart() {
+  const D = R.un.top2050_25.slice(0, 15);
+  resp(document.getElementById("riseChart"), (w, sm) => {
+    const rh = 24, lw = sm ? 112 : 170, h = D.length * rh + 34, svg = el("svg", { viewBox: `0 0 ${w} ${h}`, role: "img", "aria-label": "Dumbbell chart of the 15 largest cities of 2050, 2025 and 2050 populations" }, document.getElementById("riseChart"));
+    const X = v => lw + (w - lw - 50) * v / 55e6;
+    [0, 10e6, 20e6, 30e6, 40e6, 50e6].forEach(v => { el("line", { x1: X(v), x2: X(v), y1: 14, y2: h - 6, stroke: css("--rule") }, svg); lbl(svg, X(v), 10, v ? v / 1e6 + "m" : "0", "lab s m", "middle"); });
+    D.forEach((d, i) => { const y = 26 + i * rh, c = RC[d.reg];
+      lbl(svg, lw - 8, y + 4, `${i + 1}. ${d.name}`, "lab", "end");
+      el("line", { x1: X(d.p2025), x2: X(d.p2050), y1: y, y2: y, stroke: c, "stroke-width": 3, opacity: .55 }, svg);
+      el("circle", { cx: X(d.p2025), cy: y, r: 5, fill: css("--bg"), stroke: c, "stroke-width": 2 }, svg); el("circle", { cx: X(d.p2050), cy: y, r: 5.5, fill: c }, svg);
+      lbl(svg, Math.max(X(d.p2025), X(d.p2050)) + 9, y + 4, `${(d.p2050 / 1e6).toFixed(1)}m`, "lab s b");
+      const hr = el("rect", { x: 0, y: y - rh / 2, width: w, height: rh, fill: "transparent" }, svg);
+      hr.addEventListener("mousemove", ev => showTip(`<b>${esc(d.name)}</b>, ${esc(d.country)}<br>2025: ${fmtP(d.p2025)}<br>2050: ${fmtP(d.p2050)} (${d.p2050 > d.p2025 ? "+" : ""}${Math.round(100 * (d.p2050 / d.p2025 - 1))}%)<br>UN plausibility: ${esc(d.plaus || "n/a")}`, ev.clientX, ev.clientY)); hr.addEventListener("mouseleave", hideTip); });
+  });
+}
+function tables() {
+  const goSnap = y => { stop(); const k = kOf(y); document.getElementById("atlas").scrollIntoView({ behavior: "smooth" }); setTimeout(() => { setSnap(k); const i = SITE.crown[k][0]; if (ready) { map.flyTo({ center: pos(i, k), zoom: small() ? 2.2 : 2.8 }); pick(i, false); } }, 350); };
+  const rt = document.getElementById("reignTable");
+  rt.innerHTML = `<thead><tr><th>From</th><th>To</th><th>Largest city</th><th class="r">Snapshots</th><th class="r">Peak</th></tr></thead><tbody>` +
+    SITE.reigns.map(r => `<tr data-k="${r.first}"><td>${yl(r.first)}</td><td>${r.last !== r.first ? yl(r.last) : ""}</td><td><i class="d" style="background:${r.tie ? "transparent;border:1px solid var(--muted)" : RC[r.reg]}"></i>${esc(r.label)}${r.tie ? " <small>(tie)</small>" : ""}</td><td class="r">${r.n}</td><td class="r">${fmtP(r.peak)}</td></tr>`).join("") + `</tbody>`;
+  rt.querySelectorAll("tr[data-k]").forEach(t => t.onclick = () => goSnap(+t.dataset.k));
+  const dt = document.getElementById("disTable");
+  dt.innerHTML = `<thead><tr><th>Date</th><th>Modelski's largest</th><th>Chandler's largest</th><th>Combined</th></tr></thead><tbody>` +
+    R.disagree.map(d => `<tr data-k="${d.y}"><td>${yl(d.y)}</td><td>${esc(d.m.join(", "))} <small>${fmtP(d.pm)}</small></td><td>${esc(d.c.join(", "))} <small>${fmtP(d.pc)}</small></td><td>${esc(d.comb.join(", "))} <small>${fmtP(d.pop)}</small></td></tr>`).join("") + `</tbody>`;
+  dt.querySelectorAll("tr[data-k]").forEach(t => t.onclick = () => goSnap(+t.dataset.k));
+  document.getElementById("seamTable").innerHTML = `<thead><tr><th>Place</th><th class="r">Chandler 1975</th><th class="r">UN 1975</th><th class="r">UN rank</th></tr></thead><tbody>` +
+    R.seam.map(d => `<tr><td>${d.ch_rank}. ${esc(d.name)}</td><td class="r">${fmtP(d.chandler1975)}</td><td class="r">${d.un1975 ? fmtP(d.un1975) : "not linked"}</td><td class="r">${d.un_rank1975 || ""}</td></tr>`).join("") + `</tbody>`;
+  document.getElementById("covTable").innerHTML = `<thead><tr><th>Region</th>${R.eras.map(e => `<th class="r">${esc(e)}</th>`).join("")}</tr></thead><tbody>` +
+    R.coverage.map((c, j) => `<tr><td><i class="d" style="background:${RC[j]}"></i>${esc(c.region)}</td>${R.eras.map(e => `<td class="r">${fmt(c[e])}</td>`).join("")}</tr>`).join("") + `</tbody>`;
+  document.getElementById("fixTable").innerHTML = `<thead><tr><th>Source</th><th>Place</th><th class="r">Date</th><th class="r">Figure</th><th>Why</th></tr></thead><tbody>` +
+    R.fixes.map(f => `<tr><td>${{ C: "Chandler", M: "Modelski", X: "Modelski 2000" }[f.src]}</td><td>${esc(f.city)}</td><td class="r">${f.year == null ? "" : yl(f.year)}</td><td class="r">${f.value == null ? "location" : fmt(f.value)}</td><td>${esc(f.why)}</td></tr>`).join("") + `</tbody>`;
+}
+function charts() { crownChart(); countChart(); regionChart(); cogChart(); londonChart(); riseChart(); tables(); }
+
+/* ---------- start ---------- */
+document.getElementById("theme").onclick = () => { const r = document.documentElement; r.dataset.theme = isDark() ? "light" : "dark"; themeMap(); legend(); redraws.forEach(f => f()); };
+addEventListener("resize", () => { if (ready) placeMarkers(); });
+charts(); legend(); setSnap(S.k);
+</script>
+/*FULLSCREEN*/
+</body>
+</html>
